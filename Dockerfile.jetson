@@ -1,0 +1,36 @@
+# Start from NVIDIA's official Linux for Tegra (L4T) TensorRT developer image
+FROM nvcr.io/nvidia/l4t-tensorrt:r10.3.0-devel
+
+WORKDIR /workspace
+
+# Install system dependencies, compilers, and tools required for python packages
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    python3-pip \
+    python3-dev \
+    git \
+    curl \
+    pkg-config \
+    libffi-dev \
+    libssl-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Upgrade pip to ensure clean installation of modern packages
+RUN pip3 install --no-cache-dir --upgrade pip
+
+# Install numerical, dataset, and profiling tools
+RUN pip3 install --no-cache-dir \
+    numpy==1.23.5 \
+    opencv-python-headless \
+    psutil \
+    codecarbon \
+    pycocotools \
+    onnx
+
+# Install low-level NVIDIA Management Library bindings for VRAM tracking
+RUN pip3 install --no-cache-dir nvidia-ml-py
+
+# Ensure trtexec and other CUDA binaries are globally accessible in the container path
+ENV PATH="/usr/src/tensorrt/bin:${PATH}"
+
+# Force python output to stream straight to terminal logs without buffering
+ENV PYTHONUNBUFFERED=1

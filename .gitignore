@@ -1,0 +1,12 @@
+.vscode/
+
+# Ignore models
+*.onnx
+*.engine
+
+# Ignore images
+*.jpg
+*.png
+
+data/cocostuff/val2017.zip
+data/cocostuff/stuffthingmaps_trainval2017.zip

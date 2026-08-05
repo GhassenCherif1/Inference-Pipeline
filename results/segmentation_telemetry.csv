@@ -1,0 +1,12 @@
+Model_Config,Avg_Latency_ms,Throughput_FPS,Peak_Unified_RAM_Delta_MB,Avg_GPU_Util_Pct,Peak_GPU_Util_Pct,CO2_Produced_kg,mIoU,Images_Skipped
+model.engine,39.44,25.4,171.0,55.5,99,0.000193,0.0001,0
+model.engine,38.58,25.9,227.3,55.7,99,0.000186,0.0001,0
+model.engine,71.17,14.1,315.0,18.9,99,0.001031,0.0000,0
+model.engine,70.99,14.1,295.8,19.0,99,0.000022,0.0000,0
+model.engine,36.35,27.5,322.7,62.9,99,0.000004,0.0000,100
+model.engine,71.60,14.0,362.1,19.8,99,0.000022,0.0000,0
+model.engine,70.55,14.2,396.3,19.1,99,0.000021,0.0022,0
+model.engine,65.93,15.2,423.8,18.2,99,0.000002,0.0002,0
+model.engine,64.64,15.5,432.1,25.3,99,0.000002,0.0002,0
+model.engine,64.21,15.6,450.7,17.4,99,0.000002,0.3120,0
+model.engine,71.32,14.0,512.5,18.8,99,0.001034,0.4032,0

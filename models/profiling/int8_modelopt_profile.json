@@ -1,0 +1,651 @@
+[
+  { "count" : 11 }
+, { "name" : "images_QuantizeLinear", "timeMs" : 6.77184, "averageMs" : 0.615622, "medianMs" : 0.609728, "percentage" : 0.106164 }
+, { "name" : "images_cast_to_fp16", "timeMs" : 38.4145, "averageMs" : 3.49223, "medianMs" : 3.49206, "percentage" : 0.602237 }
+, { "name" : "backbone.backbone.downsample_layers.0.0.weight + backbone.backbone.downsample_layers.0.0.weight_QuantizeLinear + /backbone/downsample_layers.0/downsample_layers.0.0/Conv", "timeMs" : 23.4401, "averageMs" : 2.13092, "medianMs" : 2.13075, "percentage" : 0.367479 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to {ForeignNode[/backbone/downsample_layers.0/downsample_layers.0.1/ReduceMean.../backbone/downsample_layers.0/downsample_layers.0.1/Add_1_output_0_DequantizeLinear]}", "timeMs" : 18.512, "averageMs" : 1.68291, "medianMs" : 1.68246, "percentage" : 0.290219 }
+, { "name" : "__mye80_0_myl4_0", "timeMs" : 0.012608, "averageMs" : 0.00114618, "medianMs" : 0.001152, "percentage" : 0.00019766 }
+, { "name" : "__myl_Mov_myl4_1", "timeMs" : 0.16096, "averageMs" : 0.0146327, "medianMs" : 0.014688, "percentage" : 0.00252343 }
+, { "name" : "__myl_Mea_myl4_2", "timeMs" : 10.4334, "averageMs" : 0.948492, "medianMs" : 0.948576, "percentage" : 0.163568 }
+, { "name" : "__myl_SubMulMea_myl4_3", "timeMs" : 364.682, "averageMs" : 33.1529, "medianMs" : 33.1539, "percentage" : 5.71724 }
+, { "name" : "__myl_AddSqrDivMulMulAddMulMinMaxRouCasCasMul_myl4_4", "timeMs" : 49.9105, "averageMs" : 4.53732, "medianMs" : 4.53811, "percentage" : 0.782464 }
+, { "name" : "backbone.backbone.stages.0.0.dwconv.weight + backbone.backbone.stages.0.0.dwconv.weight_QuantizeLinear + backbone.backbone.stages.0.0.dwconv.weight_DequantizeLinear + /backbone/stages.0/stages.0.0/dwconv/Conv", "timeMs" : 45.6894, "averageMs" : 4.15358, "medianMs" : 4.15453, "percentage" : 0.716288 }
+, { "name" : "__mye761_0_myl6_0", "timeMs" : 0.011712, "averageMs" : 0.00106473, "medianMs" : 0.001056, "percentage" : 0.000183613 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl6_1", "timeMs" : 16.8849, "averageMs" : 1.53499, "medianMs" : 1.51331, "percentage" : 0.26471 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl6_2", "timeMs" : 19.1405, "averageMs" : 1.74005, "medianMs" : 1.75974, "percentage" : 0.300073 }
+, { "name" : "__myl_FcCas_myl6_3", "timeMs" : 44.4752, "averageMs" : 4.0432, "medianMs" : 4.04518, "percentage" : 0.697254 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl6_4", "timeMs" : 72.4824, "averageMs" : 6.58931, "medianMs" : 6.58989, "percentage" : 1.13633 }
+, { "name" : "__myl_FcCas_myl6_5", "timeMs" : 24.733, "averageMs" : 2.24845, "medianMs" : 2.24819, "percentage" : 0.387747 }
+, { "name" : "__myl_ResAddMulMulMinMaxRouCas_myl6_6", "timeMs" : 9.16663, "averageMs" : 0.83333, "medianMs" : 0.833184, "percentage" : 0.143708 }
+, { "name" : "__myl_TraCasMulAddMulMinMaxRouCasCasMul_myl6_7", "timeMs" : 22.9971, "averageMs" : 2.09064, "medianMs" : 2.09043, "percentage" : 0.360533 }
+, { "name" : "backbone.backbone.stages.0.1.dwconv.weight + backbone.backbone.stages.0.1.dwconv.weight_QuantizeLinear + backbone.backbone.stages.0.1.dwconv.weight_DequantizeLinear + /backbone/stages.0/stages.0.1/dwconv/Conv", "timeMs" : 49.1944, "averageMs" : 4.47222, "medianMs" : 4.58224, "percentage" : 0.771238 }
+, { "name" : "__mye761_0_myl8_0", "timeMs" : 0.011072, "averageMs" : 0.00100655, "medianMs" : 0.000992, "percentage" : 0.00017358 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl8_1", "timeMs" : 16.6235, "averageMs" : 1.51123, "medianMs" : 1.50154, "percentage" : 0.260612 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl8_2", "timeMs" : 19.3937, "averageMs" : 1.76307, "medianMs" : 1.77206, "percentage" : 0.304042 }
+, { "name" : "__myl_FcCas_myl8_3", "timeMs" : 44.4842, "averageMs" : 4.04402, "medianMs" : 4.0456, "percentage" : 0.697395 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl8_4", "timeMs" : 72.4042, "averageMs" : 6.5822, "medianMs" : 6.58166, "percentage" : 1.13511 }
+, { "name" : "__myl_FcCas_myl8_5", "timeMs" : 24.7715, "averageMs" : 2.25195, "medianMs" : 2.25245, "percentage" : 0.388351 }
+, { "name" : "__myl_ResAddMulMulMinMaxRouCas_myl8_6", "timeMs" : 9.35472, "averageMs" : 0.850429, "medianMs" : 0.834112, "percentage" : 0.146657 }
+, { "name" : "__myl_TraCasMulAddMulMinMaxRouCasCasMul_myl8_7", "timeMs" : 23.0058, "averageMs" : 2.09144, "medianMs" : 2.0911, "percentage" : 0.36067 }
+, { "name" : "backbone.backbone.stages.0.2.dwconv.weight + backbone.backbone.stages.0.2.dwconv.weight_QuantizeLinear + backbone.backbone.stages.0.2.dwconv.weight_DequantizeLinear + /backbone/stages.0/stages.0.2/dwconv/Conv", "timeMs" : 46.7621, "averageMs" : 4.2511, "medianMs" : 4.19574, "percentage" : 0.733106 }
+, { "name" : "__mye782_0_myl10_0", "timeMs" : 0.012128, "averageMs" : 0.00110255, "medianMs" : 0.001088, "percentage" : 0.000190135 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl10_1", "timeMs" : 16.6943, "averageMs" : 1.51767, "medianMs" : 1.49434, "percentage" : 0.261723 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl10_2", "timeMs" : 19.3419, "averageMs" : 1.75836, "medianMs" : 1.78, "percentage" : 0.30323 }
+, { "name" : "__myl_FcCas_myl10_3", "timeMs" : 43.9339, "averageMs" : 3.99399, "medianMs" : 3.99098, "percentage" : 0.688767 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl10_4", "timeMs" : 72.4566, "averageMs" : 6.58696, "medianMs" : 6.58704, "percentage" : 1.13593 }
+, { "name" : "__myl_FcCas_myl10_5", "timeMs" : 24.7231, "averageMs" : 2.24756, "medianMs" : 2.24778, "percentage" : 0.387593 }
+, { "name" : "__myl_ResAddMulMulMinMaxRouCasTraCasMulAddMeaSubMulMea_myl10_6", "timeMs" : 72.2919, "averageMs" : 6.57199, "medianMs" : 6.52646, "percentage" : 1.13334 }
+, { "name" : "__myl_AddSqrDivMulMulAdd_myl10_7", "timeMs" : 38.753, "averageMs" : 3.523, "medianMs" : 3.52285, "percentage" : 0.607544 }
+, { "name" : "/backbone/downsample_layers.1/downsample_layers.1.0/Add_1_output_0_QuantizeLinear", "timeMs" : 14.0007, "averageMs" : 1.27279, "medianMs" : 1.27254, "percentage" : 0.219494 }
+, { "name" : "backbone.backbone.downsample_layers.1.1.weight + backbone.backbone.downsample_layers.1.1.weight_QuantizeLinear + /backbone/downsample_layers.1/downsample_layers.1.1/Conv", "timeMs" : 9.84691, "averageMs" : 0.895174, "medianMs" : 1.04518, "percentage" : 0.154373 }
+, { "name" : "/backbone/downsample_layers.1/downsample_layers.1.1/Conv_output_0_DequantizeLinear_clone_1", "timeMs" : 7.51325, "averageMs" : 0.683023, "medianMs" : 0.665792, "percentage" : 0.117788 }
+, { "name" : "backbone.backbone.stages.1.0.dwconv.weight + backbone.backbone.stages.1.0.dwconv.weight_QuantizeLinear + backbone.backbone.stages.1.0.dwconv.weight_DequantizeLinear + /backbone/stages.1/stages.1.0/dwconv/Conv", "timeMs" : 23.061, "averageMs" : 2.09646, "medianMs" : 2.09798, "percentage" : 0.361536 }
+, { "name" : "__mye761_0_myl15_0", "timeMs" : 0.013248, "averageMs" : 0.00120436, "medianMs" : 0.001216, "percentage" : 0.000207693 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl15_1", "timeMs" : 12.0131, "averageMs" : 1.0921, "medianMs" : 1.09206, "percentage" : 0.188333 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl15_2", "timeMs" : 8.67898, "averageMs" : 0.788998, "medianMs" : 0.789088, "percentage" : 0.136063 }
+, { "name" : "__myl_FcCas_myl15_3", "timeMs" : 39.1993, "averageMs" : 3.56357, "medianMs" : 3.56589, "percentage" : 0.614541 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl15_4", "timeMs" : 36.2479, "averageMs" : 3.29526, "medianMs" : 3.29549, "percentage" : 0.56827 }
+, { "name" : "/backbone/stages_1/stages_1_0/pwconv2/MatMul_myl15_5", "timeMs" : 19.7811, "averageMs" : 1.79828, "medianMs" : 1.7983, "percentage" : 0.310114 }
+, { "name" : "__myl_CasResAddMulMulMinMaxRou_myl15_6", "timeMs" : 9.05197, "averageMs" : 0.822906, "medianMs" : 0.8232, "percentage" : 0.141911 }
+, { "name" : "__myl_CasTraCasMulAddMulMinMaxRouCasCasMul_myl15_7", "timeMs" : 14.5393, "averageMs" : 1.32175, "medianMs" : 1.3217, "percentage" : 0.227937 }
+, { "name" : "backbone.backbone.stages.1.1.dwconv.weight + backbone.backbone.stages.1.1.dwconv.weight_QuantizeLinear + backbone.backbone.stages.1.1.dwconv.weight_DequantizeLinear + /backbone/stages.1/stages.1.1/dwconv/Conv", "timeMs" : 23.0599, "averageMs" : 2.09635, "medianMs" : 2.09651, "percentage" : 0.361518 }
+, { "name" : "__mye761_0_myl17_0", "timeMs" : 0.013984, "averageMs" : 0.00127127, "medianMs" : 0.00128, "percentage" : 0.000219232 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl17_1", "timeMs" : 12.0173, "averageMs" : 1.09248, "medianMs" : 1.09242, "percentage" : 0.1884 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl17_2", "timeMs" : 8.66563, "averageMs" : 0.787785, "medianMs" : 0.787744, "percentage" : 0.135854 }
+, { "name" : "__myl_FcCas_myl17_3", "timeMs" : 38.8552, "averageMs" : 3.53229, "medianMs" : 3.53219, "percentage" : 0.609146 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl17_4", "timeMs" : 36.1982, "averageMs" : 3.29075, "medianMs" : 3.29062, "percentage" : 0.567492 }
+, { "name" : "/backbone/stages_1/stages_1_1/pwconv2/MatMul_myl17_5", "timeMs" : 19.233, "averageMs" : 1.74845, "medianMs" : 1.74394, "percentage" : 0.301522 }
+, { "name" : "__myl_CasResAddMulMulMinMaxRou_myl17_6", "timeMs" : 9.02496, "averageMs" : 0.820451, "medianMs" : 0.820512, "percentage" : 0.141487 }
+, { "name" : "__myl_CasTraCasMulAddMulMinMaxRouCasCasMul_myl17_7", "timeMs" : 14.5488, "averageMs" : 1.32262, "medianMs" : 1.32266, "percentage" : 0.228087 }
+, { "name" : "backbone.backbone.stages.1.2.dwconv.weight + backbone.backbone.stages.1.2.dwconv.weight_QuantizeLinear + backbone.backbone.stages.1.2.dwconv.weight_DequantizeLinear + /backbone/stages.1/stages.1.2/dwconv/Conv", "timeMs" : 23.6212, "averageMs" : 2.14738, "medianMs" : 2.14778, "percentage" : 0.370318 }
+, { "name" : "__mye782_0_myl19_0", "timeMs" : 0.011776, "averageMs" : 0.00107055, "medianMs" : 0.001056, "percentage" : 0.000184616 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl19_1", "timeMs" : 12.0187, "averageMs" : 1.09261, "medianMs" : 1.09264, "percentage" : 0.188421 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl19_2", "timeMs" : 8.66723, "averageMs" : 0.78793, "medianMs" : 0.787904, "percentage" : 0.135879 }
+, { "name" : "__myl_FcCas_myl19_3", "timeMs" : 38.6135, "averageMs" : 3.51032, "medianMs" : 3.50678, "percentage" : 0.605357 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl19_4", "timeMs" : 36.636, "averageMs" : 3.33055, "medianMs" : 3.3344, "percentage" : 0.574356 }
+, { "name" : "/backbone/stages_1/stages_1_2/pwconv2/MatMul_myl19_5", "timeMs" : 19.5426, "averageMs" : 1.7766, "medianMs" : 1.78314, "percentage" : 0.306376 }
+, { "name" : "__myl_CasResAddMulMulMinMaxRou_myl19_6", "timeMs" : 9.01939, "averageMs" : 0.819945, "medianMs" : 0.81952, "percentage" : 0.1414 }
+, { "name" : "__myl_CasTraCasMul_myl19_7", "timeMs" : 7.79075, "averageMs" : 0.70825, "medianMs" : 0.708384, "percentage" : 0.122138 }
+, { "name" : "__myl_Mov_myl19_8", "timeMs" : 0.086016, "averageMs" : 0.00781964, "medianMs" : 0.007616, "percentage" : 0.0013485 }
+, { "name" : "__myl_AddMea_myl19_9", "timeMs" : 12.9139, "averageMs" : 1.17399, "medianMs" : 1.17366, "percentage" : 0.202455 }
+, { "name" : "__myl_SubMulMea_myl19_10", "timeMs" : 94.5885, "averageMs" : 8.59895, "medianMs" : 8.60083, "percentage" : 1.4829 }
+, { "name" : "__myl_AddSqrDivMulMulAdd_myl19_11", "timeMs" : 27.1137, "averageMs" : 2.46488, "medianMs" : 2.4649, "percentage" : 0.425071 }
+, { "name" : "/backbone/downsample_layers.2/downsample_layers.2.0/Add_1_output_0_QuantizeLinear", "timeMs" : 7.06979, "averageMs" : 0.642708, "medianMs" : 0.642944, "percentage" : 0.110836 }
+, { "name" : "backbone.backbone.downsample_layers.2.1.weight + backbone.backbone.downsample_layers.2.1.weight_QuantizeLinear + /backbone/downsample_layers.2/downsample_layers.2.1/Conv", "timeMs" : 6.24128, "averageMs" : 0.567389, "medianMs" : 0.56224, "percentage" : 0.0978467 }
+, { "name" : "/backbone/downsample_layers.2/downsample_layers.2.1/Conv_output_0_DequantizeLinear_clone_1", "timeMs" : 4.68346, "averageMs" : 0.425769, "medianMs" : 0.332992, "percentage" : 0.0734242 }
+, { "name" : "backbone.backbone.stages.2.0.dwconv.weight + backbone.backbone.stages.2.0.dwconv.weight_QuantizeLinear + backbone.backbone.stages.2.0.dwconv.weight_DequantizeLinear + /backbone/stages.2/stages.2.0/dwconv/Conv", "timeMs" : 19.4892, "averageMs" : 1.77175, "medianMs" : 1.7297, "percentage" : 0.305539 }
+, { "name" : "__mye761_0_myl24_0", "timeMs" : 0.016128, "averageMs" : 0.00146618, "medianMs" : 0.001504, "percentage" : 0.000252844 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl24_1", "timeMs" : 3.88794, "averageMs" : 0.353449, "medianMs" : 0.353504, "percentage" : 0.0609525 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl24_2", "timeMs" : 3.94106, "averageMs" : 0.358278, "medianMs" : 0.358144, "percentage" : 0.0617853 }
+, { "name" : "__myl_FcCas_myl24_3", "timeMs" : 20.2603, "averageMs" : 1.84184, "medianMs" : 1.84147, "percentage" : 0.317628 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl24_4", "timeMs" : 18.1535, "averageMs" : 1.65032, "medianMs" : 1.65053, "percentage" : 0.284598 }
+, { "name" : "/backbone/stages_2/stages_2_0/pwconv2/MatMul_myl24_5", "timeMs" : 17.3637, "averageMs" : 1.57852, "medianMs" : 1.57907, "percentage" : 0.272217 }
+, { "name" : "__myl_CasResAddMulMulMinMaxRou_myl24_6", "timeMs" : 4.55443, "averageMs" : 0.414039, "medianMs" : 0.41392, "percentage" : 0.0714014 }
+, { "name" : "__myl_CasTraCasMulAddMulMinMaxRouCasCasMul_myl24_7", "timeMs" : 5.07328, "averageMs" : 0.461207, "medianMs" : 0.461344, "percentage" : 0.0795355 }
+, { "name" : "backbone.backbone.stages.2.1.dwconv.weight + backbone.backbone.stages.2.1.dwconv.weight_QuantizeLinear + backbone.backbone.stages.2.1.dwconv.weight_DequantizeLinear + /backbone/stages.2/stages.2.1/dwconv/Conv", "timeMs" : 19.0158, "averageMs" : 1.72871, "medianMs" : 1.72867, "percentage" : 0.298118 }
+, { "name" : "__mye761_0_myl26_0", "timeMs" : 0.011424, "averageMs" : 0.00103855, "medianMs" : 0.001024, "percentage" : 0.000179098 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl26_1", "timeMs" : 3.88269, "averageMs" : 0.352972, "medianMs" : 0.352832, "percentage" : 0.0608702 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl26_2", "timeMs" : 3.96448, "averageMs" : 0.360407, "medianMs" : 0.360384, "percentage" : 0.0621525 }
+, { "name" : "__myl_FcCas_myl26_3", "timeMs" : 20.321, "averageMs" : 1.84737, "medianMs" : 1.84806, "percentage" : 0.31858 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl26_4", "timeMs" : 18.0543, "averageMs" : 1.6413, "medianMs" : 1.64102, "percentage" : 0.283043 }
+, { "name" : "/backbone/stages_2/stages_2_1/pwconv2/MatMul_myl26_5", "timeMs" : 14.4478, "averageMs" : 1.31344, "medianMs" : 1.31389, "percentage" : 0.226504 }
+, { "name" : "__myl_CasResAddMulMulMinMaxRou_myl26_6", "timeMs" : 4.56179, "averageMs" : 0.414708, "medianMs" : 0.41456, "percentage" : 0.0715168 }
+, { "name" : "__myl_CasTraCasMulAddMulMinMaxRouCasCasMul_myl26_7", "timeMs" : 5.75885, "averageMs" : 0.523532, "medianMs" : 0.521824, "percentage" : 0.0902834 }
+, { "name" : "backbone.backbone.stages.2.2.dwconv.weight + backbone.backbone.stages.2.2.dwconv.weight_QuantizeLinear + backbone.backbone.stages.2.2.dwconv.weight_DequantizeLinear + /backbone/stages.2/stages.2.2/dwconv/Conv", "timeMs" : 19.0233, "averageMs" : 1.72939, "medianMs" : 1.72922, "percentage" : 0.298235 }
+, { "name" : "__mye761_0_myl28_0", "timeMs" : 0.011168, "averageMs" : 0.00101527, "medianMs" : 0.000992, "percentage" : 0.000175085 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl28_1", "timeMs" : 3.89296, "averageMs" : 0.353905, "medianMs" : 0.354144, "percentage" : 0.0610313 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl28_2", "timeMs" : 3.93293, "averageMs" : 0.357539, "medianMs" : 0.357568, "percentage" : 0.0616579 }
+, { "name" : "__myl_FcCas_myl28_3", "timeMs" : 20.2988, "averageMs" : 1.84534, "medianMs" : 1.84541, "percentage" : 0.318231 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl28_4", "timeMs" : 18.1694, "averageMs" : 1.65176, "medianMs" : 1.652, "percentage" : 0.284848 }
+, { "name" : "/backbone/stages_2/stages_2_2/pwconv2/MatMul_myl28_5", "timeMs" : 16.1848, "averageMs" : 1.47135, "medianMs" : 1.46362, "percentage" : 0.253735 }
+, { "name" : "__myl_CasResAddMulMulMinMaxRou_myl28_6", "timeMs" : 4.58099, "averageMs" : 0.416454, "medianMs" : 0.416, "percentage" : 0.0718178 }
+, { "name" : "__myl_CasTraCasMulAddMulMinMaxRouCasCasMul_myl28_7", "timeMs" : 5.0769, "averageMs" : 0.461536, "medianMs" : 0.461216, "percentage" : 0.0795923 }
+, { "name" : "backbone.backbone.stages.2.3.dwconv.weight + backbone.backbone.stages.2.3.dwconv.weight_QuantizeLinear + backbone.backbone.stages.2.3.dwconv.weight_DequantizeLinear + /backbone/stages.2/stages.2.3/dwconv/Conv", "timeMs" : 19.8141, "averageMs" : 1.80128, "medianMs" : 1.73002, "percentage" : 0.310633 }
+, { "name" : "__mye761_0_myl30_0", "timeMs" : 0.012064, "averageMs" : 0.00109673, "medianMs" : 0.001088, "percentage" : 0.000189131 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl30_1", "timeMs" : 3.89494, "averageMs" : 0.354086, "medianMs" : 0.354208, "percentage" : 0.0610624 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl30_2", "timeMs" : 3.9511, "averageMs" : 0.359191, "medianMs" : 0.359264, "percentage" : 0.0619428 }
+, { "name" : "__myl_FcCas_myl30_3", "timeMs" : 20.3699, "averageMs" : 1.85181, "medianMs" : 1.84762, "percentage" : 0.319346 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl30_4", "timeMs" : 18.1785, "averageMs" : 1.65259, "medianMs" : 1.6529, "percentage" : 0.284991 }
+, { "name" : "/backbone/stages_2/stages_2_3/pwconv2/MatMul_myl30_5", "timeMs" : 17.2608, "averageMs" : 1.56916, "medianMs" : 1.56806, "percentage" : 0.270603 }
+, { "name" : "__myl_CasResAddMulMulMinMaxRou_myl30_6", "timeMs" : 4.59661, "averageMs" : 0.417873, "medianMs" : 0.418336, "percentage" : 0.0720626 }
+, { "name" : "__myl_CasTraCasMulAddMulMinMaxRouCasCasMul_myl30_7", "timeMs" : 5.06122, "averageMs" : 0.460111, "medianMs" : 0.460256, "percentage" : 0.0793464 }
+, { "name" : "backbone.backbone.stages.2.4.dwconv.weight + backbone.backbone.stages.2.4.dwconv.weight_QuantizeLinear + backbone.backbone.stages.2.4.dwconv.weight_DequantizeLinear + /backbone/stages.2/stages.2.4/dwconv/Conv", "timeMs" : 20.552, "averageMs" : 1.86837, "medianMs" : 1.72912, "percentage" : 0.322201 }
+, { "name" : "__mye761_0_myl32_0", "timeMs" : 0.012576, "averageMs" : 0.00114327, "medianMs" : 0.001152, "percentage" : 0.000197158 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl32_1", "timeMs" : 3.89267, "averageMs" : 0.353879, "medianMs" : 0.353952, "percentage" : 0.0610268 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl32_2", "timeMs" : 3.97002, "averageMs" : 0.360911, "medianMs" : 0.36128, "percentage" : 0.0622393 }
+, { "name" : "__myl_FcCas_myl32_3", "timeMs" : 20.2308, "averageMs" : 1.83917, "medianMs" : 1.83872, "percentage" : 0.317165 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl32_4", "timeMs" : 18.1636, "averageMs" : 1.65123, "medianMs" : 1.65146, "percentage" : 0.284757 }
+, { "name" : "/backbone/stages_2/stages_2_4/pwconv2/MatMul_myl32_5", "timeMs" : 14.6278, "averageMs" : 1.3298, "medianMs" : 1.32445, "percentage" : 0.229326 }
+, { "name" : "__myl_CasResAddMulMulMinMaxRou_myl32_6", "timeMs" : 4.5937, "averageMs" : 0.417609, "medianMs" : 0.417856, "percentage" : 0.072017 }
+, { "name" : "__myl_CasTraCasMulAddMulMinMaxRouCasCasMul_myl32_7", "timeMs" : 5.67149, "averageMs" : 0.51559, "medianMs" : 0.52112, "percentage" : 0.0889139 }
+, { "name" : "backbone.backbone.stages.2.5.dwconv.weight + backbone.backbone.stages.2.5.dwconv.weight_QuantizeLinear + backbone.backbone.stages.2.5.dwconv.weight_DequantizeLinear + /backbone/stages.2/stages.2.5/dwconv/Conv", "timeMs" : 19.8253, "averageMs" : 1.8023, "medianMs" : 1.72922, "percentage" : 0.310808 }
+, { "name" : "__mye761_0_myl34_0", "timeMs" : 0.01264, "averageMs" : 0.00114909, "medianMs" : 0.001152, "percentage" : 0.000198162 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl34_1", "timeMs" : 3.8905, "averageMs" : 0.353681, "medianMs" : 0.353792, "percentage" : 0.0609926 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl34_2", "timeMs" : 3.9521, "averageMs" : 0.359281, "medianMs" : 0.35936, "percentage" : 0.0619584 }
+, { "name" : "__myl_FcCas_myl34_3", "timeMs" : 20.2756, "averageMs" : 1.84324, "medianMs" : 1.84317, "percentage" : 0.317868 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl34_4", "timeMs" : 18.1547, "averageMs" : 1.65042, "medianMs" : 1.65037, "percentage" : 0.284617 }
+, { "name" : "/backbone/stages_2/stages_2_5/pwconv2/MatMul_myl34_5", "timeMs" : 16.3274, "averageMs" : 1.48431, "medianMs" : 1.47498, "percentage" : 0.25597 }
+, { "name" : "__myl_CasResAddMulMulMinMaxRou_myl34_6", "timeMs" : 4.5616, "averageMs" : 0.414691, "medianMs" : 0.414688, "percentage" : 0.0715138 }
+, { "name" : "__myl_CasTraCasMulAddMulMinMaxRouCasCasMul_myl34_7", "timeMs" : 5.07338, "averageMs" : 0.461216, "medianMs" : 0.458176, "percentage" : 0.0795371 }
+, { "name" : "backbone.backbone.stages.2.6.dwconv.weight + backbone.backbone.stages.2.6.dwconv.weight_QuantizeLinear + backbone.backbone.stages.2.6.dwconv.weight_DequantizeLinear + /backbone/stages.2/stages.2.6/dwconv/Conv", "timeMs" : 20.1495, "averageMs" : 1.83177, "medianMs" : 1.73034, "percentage" : 0.315891 }
+, { "name" : "__mye761_0_myl36_0", "timeMs" : 0.01248, "averageMs" : 0.00113455, "medianMs" : 0.00112, "percentage" : 0.000195653 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl36_1", "timeMs" : 3.88403, "averageMs" : 0.353094, "medianMs" : 0.353152, "percentage" : 0.0608913 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl36_2", "timeMs" : 3.93459, "averageMs" : 0.35769, "medianMs" : 0.357728, "percentage" : 0.061684 }
+, { "name" : "__myl_FcCas_myl36_3", "timeMs" : 20.2804, "averageMs" : 1.84368, "medianMs" : 1.84397, "percentage" : 0.317944 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl36_4", "timeMs" : 18.1714, "averageMs" : 1.65194, "medianMs" : 1.65222, "percentage" : 0.284879 }
+, { "name" : "/backbone/stages_2/stages_2_6/pwconv2/MatMul_myl36_5", "timeMs" : 17.3864, "averageMs" : 1.58058, "medianMs" : 1.58573, "percentage" : 0.272572 }
+, { "name" : "__myl_CasResAddMulMulMinMaxRou_myl36_6", "timeMs" : 4.55626, "averageMs" : 0.414205, "medianMs" : 0.414144, "percentage" : 0.07143 }
+, { "name" : "__myl_CasTraCasMulAddMulMinMaxRouCasCasMul_myl36_7", "timeMs" : 5.04608, "averageMs" : 0.458735, "medianMs" : 0.458592, "percentage" : 0.0791091 }
+, { "name" : "backbone.backbone.stages.2.7.dwconv.weight + backbone.backbone.stages.2.7.dwconv.weight_QuantizeLinear + backbone.backbone.stages.2.7.dwconv.weight_DequantizeLinear + /backbone/stages.2/stages.2.7/dwconv/Conv", "timeMs" : 20.2283, "averageMs" : 1.83893, "medianMs" : 1.72979, "percentage" : 0.317125 }
+, { "name" : "__mye761_0_myl38_0", "timeMs" : 0.01232, "averageMs" : 0.00112, "medianMs" : 0.00112, "percentage" : 0.000193145 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl38_1", "timeMs" : 3.87056, "averageMs" : 0.351869, "medianMs" : 0.351904, "percentage" : 0.0606801 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl38_2", "timeMs" : 3.96506, "averageMs" : 0.36046, "medianMs" : 0.360896, "percentage" : 0.0621616 }
+, { "name" : "__myl_FcCas_myl38_3", "timeMs" : 20.2439, "averageMs" : 1.84035, "medianMs" : 1.83997, "percentage" : 0.317371 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl38_4", "timeMs" : 18.1647, "averageMs" : 1.65134, "medianMs" : 1.65155, "percentage" : 0.284775 }
+, { "name" : "/backbone/stages_2/stages_2_7/pwconv2/MatMul_myl38_5", "timeMs" : 14.938, "averageMs" : 1.358, "medianMs" : 1.34797, "percentage" : 0.234189 }
+, { "name" : "__myl_CasResAddMulMulMinMaxRou_myl38_6", "timeMs" : 4.56147, "averageMs" : 0.414679, "medianMs" : 0.414656, "percentage" : 0.0715118 }
+, { "name" : "__myl_CasTraCasMulAddMulMinMaxRouCasCasMul_myl38_7", "timeMs" : 5.54349, "averageMs" : 0.503953, "medianMs" : 0.508384, "percentage" : 0.0869072 }
+, { "name" : "backbone.backbone.stages.2.8.dwconv.weight + backbone.backbone.stages.2.8.dwconv.weight_QuantizeLinear + backbone.backbone.stages.2.8.dwconv.weight_DequantizeLinear + /backbone/stages.2/stages.2.8/dwconv/Conv", "timeMs" : 19.3789, "averageMs" : 1.76172, "medianMs" : 1.72922, "percentage" : 0.30381 }
+, { "name" : "__mye761_0_myl40_0", "timeMs" : 0.013184, "averageMs" : 0.00119855, "medianMs" : 0.001184, "percentage" : 0.00020669 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl40_1", "timeMs" : 3.89043, "averageMs" : 0.353676, "medianMs" : 0.35376, "percentage" : 0.0609916 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl40_2", "timeMs" : 3.95069, "averageMs" : 0.359153, "medianMs" : 0.359104, "percentage" : 0.0619363 }
+, { "name" : "__myl_FcCas_myl40_3", "timeMs" : 20.2597, "averageMs" : 1.84179, "medianMs" : 1.8417, "percentage" : 0.317618 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl40_4", "timeMs" : 18.1698, "averageMs" : 1.6518, "medianMs" : 1.65216, "percentage" : 0.284854 }
+, { "name" : "/backbone/stages_2/stages_2_8/pwconv2/MatMul_myl40_5", "timeMs" : 16.4216, "averageMs" : 1.49287, "medianMs" : 1.48531, "percentage" : 0.257447 }
+, { "name" : "__myl_CasResAddMulMulMinMaxRou_myl40_6", "timeMs" : 4.58022, "averageMs" : 0.416384, "medianMs" : 0.41664, "percentage" : 0.0718058 }
+, { "name" : "__myl_CasTraCasMulAddMulMinMaxRouCasCasMul_myl40_7", "timeMs" : 5.06288, "averageMs" : 0.460262, "medianMs" : 0.46032, "percentage" : 0.0793725 }
+, { "name" : "backbone.backbone.stages.2.9.dwconv.weight + backbone.backbone.stages.2.9.dwconv.weight_QuantizeLinear + backbone.backbone.stages.2.9.dwconv.weight_DequantizeLinear + /backbone/stages.2/stages.2.9/dwconv/Conv", "timeMs" : 20.2303, "averageMs" : 1.83912, "medianMs" : 1.72915, "percentage" : 0.317157 }
+, { "name" : "__mye761_0_myl42_0", "timeMs" : 0.011168, "averageMs" : 0.00101527, "medianMs" : 0.000992, "percentage" : 0.000175085 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl42_1", "timeMs" : 3.88662, "averageMs" : 0.353329, "medianMs" : 0.35344, "percentage" : 0.0609319 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl42_2", "timeMs" : 3.92848, "averageMs" : 0.357135, "medianMs" : 0.35728, "percentage" : 0.0615881 }
+, { "name" : "__myl_FcCas_myl42_3", "timeMs" : 20.2265, "averageMs" : 1.83877, "medianMs" : 1.83875, "percentage" : 0.317097 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl42_4", "timeMs" : 18.1583, "averageMs" : 1.65075, "medianMs" : 1.65091, "percentage" : 0.284674 }
+, { "name" : "/backbone/stages_2/stages_2_9/pwconv2/MatMul_myl42_5", "timeMs" : 17.2052, "averageMs" : 1.56411, "medianMs" : 1.59338, "percentage" : 0.269732 }
+, { "name" : "__myl_CasResAddMulMulMinMaxRou_myl42_6", "timeMs" : 4.56957, "averageMs" : 0.415415, "medianMs" : 0.415424, "percentage" : 0.0716387 }
+, { "name" : "__myl_CasTraCasMulAddMulMinMaxRouCasCasMul_myl42_7", "timeMs" : 5.17254, "averageMs" : 0.470231, "medianMs" : 0.459104, "percentage" : 0.0810918 }
+, { "name" : "backbone.backbone.stages.2.10.dwconv.weight + backbone.backbone.stages.2.10.dwconv.weight_QuantizeLinear + backbone.backbone.stages.2.10.dwconv.weight_DequantizeLinear + /backbone/stages.2/stages.2.10/dwconv/Conv", "timeMs" : 19.4239, "averageMs" : 1.76581, "medianMs" : 1.72912, "percentage" : 0.304515 }
+, { "name" : "__mye761_0_myl44_0", "timeMs" : 0.010976, "averageMs" : 0.000997818, "medianMs" : 0.000992, "percentage" : 0.000172075 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl44_1", "timeMs" : 3.88576, "averageMs" : 0.353251, "medianMs" : 0.353376, "percentage" : 0.0609184 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl44_2", "timeMs" : 3.93792, "averageMs" : 0.357993, "medianMs" : 0.357952, "percentage" : 0.0617361 }
+, { "name" : "__myl_FcCas_myl44_3", "timeMs" : 20.3044, "averageMs" : 1.84585, "medianMs" : 1.84554, "percentage" : 0.318318 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl44_4", "timeMs" : 18.1651, "averageMs" : 1.65137, "medianMs" : 1.65168, "percentage" : 0.28478 }
+, { "name" : "/backbone/stages_2/stages_2_10/pwconv2/MatMul_myl44_5", "timeMs" : 14.6054, "averageMs" : 1.32777, "medianMs" : 1.32374, "percentage" : 0.228975 }
+, { "name" : "__myl_CasResAddMulMulMinMaxRou_myl44_6", "timeMs" : 4.57418, "averageMs" : 0.415834, "medianMs" : 0.415744, "percentage" : 0.0717109 }
+, { "name" : "__myl_CasTraCasMulAddMulMinMaxRouCasCasMul_myl44_7", "timeMs" : 5.4864, "averageMs" : 0.498764, "medianMs" : 0.502432, "percentage" : 0.0860122 }
+, { "name" : "backbone.backbone.stages.2.11.dwconv.weight + backbone.backbone.stages.2.11.dwconv.weight_QuantizeLinear + backbone.backbone.stages.2.11.dwconv.weight_DequantizeLinear + /backbone/stages.2/stages.2.11/dwconv/Conv", "timeMs" : 19.3966, "averageMs" : 1.76332, "medianMs" : 1.72918, "percentage" : 0.304087 }
+, { "name" : "__mye761_0_myl46_0", "timeMs" : 0.0136, "averageMs" : 0.00123636, "medianMs" : 0.001248, "percentage" : 0.000213212 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl46_1", "timeMs" : 3.89139, "averageMs" : 0.353763, "medianMs" : 0.353824, "percentage" : 0.0610067 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl46_2", "timeMs" : 3.93498, "averageMs" : 0.357725, "medianMs" : 0.357824, "percentage" : 0.06169 }
+, { "name" : "__myl_FcCas_myl46_3", "timeMs" : 20.2747, "averageMs" : 1.84315, "medianMs" : 1.84339, "percentage" : 0.317853 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl46_4", "timeMs" : 18.1658, "averageMs" : 1.65144, "medianMs" : 1.65149, "percentage" : 0.284791 }
+, { "name" : "/backbone/stages_2/stages_2_11/pwconv2/MatMul_myl46_5", "timeMs" : 16.6359, "averageMs" : 1.51235, "medianMs" : 1.50896, "percentage" : 0.260806 }
+, { "name" : "__myl_CasResAddMulMulMinMaxRou_myl46_6", "timeMs" : 4.5673, "averageMs" : 0.415209, "medianMs" : 0.415168, "percentage" : 0.0716031 }
+, { "name" : "__myl_CasTraCasMulAddMulMinMaxRouCasCasMul_myl46_7", "timeMs" : 5.06016, "averageMs" : 0.460015, "medianMs" : 0.460192, "percentage" : 0.0793299 }
+, { "name" : "backbone.backbone.stages.2.12.dwconv.weight + backbone.backbone.stages.2.12.dwconv.weight_QuantizeLinear + backbone.backbone.stages.2.12.dwconv.weight_DequantizeLinear + /backbone/stages.2/stages.2.12/dwconv/Conv", "timeMs" : 22.0763, "averageMs" : 2.00693, "medianMs" : 2.13078, "percentage" : 0.346097 }
+, { "name" : "__mye761_0_myl48_0", "timeMs" : 0.016, "averageMs" : 0.00145455, "medianMs" : 0.001472, "percentage" : 0.000250838 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl48_1", "timeMs" : 3.88285, "averageMs" : 0.352986, "medianMs" : 0.352992, "percentage" : 0.0608728 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl48_2", "timeMs" : 3.90854, "averageMs" : 0.355322, "medianMs" : 0.354912, "percentage" : 0.0612756 }
+, { "name" : "__myl_FcCas_myl48_3", "timeMs" : 20.2749, "averageMs" : 1.84317, "medianMs" : 1.84346, "percentage" : 0.317856 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl48_4", "timeMs" : 18.1601, "averageMs" : 1.65091, "medianMs" : 1.65101, "percentage" : 0.284702 }
+, { "name" : "/backbone/stages_2/stages_2_12/pwconv2/MatMul_myl48_5", "timeMs" : 15.1791, "averageMs" : 1.37992, "medianMs" : 1.37318, "percentage" : 0.237969 }
+, { "name" : "__myl_CasResAddMulMulMinMaxRou_myl48_6", "timeMs" : 4.59402, "averageMs" : 0.417638, "medianMs" : 0.417856, "percentage" : 0.072022 }
+, { "name" : "__myl_CasTraCasMulAddMulMinMaxRouCasCasMul_myl48_7", "timeMs" : 5.07574, "averageMs" : 0.461431, "medianMs" : 0.4616, "percentage" : 0.0795742 }
+, { "name" : "backbone.backbone.stages.2.13.dwconv.weight + backbone.backbone.stages.2.13.dwconv.weight_QuantizeLinear + backbone.backbone.stages.2.13.dwconv.weight_DequantizeLinear + /backbone/stages.2/stages.2.13/dwconv/Conv", "timeMs" : 19.8231, "averageMs" : 1.8021, "medianMs" : 1.73034, "percentage" : 0.310773 }
+, { "name" : "__mye761_0_myl50_0", "timeMs" : 0.013376, "averageMs" : 0.001216, "medianMs" : 0.001216, "percentage" : 0.0002097 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl50_1", "timeMs" : 3.88464, "averageMs" : 0.353149, "medianMs" : 0.353248, "percentage" : 0.0609008 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl50_2", "timeMs" : 3.95859, "averageMs" : 0.359872, "medianMs" : 0.359904, "percentage" : 0.0620602 }
+, { "name" : "__myl_FcCas_myl50_3", "timeMs" : 20.2974, "averageMs" : 1.84522, "medianMs" : 1.84618, "percentage" : 0.318209 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl50_4", "timeMs" : 18.1646, "averageMs" : 1.65133, "medianMs" : 1.65133, "percentage" : 0.284772 }
+, { "name" : "/backbone/stages_2/stages_2_13/pwconv2/MatMul_myl50_5", "timeMs" : 16.8947, "averageMs" : 1.53588, "medianMs" : 1.53194, "percentage" : 0.264864 }
+, { "name" : "__myl_CasResAddMulMulMinMaxRou_myl50_6", "timeMs" : 4.5999, "averageMs" : 0.418173, "medianMs" : 0.418432, "percentage" : 0.0721143 }
+, { "name" : "__myl_CasTraCasMulAddMulMinMaxRouCasCasMul_myl50_7", "timeMs" : 5.05414, "averageMs" : 0.459468, "medianMs" : 0.45936, "percentage" : 0.0792356 }
+, { "name" : "backbone.backbone.stages.2.14.dwconv.weight + backbone.backbone.stages.2.14.dwconv.weight_QuantizeLinear + backbone.backbone.stages.2.14.dwconv.weight_DequantizeLinear + /backbone/stages.2/stages.2.14/dwconv/Conv", "timeMs" : 19.741, "averageMs" : 1.79464, "medianMs" : 1.72851, "percentage" : 0.309487 }
+, { "name" : "__mye761_0_myl52_0", "timeMs" : 0.0136, "averageMs" : 0.00123636, "medianMs" : 0.001248, "percentage" : 0.000213212 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl52_1", "timeMs" : 3.87488, "averageMs" : 0.352262, "medianMs" : 0.352224, "percentage" : 0.0607478 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl52_2", "timeMs" : 3.92909, "averageMs" : 0.35719, "medianMs" : 0.357248, "percentage" : 0.0615977 }
+, { "name" : "__myl_FcCas_myl52_3", "timeMs" : 20.3028, "averageMs" : 1.84571, "medianMs" : 1.84608, "percentage" : 0.318295 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl52_4", "timeMs" : 18.1724, "averageMs" : 1.65204, "medianMs" : 1.65219, "percentage" : 0.284896 }
+, { "name" : "/backbone/stages_2/stages_2_14/pwconv2/MatMul_myl52_5", "timeMs" : 16.0345, "averageMs" : 1.45768, "medianMs" : 1.47242, "percentage" : 0.251378 }
+, { "name" : "__myl_CasResAddMulMulMinMaxRou_myl52_6", "timeMs" : 4.55094, "averageMs" : 0.413722, "medianMs" : 0.41344, "percentage" : 0.0713467 }
+, { "name" : "__myl_CasTraCasMulAddMulMinMaxRouCasCasMul_myl52_7", "timeMs" : 5.15882, "averageMs" : 0.468983, "medianMs" : 0.461664, "percentage" : 0.0808765 }
+, { "name" : "backbone.backbone.stages.2.15.dwconv.weight + backbone.backbone.stages.2.15.dwconv.weight_QuantizeLinear + backbone.backbone.stages.2.15.dwconv.weight_DequantizeLinear + /backbone/stages.2/stages.2.15/dwconv/Conv", "timeMs" : 19.4212, "averageMs" : 1.76557, "medianMs" : 1.72966, "percentage" : 0.304473 }
+, { "name" : "__mye761_0_myl54_0", "timeMs" : 0.012448, "averageMs" : 0.00113164, "medianMs" : 0.00112, "percentage" : 0.000195152 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl54_1", "timeMs" : 3.87901, "averageMs" : 0.352637, "medianMs" : 0.352544, "percentage" : 0.0608126 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl54_2", "timeMs" : 3.94963, "averageMs" : 0.359057, "medianMs" : 0.359168, "percentage" : 0.0619197 }
+, { "name" : "__myl_FcCas_myl54_3", "timeMs" : 20.2984, "averageMs" : 1.84531, "medianMs" : 1.84554, "percentage" : 0.318224 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl54_4", "timeMs" : 18.1562, "averageMs" : 1.65057, "medianMs" : 1.6505, "percentage" : 0.284641 }
+, { "name" : "/backbone/stages_2/stages_2_15/pwconv2/MatMul_myl54_5", "timeMs" : 17.345, "averageMs" : 1.57681, "medianMs" : 1.59098, "percentage" : 0.271923 }
+, { "name" : "__myl_CasResAddMulMulMinMaxRou_myl54_6", "timeMs" : 4.55594, "averageMs" : 0.414176, "medianMs" : 0.414112, "percentage" : 0.071425 }
+, { "name" : "__myl_CasTraCasMulAddMulMinMaxRouCasCasMul_myl54_7", "timeMs" : 5.03869, "averageMs" : 0.458063, "medianMs" : 0.45792, "percentage" : 0.0789933 }
+, { "name" : "backbone.backbone.stages.2.16.dwconv.weight + backbone.backbone.stages.2.16.dwconv.weight_QuantizeLinear + backbone.backbone.stages.2.16.dwconv.weight_DequantizeLinear + /backbone/stages.2/stages.2.16/dwconv/Conv", "timeMs" : 20.2266, "averageMs" : 1.83878, "medianMs" : 1.72925, "percentage" : 0.317099 }
+, { "name" : "__mye761_0_myl56_0", "timeMs" : 0.011712, "averageMs" : 0.00106473, "medianMs" : 0.001056, "percentage" : 0.000183613 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl56_1", "timeMs" : 3.87834, "averageMs" : 0.352576, "medianMs" : 0.352672, "percentage" : 0.060802 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl56_2", "timeMs" : 3.94144, "averageMs" : 0.358313, "medianMs" : 0.3584, "percentage" : 0.0617913 }
+, { "name" : "__myl_FcCas_myl56_3", "timeMs" : 20.2686, "averageMs" : 1.8426, "medianMs" : 1.84246, "percentage" : 0.317758 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl56_4", "timeMs" : 18.1605, "averageMs" : 1.65095, "medianMs" : 1.65091, "percentage" : 0.284708 }
+, { "name" : "/backbone/stages_2/stages_2_16/pwconv2/MatMul_myl56_5", "timeMs" : 14.9385, "averageMs" : 1.35804, "medianMs" : 1.3351, "percentage" : 0.234195 }
+, { "name" : "__myl_CasResAddMulMulMinMaxRou_myl56_6", "timeMs" : 4.57997, "averageMs" : 0.416361, "medianMs" : 0.416544, "percentage" : 0.0718017 }
+, { "name" : "__myl_CasTraCasMulAddMulMinMaxRouCasCasMul_myl56_7", "timeMs" : 5.57658, "averageMs" : 0.506962, "medianMs" : 0.51168, "percentage" : 0.0874259 }
+, { "name" : "backbone.backbone.stages.2.17.dwconv.weight + backbone.backbone.stages.2.17.dwconv.weight_QuantizeLinear + backbone.backbone.stages.2.17.dwconv.weight_DequantizeLinear + /backbone/stages.2/stages.2.17/dwconv/Conv", "timeMs" : 20.1439, "averageMs" : 1.83126, "medianMs" : 1.72906, "percentage" : 0.315803 }
+, { "name" : "__mye761_0_myl58_0", "timeMs" : 0.012352, "averageMs" : 0.00112291, "medianMs" : 0.00112, "percentage" : 0.000193647 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl58_1", "timeMs" : 3.88656, "averageMs" : 0.353324, "medianMs" : 0.353312, "percentage" : 0.0609309 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl58_2", "timeMs" : 3.9391, "averageMs" : 0.3581, "medianMs" : 0.358112, "percentage" : 0.0617547 }
+, { "name" : "__myl_FcCas_myl58_3", "timeMs" : 20.2619, "averageMs" : 1.84199, "medianMs" : 1.84198, "percentage" : 0.317653 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl58_4", "timeMs" : 18.1377, "averageMs" : 1.64888, "medianMs" : 1.64874, "percentage" : 0.28435 }
+, { "name" : "/backbone/stages_2/stages_2_17/pwconv2/MatMul_myl58_5", "timeMs" : 16.2224, "averageMs" : 1.47476, "medianMs" : 1.49619, "percentage" : 0.254324 }
+, { "name" : "__myl_CasResAddMulMulMinMaxRou_myl58_6", "timeMs" : 4.58237, "averageMs" : 0.416579, "medianMs" : 0.416704, "percentage" : 0.0718394 }
+, { "name" : "__myl_CasTraCasMulAddMulMinMaxRouCasCasMul_myl58_7", "timeMs" : 5.17523, "averageMs" : 0.470476, "medianMs" : 0.459808, "percentage" : 0.0811339 }
+, { "name" : "backbone.backbone.stages.2.18.dwconv.weight + backbone.backbone.stages.2.18.dwconv.weight_QuantizeLinear + backbone.backbone.stages.2.18.dwconv.weight_DequantizeLinear + /backbone/stages.2/stages.2.18/dwconv/Conv", "timeMs" : 20.9023, "averageMs" : 1.90021, "medianMs" : 1.73027, "percentage" : 0.327692 }
+, { "name" : "__mye761_0_myl60_0", "timeMs" : 0.015232, "averageMs" : 0.00138473, "medianMs" : 0.001408, "percentage" : 0.000238797 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl60_1", "timeMs" : 3.87728, "averageMs" : 0.35248, "medianMs" : 0.352384, "percentage" : 0.0607855 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl60_2", "timeMs" : 3.92106, "averageMs" : 0.35646, "medianMs" : 0.356448, "percentage" : 0.0614717 }
+, { "name" : "__myl_FcCas_myl60_3", "timeMs" : 20.2065, "averageMs" : 1.83696, "medianMs" : 1.83606, "percentage" : 0.316785 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl60_4", "timeMs" : 18.1871, "averageMs" : 1.65338, "medianMs" : 1.6535, "percentage" : 0.285126 }
+, { "name" : "/backbone/stages_2/stages_2_18/pwconv2/MatMul_myl60_5", "timeMs" : 17.3238, "averageMs" : 1.57489, "medianMs" : 1.59213, "percentage" : 0.271592 }
+, { "name" : "__myl_CasResAddMulMulMinMaxRou_myl60_6", "timeMs" : 4.57187, "averageMs" : 0.415625, "medianMs" : 0.415776, "percentage" : 0.0716748 }
+, { "name" : "__myl_CasTraCasMulAddMulMinMaxRouCasCasMul_myl60_7", "timeMs" : 5.06285, "averageMs" : 0.460259, "medianMs" : 0.460384, "percentage" : 0.079372 }
+, { "name" : "backbone.backbone.stages.2.19.dwconv.weight + backbone.backbone.stages.2.19.dwconv.weight_QuantizeLinear + backbone.backbone.stages.2.19.dwconv.weight_DequantizeLinear + /backbone/stages.2/stages.2.19/dwconv/Conv", "timeMs" : 20.5396, "averageMs" : 1.86724, "medianMs" : 1.72902, "percentage" : 0.322007 }
+, { "name" : "__mye761_0_myl62_0", "timeMs" : 0.012064, "averageMs" : 0.00109673, "medianMs" : 0.001088, "percentage" : 0.000189131 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl62_1", "timeMs" : 3.88883, "averageMs" : 0.35353, "medianMs" : 0.353568, "percentage" : 0.0609666 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl62_2", "timeMs" : 3.95667, "averageMs" : 0.359697, "medianMs" : 0.359584, "percentage" : 0.0620301 }
+, { "name" : "__myl_FcCas_myl62_3", "timeMs" : 20.353, "averageMs" : 1.85027, "medianMs" : 1.85085, "percentage" : 0.31908 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl62_4", "timeMs" : 18.1542, "averageMs" : 1.65039, "medianMs" : 1.6503, "percentage" : 0.28461 }
+, { "name" : "/backbone/stages_2/stages_2_19/pwconv2/MatMul_myl62_5", "timeMs" : 15.431, "averageMs" : 1.40282, "medianMs" : 1.38566, "percentage" : 0.241918 }
+, { "name" : "__myl_CasResAddMulMulMinMaxRou_myl62_6", "timeMs" : 4.56787, "averageMs" : 0.415261, "medianMs" : 0.41536, "percentage" : 0.0716121 }
+, { "name" : "__myl_CasTraCasMulAddMulMinMaxRouCasCasMul_myl62_7", "timeMs" : 5.21366, "averageMs" : 0.473969, "medianMs" : 0.471392, "percentage" : 0.0817364 }
+, { "name" : "backbone.backbone.stages.2.20.dwconv.weight + backbone.backbone.stages.2.20.dwconv.weight_QuantizeLinear + backbone.backbone.stages.2.20.dwconv.weight_DequantizeLinear + /backbone/stages.2/stages.2.20/dwconv/Conv", "timeMs" : 21.2747, "averageMs" : 1.93406, "medianMs" : 2.08282, "percentage" : 0.33353 }
+, { "name" : "__mye761_0_myl64_0", "timeMs" : 0.013344, "averageMs" : 0.00121309, "medianMs" : 0.001216, "percentage" : 0.000209198 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl64_1", "timeMs" : 3.87757, "averageMs" : 0.352506, "medianMs" : 0.352352, "percentage" : 0.06079 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl64_2", "timeMs" : 3.9489, "averageMs" : 0.358991, "medianMs" : 0.359232, "percentage" : 0.0619082 }
+, { "name" : "__myl_FcCas_myl64_3", "timeMs" : 20.2404, "averageMs" : 1.84003, "medianMs" : 1.84003, "percentage" : 0.317315 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl64_4", "timeMs" : 18.157, "averageMs" : 1.65064, "medianMs" : 1.6505, "percentage" : 0.284653 }
+, { "name" : "/backbone/stages_2/stages_2_20/pwconv2/MatMul_myl64_5", "timeMs" : 16.8033, "averageMs" : 1.52757, "medianMs" : 1.52963, "percentage" : 0.263431 }
+, { "name" : "__myl_CasResAddMulMulMinMaxRou_myl64_6", "timeMs" : 4.56477, "averageMs" : 0.414979, "medianMs" : 0.414816, "percentage" : 0.0715634 }
+, { "name" : "__myl_CasTraCasMulAddMulMinMaxRouCasCasMul_myl64_7", "timeMs" : 5.0592, "averageMs" : 0.459927, "medianMs" : 0.460032, "percentage" : 0.0793148 }
+, { "name" : "backbone.backbone.stages.2.21.dwconv.weight + backbone.backbone.stages.2.21.dwconv.weight_QuantizeLinear + backbone.backbone.stages.2.21.dwconv.weight_DequantizeLinear + /backbone/stages.2/stages.2.21/dwconv/Conv", "timeMs" : 21.3717, "averageMs" : 1.94288, "medianMs" : 2.06307, "percentage" : 0.335051 }
+, { "name" : "__mye761_0_myl66_0", "timeMs" : 0.012352, "averageMs" : 0.00112291, "medianMs" : 0.00112, "percentage" : 0.000193647 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl66_1", "timeMs" : 3.8815, "averageMs" : 0.352864, "medianMs" : 0.352864, "percentage" : 0.0608517 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl66_2", "timeMs" : 3.92739, "averageMs" : 0.357036, "medianMs" : 0.356896, "percentage" : 0.0615711 }
+, { "name" : "__myl_FcCas_myl66_3", "timeMs" : 20.2457, "averageMs" : 1.84052, "medianMs" : 1.84003, "percentage" : 0.317399 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl66_4", "timeMs" : 18.1669, "averageMs" : 1.65154, "medianMs" : 1.65152, "percentage" : 0.284809 }
+, { "name" : "/backbone/stages_2/stages_2_21/pwconv2/MatMul_myl66_5", "timeMs" : 16.1476, "averageMs" : 1.46796, "medianMs" : 1.46803, "percentage" : 0.253151 }
+, { "name" : "__myl_CasResAddMulMulMinMaxRou_myl66_6", "timeMs" : 4.5585, "averageMs" : 0.414409, "medianMs" : 0.414272, "percentage" : 0.0714651 }
+, { "name" : "__myl_CasTraCasMulAddMulMinMaxRouCasCasMul_myl66_7", "timeMs" : 5.04275, "averageMs" : 0.458432, "medianMs" : 0.458176, "percentage" : 0.079057 }
+, { "name" : "backbone.backbone.stages.2.22.dwconv.weight + backbone.backbone.stages.2.22.dwconv.weight_QuantizeLinear + backbone.backbone.stages.2.22.dwconv.weight_DequantizeLinear + /backbone/stages.2/stages.2.22/dwconv/Conv", "timeMs" : 19.7766, "averageMs" : 1.79788, "medianMs" : 1.72826, "percentage" : 0.310045 }
+, { "name" : "__mye761_0_myl68_0", "timeMs" : 0.011008, "averageMs" : 0.00100073, "medianMs" : 0.000992, "percentage" : 0.000172576 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl68_1", "timeMs" : 3.87398, "averageMs" : 0.35218, "medianMs" : 0.352032, "percentage" : 0.0607338 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl68_2", "timeMs" : 3.95619, "averageMs" : 0.359654, "medianMs" : 0.359584, "percentage" : 0.0620226 }
+, { "name" : "__myl_FcCas_myl68_3", "timeMs" : 20.2791, "averageMs" : 1.84355, "medianMs" : 1.84349, "percentage" : 0.317922 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl68_4", "timeMs" : 18.1524, "averageMs" : 1.65022, "medianMs" : 1.65002, "percentage" : 0.284582 }
+, { "name" : "/backbone/stages_2/stages_2_22/pwconv2/MatMul_myl68_5", "timeMs" : 17.3868, "averageMs" : 1.58062, "medianMs" : 1.58038, "percentage" : 0.272579 }
+, { "name" : "__myl_CasResAddMulMulMinMaxRou_myl68_6", "timeMs" : 4.55517, "averageMs" : 0.414106, "medianMs" : 0.414112, "percentage" : 0.071413 }
+, { "name" : "__myl_CasTraCasMulAddMulMinMaxRouCasCasMul_myl68_7", "timeMs" : 5.04829, "averageMs" : 0.458935, "medianMs" : 0.458816, "percentage" : 0.0791438 }
+, { "name" : "backbone.backbone.stages.2.23.dwconv.weight + backbone.backbone.stages.2.23.dwconv.weight_QuantizeLinear + backbone.backbone.stages.2.23.dwconv.weight_DequantizeLinear + /backbone/stages.2/stages.2.23/dwconv/Conv", "timeMs" : 20.6076, "averageMs" : 1.87341, "medianMs" : 1.72922, "percentage" : 0.323072 }
+, { "name" : "__mye761_0_myl70_0", "timeMs" : 0.012608, "averageMs" : 0.00114618, "medianMs" : 0.001152, "percentage" : 0.00019766 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl70_1", "timeMs" : 3.88282, "averageMs" : 0.352983, "medianMs" : 0.352832, "percentage" : 0.0608722 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl70_2", "timeMs" : 3.96038, "averageMs" : 0.360035, "medianMs" : 0.360416, "percentage" : 0.0620883 }
+, { "name" : "__myl_FcCas_myl70_3", "timeMs" : 20.3019, "averageMs" : 1.84562, "medianMs" : 1.84624, "percentage" : 0.318279 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl70_4", "timeMs" : 18.1435, "averageMs" : 1.64941, "medianMs" : 1.64947, "percentage" : 0.284442 }
+, { "name" : "/backbone/stages_2/stages_2_23/pwconv2/MatMul_myl70_5", "timeMs" : 14.1899, "averageMs" : 1.28999, "medianMs" : 1.28931, "percentage" : 0.22246 }
+, { "name" : "__myl_CasResAddMulMulMinMaxRou_myl70_6", "timeMs" : 4.56394, "averageMs" : 0.414903, "medianMs" : 0.414784, "percentage" : 0.0715504 }
+, { "name" : "__myl_CasTraCasMulAddMulMinMaxRouCasCasMul_myl70_7", "timeMs" : 6.07594, "averageMs" : 0.552358, "medianMs" : 0.552288, "percentage" : 0.0952545 }
+, { "name" : "backbone.backbone.stages.2.24.dwconv.weight + backbone.backbone.stages.2.24.dwconv.weight_QuantizeLinear + backbone.backbone.stages.2.24.dwconv.weight_DequantizeLinear + /backbone/stages.2/stages.2.24/dwconv/Conv", "timeMs" : 19.7992, "averageMs" : 1.79993, "medianMs" : 1.72934, "percentage" : 0.310399 }
+, { "name" : "__mye761_0_myl72_0", "timeMs" : 0.013664, "averageMs" : 0.00124218, "medianMs" : 0.001248, "percentage" : 0.000214215 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl72_1", "timeMs" : 3.87965, "averageMs" : 0.352695, "medianMs" : 0.3528, "percentage" : 0.0608226 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl72_2", "timeMs" : 3.95379, "averageMs" : 0.359436, "medianMs" : 0.359584, "percentage" : 0.061985 }
+, { "name" : "__myl_FcCas_myl72_3", "timeMs" : 20.3265, "averageMs" : 1.84786, "medianMs" : 1.84787, "percentage" : 0.318665 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl72_4", "timeMs" : 18.1484, "averageMs" : 1.64985, "medianMs" : 1.65008, "percentage" : 0.284518 }
+, { "name" : "/backbone/stages_2/stages_2_24/pwconv2/MatMul_myl72_5", "timeMs" : 15.8161, "averageMs" : 1.43783, "medianMs" : 1.43917, "percentage" : 0.247955 }
+, { "name" : "__myl_CasResAddMulMulMinMaxRou_myl72_6", "timeMs" : 4.55107, "averageMs" : 0.413734, "medianMs" : 0.413664, "percentage" : 0.0713487 }
+, { "name" : "__myl_CasTraCasMulAddMulMinMaxRouCasCasMul_myl72_7", "timeMs" : 5.07267, "averageMs" : 0.461152, "medianMs" : 0.461184, "percentage" : 0.079526 }
+, { "name" : "backbone.backbone.stages.2.25.dwconv.weight + backbone.backbone.stages.2.25.dwconv.weight_QuantizeLinear + backbone.backbone.stages.2.25.dwconv.weight_DequantizeLinear + /backbone/stages.2/stages.2.25/dwconv/Conv", "timeMs" : 20.8864, "averageMs" : 1.89876, "medianMs" : 1.72899, "percentage" : 0.327443 }
+, { "name" : "__mye761_0_myl74_0", "timeMs" : 0.011968, "averageMs" : 0.001088, "medianMs" : 0.001088, "percentage" : 0.000187626 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl74_1", "timeMs" : 3.87882, "averageMs" : 0.35262, "medianMs" : 0.352576, "percentage" : 0.0608095 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl74_2", "timeMs" : 3.94013, "averageMs" : 0.358193, "medianMs" : 0.35808, "percentage" : 0.0617707 }
+, { "name" : "__myl_FcCas_myl74_3", "timeMs" : 20.1892, "averageMs" : 1.83539, "medianMs" : 1.83478, "percentage" : 0.316514 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl74_4", "timeMs" : 18.1637, "averageMs" : 1.65124, "medianMs" : 1.65139, "percentage" : 0.284758 }
+, { "name" : "/backbone/stages_2/stages_2_25/pwconv2/MatMul_myl74_5", "timeMs" : 17.2196, "averageMs" : 1.56541, "medianMs" : 1.56326, "percentage" : 0.269957 }
+, { "name" : "__myl_CasResAddMulMulMinMaxRou_myl74_6", "timeMs" : 4.55846, "averageMs" : 0.414406, "medianMs" : 0.4144, "percentage" : 0.0714646 }
+, { "name" : "__myl_CasTraCasMulAddMulMinMaxRouCasCasMul_myl74_7", "timeMs" : 5.04736, "averageMs" : 0.458851, "medianMs" : 0.458912, "percentage" : 0.0791292 }
+, { "name" : "backbone.backbone.stages.2.26.dwconv.weight + backbone.backbone.stages.2.26.dwconv.weight_QuantizeLinear + backbone.backbone.stages.2.26.dwconv.weight_DequantizeLinear + /backbone/stages.2/stages.2.26/dwconv/Conv", "timeMs" : 20.8619, "averageMs" : 1.89654, "medianMs" : 1.72867, "percentage" : 0.32706 }
+, { "name" : "__mye782_0_myl76_0", "timeMs" : 0.01168, "averageMs" : 0.00106182, "medianMs" : 0.001056, "percentage" : 0.000183111 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl76_1", "timeMs" : 3.87706, "averageMs" : 0.35246, "medianMs" : 0.352448, "percentage" : 0.0607819 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl76_2", "timeMs" : 3.92608, "averageMs" : 0.356916, "medianMs" : 0.356672, "percentage" : 0.0615505 }
+, { "name" : "__myl_FcCas_myl76_3", "timeMs" : 20.2264, "averageMs" : 1.83876, "medianMs" : 1.83878, "percentage" : 0.317096 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl76_4", "timeMs" : 18.1513, "averageMs" : 1.65012, "medianMs" : 1.65005, "percentage" : 0.284564 }
+, { "name" : "/backbone/stages_2/stages_2_26/pwconv2/MatMul_myl76_5", "timeMs" : 13.7557, "averageMs" : 1.25052, "medianMs" : 1.24915, "percentage" : 0.215654 }
+, { "name" : "__myl_CasResAddMulMulMinMaxRou_myl76_6", "timeMs" : 4.57651, "averageMs" : 0.416047, "medianMs" : 0.416256, "percentage" : 0.0717476 }
+, { "name" : "__myl_CasTraCasMul_myl76_7", "timeMs" : 5.36387, "averageMs" : 0.487625, "medianMs" : 0.487968, "percentage" : 0.0840913 }
+, { "name" : "__myl_Mov_myl76_8", "timeMs" : 0.081472, "averageMs" : 0.00740654, "medianMs" : 0.007392, "percentage" : 0.00127726 }
+, { "name" : "__myl_AddSubMulMea_myl76_9", "timeMs" : 130.689, "averageMs" : 11.8808, "medianMs" : 11.8786, "percentage" : 2.04885 }
+, { "name" : "__myl_MeaAddSqrDivMulMulAdd_myl76_10", "timeMs" : 45.401, "averageMs" : 4.12737, "medianMs" : 4.12563, "percentage" : 0.711767 }
+, { "name" : "/backbone/downsample_layers.3/downsample_layers.3.0/Add_1_output_0_QuantizeLinear", "timeMs" : 3.59878, "averageMs" : 0.327162, "medianMs" : 0.327328, "percentage" : 0.0564194 }
+, { "name" : "backbone.backbone.downsample_layers.3.1.weight + backbone.backbone.downsample_layers.3.1.weight_QuantizeLinear + /backbone/downsample_layers.3/downsample_layers.3.1/Conv", "timeMs" : 6.31664, "averageMs" : 0.57424, "medianMs" : 0.553056, "percentage" : 0.0990281 }
+, { "name" : "/backbone/downsample_layers.3/downsample_layers.3.1/Conv_output_0_DequantizeLinear_clone_1", "timeMs" : 2.89658, "averageMs" : 0.263325, "medianMs" : 0.277056, "percentage" : 0.0454106 }
+, { "name" : "backbone.backbone.stages.3.0.dwconv.weight + backbone.backbone.stages.3.0.dwconv.weight_QuantizeLinear + backbone.backbone.stages.3.0.dwconv.weight_DequantizeLinear + /backbone/stages.3/stages.3.0/dwconv/Conv", "timeMs" : 10.784, "averageMs" : 0.980361, "medianMs" : 0.910144, "percentage" : 0.169064 }
+, { "name" : "__mye761_0_myl81_0", "timeMs" : 0.011616, "averageMs" : 0.001056, "medianMs" : 0.001056, "percentage" : 0.000182108 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl81_1", "timeMs" : 2.35459, "averageMs" : 0.214054, "medianMs" : 0.214272, "percentage" : 0.0369137 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl81_2", "timeMs" : 2.40192, "averageMs" : 0.218356, "medianMs" : 0.218432, "percentage" : 0.0376557 }
+, { "name" : "__myl_FcCas_myl81_3", "timeMs" : 15.9584, "averageMs" : 1.45076, "medianMs" : 1.45123, "percentage" : 0.250185 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl81_4", "timeMs" : 9.49408, "averageMs" : 0.863098, "medianMs" : 0.828544, "percentage" : 0.148842 }
+, { "name" : "/backbone/stages_3/stages_3_0/pwconv2/MatMul_myl81_5", "timeMs" : 15.8807, "averageMs" : 1.4437, "medianMs" : 1.44371, "percentage" : 0.248967 }
+, { "name" : "__myl_CasResAddMulMulMinMaxRou_myl81_6", "timeMs" : 2.28982, "averageMs" : 0.208166, "medianMs" : 0.208448, "percentage" : 0.0358984 }
+, { "name" : "__myl_CasTraCasMulAddMulMinMaxRouCasCasMul_myl81_7", "timeMs" : 5.64787, "averageMs" : 0.513443, "medianMs" : 0.513696, "percentage" : 0.0885436 }
+, { "name" : "backbone.backbone.stages.3.1.dwconv.weight + backbone.backbone.stages.3.1.dwconv.weight_QuantizeLinear + backbone.backbone.stages.3.1.dwconv.weight_DequantizeLinear + /backbone/stages.3/stages.3.1/dwconv/Conv", "timeMs" : 9.56618, "averageMs" : 0.869652, "medianMs" : 0.869536, "percentage" : 0.149972 }
+, { "name" : "__mye761_0_myl83_0", "timeMs" : 0.01168, "averageMs" : 0.00106182, "medianMs" : 0.001056, "percentage" : 0.000183111 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl83_1", "timeMs" : 2.33629, "averageMs" : 0.21239, "medianMs" : 0.212384, "percentage" : 0.0366268 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl83_2", "timeMs" : 2.39562, "averageMs" : 0.217783, "medianMs" : 0.217888, "percentage" : 0.0375569 }
+, { "name" : "__myl_FcCas_myl83_3", "timeMs" : 15.9672, "averageMs" : 1.45157, "medianMs" : 1.45098, "percentage" : 0.250324 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl83_4", "timeMs" : 9.14077, "averageMs" : 0.830979, "medianMs" : 0.831168, "percentage" : 0.143303 }
+, { "name" : "/backbone/stages_3/stages_3_1/pwconv2/MatMul_myl83_5", "timeMs" : 15.842, "averageMs" : 1.44018, "medianMs" : 1.44016, "percentage" : 0.24836 }
+, { "name" : "__myl_CasResAddMulMulMinMaxRou_myl83_6", "timeMs" : 2.27254, "averageMs" : 0.206595, "medianMs" : 0.206592, "percentage" : 0.0356275 }
+, { "name" : "__myl_CasTraCasMulAddMulMinMaxRouCasCasMul_myl83_7", "timeMs" : 5.63811, "averageMs" : 0.512556, "medianMs" : 0.5128, "percentage" : 0.0883906 }
+, { "name" : "backbone.backbone.stages.3.2.dwconv.weight + backbone.backbone.stages.3.2.dwconv.weight_QuantizeLinear + backbone.backbone.stages.3.2.dwconv.weight_DequantizeLinear + /backbone/stages.3/stages.3.2/dwconv/Conv", "timeMs" : 9.56698, "averageMs" : 0.869725, "medianMs" : 0.869504, "percentage" : 0.149985 }
+, { "name" : "__mye1299_0_myl85_0", "timeMs" : 0.011104, "averageMs" : 0.00100945, "medianMs" : 0.000992, "percentage" : 0.000174081 }
+, { "name" : "__myl_MulMinMaxRouCasTraCasMul_myl85_1", "timeMs" : 2.34573, "averageMs" : 0.213248, "medianMs" : 0.21328, "percentage" : 0.0367748 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl85_2", "timeMs" : 2.40381, "averageMs" : 0.218528, "medianMs" : 0.218592, "percentage" : 0.0376853 }
+, { "name" : "__myl_FcCas_myl85_3", "timeMs" : 16.1242, "averageMs" : 1.46584, "medianMs" : 1.46656, "percentage" : 0.252785 }
+, { "name" : "__myl_ResAddDivCasErfCasAddMulMulMulMinMaxRouCas_myl85_4", "timeMs" : 9.1264, "averageMs" : 0.829673, "medianMs" : 0.829664, "percentage" : 0.143078 }
+, { "name" : "/backbone/stages_3/stages_3_2/pwconv2/MatMul_myl85_5", "timeMs" : 12.3557, "averageMs" : 1.12324, "medianMs" : 1.12218, "percentage" : 0.193704 }
+, { "name" : "__myl_CasResAddMulMulMinMaxRou_myl85_6", "timeMs" : 2.2889, "averageMs" : 0.208081, "medianMs" : 0.208128, "percentage" : 0.0358838 }
+, { "name" : "__myl_CasTraCasMul_myl85_7", "timeMs" : 5.53216, "averageMs" : 0.502924, "medianMs" : 0.504192, "percentage" : 0.0867296 }
+, { "name" : "__myl_AddResTra_myl85_8", "timeMs" : 3.10714, "averageMs" : 0.282467, "medianMs" : 0.282656, "percentage" : 0.0487116 }
+, { "name" : "__myl_CasMeaSubMulMea_myl85_9", "timeMs" : 2.34374, "averageMs" : 0.213068, "medianMs" : 0.212992, "percentage" : 0.0367437 }
+, { "name" : "__myl_AddSqrDivMulCasMulAddTra_myl85_10", "timeMs" : 4.59126, "averageMs" : 0.417388, "medianMs" : 0.417312, "percentage" : 0.0719788 }
+, { "name" : "/backbone/Reshape_5_output_0_QuantizeLinear", "timeMs" : 2.1952, "averageMs" : 0.199564, "medianMs" : 0.199744, "percentage" : 0.0344149 }
+, { "name" : "onnx::Conv_4305 + onnx::Conv_4305_QuantizeLinear + /encoder/input_proj.2/conv/Conv", "timeMs" : 1.56995, "averageMs" : 0.142723, "medianMs" : 0.142368, "percentage" : 0.0246127 }
+, { "name" : "Reformatting CopyNode for Output Tensor 0 to onnx::Conv_4305 + onnx::Conv_4305_QuantizeLinear + /encoder/input_proj.2/conv/Conv", "timeMs" : 0.780608, "averageMs" : 0.0709644, "medianMs" : 0.07104, "percentage" : 0.0122379 }
+, { "name" : "__mye3032_0_myl89_0", "timeMs" : 0.011072, "averageMs" : 0.00100655, "medianMs" : 0.000992, "percentage" : 0.00017358 }
+, { "name" : "__mye15321_hc_init_myl89_1", "timeMs" : 0.013088, "averageMs" : 0.00118982, "medianMs" : 0.001184, "percentage" : 0.000205185 }
+, { "name" : "entry^bb^signal^1_myl89_2", "timeMs" : 0, "averageMs" : 0, "medianMs" : 0, "percentage" : 0 }
+, { "name" : "entry^bb^wait^1_myl89_3", "timeMs" : 0, "averageMs" : 0, "medianMs" : 0, "percentage" : 0 }
+, { "name" : "__myl_AddMulMinMaxRouCasTra_myl89_4", "timeMs" : 1.06282, "averageMs" : 0.0966196, "medianMs" : 0.096832, "percentage" : 0.0166621 }
+, { "name" : "__myl_MulMinMaxRouCasResTra_myl89_5", "timeMs" : 2.19731, "averageMs" : 0.199756, "medianMs" : 0.199712, "percentage" : 0.034448 }
+, { "name" : "__myl_FcMulCasAdd_myl89_6", "timeMs" : 2.82522, "averageMs" : 0.256838, "medianMs" : 0.25744, "percentage" : 0.0442919 }
+, { "name" : "__myl_FcCasAdd_myl89_7", "timeMs" : 2.38928, "averageMs" : 0.217207, "medianMs" : 0.217856, "percentage" : 0.0374576 }
+, { "name" : "__mye14924_myl89_8", "timeMs" : 0, "averageMs" : 0, "medianMs" : 0, "percentage" : 0 }
+, { "name" : "__mye14926_myl89_9", "timeMs" : 0, "averageMs" : 0, "medianMs" : 0, "percentage" : 0 }
+, { "name" : "__mye15014_myl89_10", "timeMs" : 0.010752, "averageMs" : 0.000977454, "medianMs" : 0.00096, "percentage" : 0.000168563 }
+, { "name" : "cast_hvar^15010i64_myl89_11", "timeMs" : 0.011264, "averageMs" : 0.001024, "medianMs" : 0.001024, "percentage" : 0.00017659 }
+, { "name" : "off_add_myl89_12", "timeMs" : 0.011584, "averageMs" : 0.00105309, "medianMs" : 0.001056, "percentage" : 0.000181606 }
+, { "name" : "_gemm_mha_v2_myl89_13", "timeMs" : 5.392, "averageMs" : 0.490182, "medianMs" : 0.490592, "percentage" : 0.0845322 }
+, { "name" : "__myl_Tra_myl89_14", "timeMs" : 0.350176, "averageMs" : 0.0318342, "medianMs" : 0.031872, "percentage" : 0.00548983 }
+, { "name" : "/encoder/encoder_0/layers_0/self_attn/Gemm_myl89_15", "timeMs" : 0.526464, "averageMs" : 0.0478604, "medianMs" : 0.047872, "percentage" : 0.00825356 }
+, { "name" : "__myl_TraCasMulTraAdd_myl89_16", "timeMs" : 1.9951, "averageMs" : 0.181373, "medianMs" : 0.181248, "percentage" : 0.0312779 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl89_17", "timeMs" : 1.75962, "averageMs" : 0.159965, "medianMs" : 0.16, "percentage" : 0.0275861 }
+, { "name" : "/encoder/encoder_0/layers_0/linear1/MatMul_myl89_18", "timeMs" : 9.28394, "averageMs" : 0.843994, "medianMs" : 0.844384, "percentage" : 0.145547 }
+, { "name" : "/encoder/encoder_0/layers_0/linear2/MatMul_myl89_19", "timeMs" : 2.65142, "averageMs" : 0.241039, "medianMs" : 0.241216, "percentage" : 0.0415673 }
+, { "name" : "__myl_CasMulCasMulResAddCasMeaSubMulMea_myl89_20", "timeMs" : 1.12851, "averageMs" : 0.102592, "medianMs" : 0.102656, "percentage" : 0.0176921 }
+, { "name" : "__myl_AddSqrDivMulCasMulAddTra_myl89_21", "timeMs" : 1.78067, "averageMs" : 0.161879, "medianMs" : 0.161952, "percentage" : 0.0279162 }
+, { "name" : "/backbone/Reshape_3_output_0_QuantizeLinear", "timeMs" : 7.03837, "averageMs" : 0.639852, "medianMs" : 0.640064, "percentage" : 0.110343 }
+, { "name" : "onnx::Conv_4299 + onnx::Conv_4299_QuantizeLinear + /encoder/input_proj.0/conv/Conv", "timeMs" : 6.86397, "averageMs" : 0.623997, "medianMs" : 0.62384, "percentage" : 0.107609 }
+, { "name" : "/backbone/Reshape_4_output_0_QuantizeLinear", "timeMs" : 3.57488, "averageMs" : 0.324989, "medianMs" : 0.325248, "percentage" : 0.0560446 }
+, { "name" : "onnx::Conv_4302 + onnx::Conv_4302_QuantizeLinear + /encoder/input_proj.1/conv/Conv", "timeMs" : 2.99558, "averageMs" : 0.272326, "medianMs" : 0.272384, "percentage" : 0.0469628 }
+, { "name" : "/encoder/Reshape_1_output_0_QuantizeLinear", "timeMs" : 0.89504, "averageMs" : 0.0813673, "medianMs" : 0.081632, "percentage" : 0.0140318 }
+, { "name" : "onnx::Conv_4308 + onnx::Conv_4308_QuantizeLinear + /encoder/lateral_convs.0/conv/Conv + PWN(/encoder/lateral_convs.0/act/Sigmoid, /encoder/lateral_convs.0/act/Mul)", "timeMs" : 0.943648, "averageMs" : 0.0857862, "medianMs" : 0.08592, "percentage" : 0.0147939 }
+, { "name" : "/encoder/Resize", "timeMs" : 1.18656, "averageMs" : 0.107869, "medianMs" : 0.10768, "percentage" : 0.0186021 }
+, { "name" : "/encoder/lateral_convs.0/act/Mul_output_0_DequantizeLinear_clone_0 + /encoder/Concat_4_output_0_QuantizeLinear_clone_0", "timeMs" : 1.2407, "averageMs" : 0.112791, "medianMs" : 0.112896, "percentage" : 0.0194509 }
+, { "name" : "onnx::Conv_4314 + onnx::Conv_4314_QuantizeLinear + /encoder/fpn_blocks.0/conv2/conv/Conv + PWN(/encoder/fpn_blocks.0/conv2/act/Sigmoid, /encoder/fpn_blocks.0/conv2/act/Mul)", "timeMs" : 3.78803, "averageMs" : 0.344367, "medianMs" : 0.34368, "percentage" : 0.0593863 }
+, { "name" : "onnx::Conv_4311 + onnx::Conv_4311_QuantizeLinear + /encoder/fpn_blocks.0/conv1/conv/Conv + PWN(/encoder/fpn_blocks.0/conv1/act/Sigmoid, /encoder/fpn_blocks.0/conv1/act/Mul)", "timeMs" : 3.77238, "averageMs" : 0.342944, "medianMs" : 0.343072, "percentage" : 0.059141 }
+, { "name" : "encoder.fpn_blocks.0.bottlenecks.0.conv.weight + encoder.fpn_blocks.0.bottlenecks.0.conv.weight_QuantizeLinear + /encoder/fpn_blocks.0/bottlenecks/bottlenecks.0/conv/Conv + PWN(/encoder/fpn_blocks.0/bottlenecks/bottlenecks.0/act/Sigmoid, /encoder/fpn_blocks.0/bottlenecks/bottlenecks.0/act/Mul)", "timeMs" : 14.9405, "averageMs" : 1.35823, "medianMs" : 1.17533, "percentage" : 0.234228 }
+, { "name" : "encoder.fpn_blocks.0.bottlenecks.1.conv.weight + encoder.fpn_blocks.0.bottlenecks.1.conv.weight_QuantizeLinear + /encoder/fpn_blocks.0/bottlenecks/bottlenecks.1/conv/Conv + PWN(/encoder/fpn_blocks.0/bottlenecks/bottlenecks.1/act/Sigmoid, /encoder/fpn_blocks.0/bottlenecks/bottlenecks.1/act/Mul)", "timeMs" : 12.8628, "averageMs" : 1.16935, "medianMs" : 1.16976, "percentage" : 0.201655 }
+, { "name" : "encoder.fpn_blocks.0.bottlenecks.2.conv.weight + encoder.fpn_blocks.0.bottlenecks.2.conv.weight_QuantizeLinear + /encoder/fpn_blocks.0/bottlenecks/bottlenecks.2/conv/Conv + PWN(/encoder/fpn_blocks.0/bottlenecks/bottlenecks.2/act/Sigmoid, /encoder/fpn_blocks.0/bottlenecks/bottlenecks.2/act/Mul)", "timeMs" : 12.8564, "averageMs" : 1.16876, "medianMs" : 1.16909, "percentage" : 0.201554 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to PWN(/encoder/fpn_blocks.0/Add)", "timeMs" : 2.93606, "averageMs" : 0.266915, "medianMs" : 0.267104, "percentage" : 0.0460297 }
+, { "name" : "Reformatting CopyNode for Input Tensor 1 to PWN(/encoder/fpn_blocks.0/Add)", "timeMs" : 2.91741, "averageMs" : 0.265219, "medianMs" : 0.26528, "percentage" : 0.0457372 }
+, { "name" : "__mye54_0_myl105_0", "timeMs" : 0.01088, "averageMs" : 0.000989091, "medianMs" : 0.000992, "percentage" : 0.00017057 }
+, { "name" : "__myl_CasMulCasCasMulCasAddCasMulMinMaxRouCas_myl105_1", "timeMs" : 1.85386, "averageMs" : 0.168532, "medianMs" : 0.168512, "percentage" : 0.0290635 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to onnx::Conv_4317 + onnx::Conv_4317_QuantizeLinear + /encoder/lateral_convs.1/conv/Conv + PWN(/encoder/lateral_convs.1/act/Sigmoid, /encoder/lateral_convs.1/act/Mul)", "timeMs" : 2.90298, "averageMs" : 0.263907, "medianMs" : 0.264192, "percentage" : 0.045511 }
+, { "name" : "onnx::Conv_4317 + onnx::Conv_4317_QuantizeLinear + /encoder/lateral_convs.1/conv/Conv + PWN(/encoder/lateral_convs.1/act/Sigmoid, /encoder/lateral_convs.1/act/Mul)", "timeMs" : 2.87949, "averageMs" : 0.261772, "medianMs" : 0.262112, "percentage" : 0.0451427 }
+, { "name" : "/encoder/Resize_1", "timeMs" : 4.42147, "averageMs" : 0.401952, "medianMs" : 0.402464, "percentage" : 0.0693169 }
+, { "name" : "/encoder/Concat_7_/encoder/Resize_1_output_0_clone_0 copy", "timeMs" : 7.54922, "averageMs" : 0.686292, "medianMs" : 0.686496, "percentage" : 0.118352 }
+, { "name" : "onnx::Conv_4323 + onnx::Conv_4323_QuantizeLinear + /encoder/fpn_blocks.1/conv2/conv/Conv + PWN(/encoder/fpn_blocks.1/conv2/act/Sigmoid, /encoder/fpn_blocks.1/conv2/act/Mul)", "timeMs" : 15.1982, "averageMs" : 1.38166, "medianMs" : 1.38138, "percentage" : 0.238268 }
+, { "name" : "onnx::Conv_4320 + onnx::Conv_4320_QuantizeLinear + /encoder/fpn_blocks.1/conv1/conv/Conv + PWN(/encoder/fpn_blocks.1/conv1/act/Sigmoid, /encoder/fpn_blocks.1/conv1/act/Mul)", "timeMs" : 15.2475, "averageMs" : 1.38613, "medianMs" : 1.38618, "percentage" : 0.23904 }
+, { "name" : "encoder.fpn_blocks.1.bottlenecks.0.conv.weight + encoder.fpn_blocks.1.bottlenecks.0.conv.weight_QuantizeLinear + /encoder/fpn_blocks.1/bottlenecks/bottlenecks.0/conv/Conv + PWN(/encoder/fpn_blocks.1/bottlenecks/bottlenecks.0/act/Sigmoid, /encoder/fpn_blocks.1/bottlenecks/bottlenecks.0/act/Mul)", "timeMs" : 52.3338, "averageMs" : 4.75762, "medianMs" : 4.75869, "percentage" : 0.820455 }
+, { "name" : "encoder.fpn_blocks.1.bottlenecks.1.conv.weight + encoder.fpn_blocks.1.bottlenecks.1.conv.weight_QuantizeLinear + /encoder/fpn_blocks.1/bottlenecks/bottlenecks.1/conv/Conv + PWN(/encoder/fpn_blocks.1/bottlenecks/bottlenecks.1/act/Sigmoid, /encoder/fpn_blocks.1/bottlenecks/bottlenecks.1/act/Mul)", "timeMs" : 52.1125, "averageMs" : 4.7375, "medianMs" : 4.73754, "percentage" : 0.816986 }
+, { "name" : "encoder.fpn_blocks.1.bottlenecks.2.conv.weight + encoder.fpn_blocks.1.bottlenecks.2.conv.weight_QuantizeLinear + /encoder/fpn_blocks.1/bottlenecks/bottlenecks.2/conv/Conv + PWN(/encoder/fpn_blocks.1/bottlenecks/bottlenecks.2/act/Sigmoid, /encoder/fpn_blocks.1/bottlenecks/bottlenecks.2/act/Mul)", "timeMs" : 52.0635, "averageMs" : 4.73304, "medianMs" : 4.73328, "percentage" : 0.816217 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to PWN(/encoder/fpn_blocks.1/Add)", "timeMs" : 11.4352, "averageMs" : 1.03956, "medianMs" : 1.03974, "percentage" : 0.179274 }
+, { "name" : "Reformatting CopyNode for Input Tensor 1 to PWN(/encoder/fpn_blocks.1/Add)", "timeMs" : 11.4242, "averageMs" : 1.03857, "medianMs" : 1.03862, "percentage" : 0.179101 }
+, { "name" : "__mye54_0_myl117_0", "timeMs" : 0.011232, "averageMs" : 0.00102109, "medianMs" : 0.001024, "percentage" : 0.000176088 }
+, { "name" : "__myl_CasMulCasCasMulCasAddCasMulMinMaxRouCas_myl117_1", "timeMs" : 7.11581, "averageMs" : 0.646892, "medianMs" : 0.646944, "percentage" : 0.111557 }
+, { "name" : "Reformatting CopyNode for Output Tensor 0 to PWN(/encoder/fpn_blocks.1/Add)", "timeMs" : 11.2692, "averageMs" : 1.02447, "medianMs" : 1.02445, "percentage" : 0.176671 }
+, { "name" : "onnx::Conv_4344 + onnx::Conv_4344_QuantizeLinear + /decoder/input_proj.0/conv/Conv", "timeMs" : 8.62048, "averageMs" : 0.78368, "medianMs" : 0.782944, "percentage" : 0.135146 }
+, { "name" : "Reformatting CopyNode for Output Tensor 0 to onnx::Conv_4344 + onnx::Conv_4344_QuantizeLinear + /decoder/input_proj.0/conv/Conv", "timeMs" : 7.49616, "averageMs" : 0.681469, "medianMs" : 0.645536, "percentage" : 0.11752 }
+, { "name" : "onnx::Conv_4326 + onnx::Conv_4326_QuantizeLinear + /encoder/downsample_convs.0/conv/Conv + PWN(/encoder/downsample_convs.0/act/Sigmoid, /encoder/downsample_convs.0/act/Mul)", "timeMs" : 17.2414, "averageMs" : 1.5674, "medianMs" : 1.56237, "percentage" : 0.270299 }
+, { "name" : "Reformatting CopyNode for Output Tensor 0 to onnx::Conv_4326 + onnx::Conv_4326_QuantizeLinear + /encoder/downsample_convs.0/conv/Conv + PWN(/encoder/downsample_convs.0/act/Sigmoid, /encoder/downsample_convs.0/act/Mul)", "timeMs" : 1.9312, "averageMs" : 0.175564, "medianMs" : 0.17536, "percentage" : 0.0302761 }
+, { "name" : "/encoder/Concat_8_/encoder/lateral_convs.1/act/Mul_output_0_DequantizeLinear_Output_clone_1_clone_1 copy", "timeMs" : 1.95258, "averageMs" : 0.177507, "medianMs" : 0.17776, "percentage" : 0.0306112 }
+, { "name" : "onnx::Conv_4332 + onnx::Conv_4332_QuantizeLinear + /encoder/pan_blocks.0/conv2/conv/Conv + PWN(/encoder/pan_blocks.0/conv2/act/Sigmoid, /encoder/pan_blocks.0/conv2/act/Mul)", "timeMs" : 3.95968, "averageMs" : 0.359971, "medianMs" : 0.35952, "percentage" : 0.0620773 }
+, { "name" : "onnx::Conv_4329 + onnx::Conv_4329_QuantizeLinear + /encoder/pan_blocks.0/conv1/conv/Conv + PWN(/encoder/pan_blocks.0/conv1/act/Sigmoid, /encoder/pan_blocks.0/conv1/act/Mul)", "timeMs" : 3.78602, "averageMs" : 0.344183, "medianMs" : 0.344768, "percentage" : 0.0593547 }
+, { "name" : "encoder.pan_blocks.0.bottlenecks.0.conv.weight + encoder.pan_blocks.0.bottlenecks.0.conv.weight_QuantizeLinear + /encoder/pan_blocks.0/bottlenecks/bottlenecks.0/conv/Conv + PWN(/encoder/pan_blocks.0/bottlenecks/bottlenecks.0/act/Sigmoid, /encoder/pan_blocks.0/bottlenecks/bottlenecks.0/act/Mul)", "timeMs" : 14.9419, "averageMs" : 1.35835, "medianMs" : 1.17507, "percentage" : 0.234249 }
+, { "name" : "encoder.pan_blocks.0.bottlenecks.1.conv.weight + encoder.pan_blocks.0.bottlenecks.1.conv.weight_QuantizeLinear + /encoder/pan_blocks.0/bottlenecks/bottlenecks.1/conv/Conv + PWN(/encoder/pan_blocks.0/bottlenecks/bottlenecks.1/act/Sigmoid, /encoder/pan_blocks.0/bottlenecks/bottlenecks.1/act/Mul)", "timeMs" : 12.8628, "averageMs" : 1.16934, "medianMs" : 1.1696, "percentage" : 0.201654 }
+, { "name" : "encoder.pan_blocks.0.bottlenecks.2.conv.weight + encoder.pan_blocks.0.bottlenecks.2.conv.weight_QuantizeLinear + /encoder/pan_blocks.0/bottlenecks/bottlenecks.2/conv/Conv + PWN(/encoder/pan_blocks.0/bottlenecks/bottlenecks.2/act/Sigmoid, /encoder/pan_blocks.0/bottlenecks/bottlenecks.2/act/Mul)", "timeMs" : 12.8638, "averageMs" : 1.16943, "medianMs" : 1.16963, "percentage" : 0.20167 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to PWN(/encoder/pan_blocks.0/Add)", "timeMs" : 2.93328, "averageMs" : 0.266662, "medianMs" : 0.266944, "percentage" : 0.045986 }
+, { "name" : "Reformatting CopyNode for Input Tensor 1 to PWN(/encoder/pan_blocks.0/Add)", "timeMs" : 2.9183, "averageMs" : 0.2653, "medianMs" : 0.265504, "percentage" : 0.0457513 }
+, { "name" : "__mye54_0_myl131_0", "timeMs" : 0.011328, "averageMs" : 0.00102982, "medianMs" : 0.001024, "percentage" : 0.000177593 }
+, { "name" : "__myl_CasMulCasCasMulCasAddCasMulMinMaxRouCas_myl131_1", "timeMs" : 1.86365, "averageMs" : 0.169423, "medianMs" : 0.169504, "percentage" : 0.0292171 }
+, { "name" : "Reformatting CopyNode for Output Tensor 0 to PWN(/encoder/pan_blocks.0/Add)", "timeMs" : 2.89651, "averageMs" : 0.263319, "medianMs" : 0.263488, "percentage" : 0.0454096 }
+, { "name" : "onnx::Conv_4347 + onnx::Conv_4347_QuantizeLinear + /decoder/input_proj.1/conv/Conv", "timeMs" : 1.97123, "averageMs" : 0.179203, "medianMs" : 0.179552, "percentage" : 0.0309037 }
+, { "name" : "Reformatting CopyNode for Output Tensor 0 to onnx::Conv_4347 + onnx::Conv_4347_QuantizeLinear + /decoder/input_proj.1/conv/Conv", "timeMs" : 1.87296, "averageMs" : 0.170269, "medianMs" : 0.170816, "percentage" : 0.029363 }
+, { "name" : "onnx::Conv_4335 + onnx::Conv_4335_QuantizeLinear + /encoder/downsample_convs.1/conv/Conv + PWN(/encoder/downsample_convs.1/act/Sigmoid, /encoder/downsample_convs.1/act/Mul)", "timeMs" : 3.72915, "averageMs" : 0.339014, "medianMs" : 0.33952, "percentage" : 0.0584632 }
+, { "name" : "/encoder/Concat_9_/encoder/lateral_convs.0/act/Mul_output_0_DequantizeLinear_Output_clone_1_clone_1 copy", "timeMs" : 0.519872, "averageMs" : 0.0472611, "medianMs" : 0.047392, "percentage" : 0.00815021 }
+, { "name" : "onnx::Conv_4341 + onnx::Conv_4341_QuantizeLinear + /encoder/pan_blocks.1/conv2/conv/Conv + PWN(/encoder/pan_blocks.1/conv2/act/Sigmoid, /encoder/pan_blocks.1/conv2/act/Mul)", "timeMs" : 1.3296, "averageMs" : 0.120873, "medianMs" : 0.121056, "percentage" : 0.0208446 }
+, { "name" : "onnx::Conv_4338 + onnx::Conv_4338_QuantizeLinear + /encoder/pan_blocks.1/conv1/conv/Conv + PWN(/encoder/pan_blocks.1/conv1/act/Sigmoid, /encoder/pan_blocks.1/conv1/act/Mul)", "timeMs" : 1.164, "averageMs" : 0.105818, "medianMs" : 0.106048, "percentage" : 0.0182484 }
+, { "name" : "encoder.pan_blocks.1.bottlenecks.0.conv.weight + encoder.pan_blocks.1.bottlenecks.0.conv.weight_QuantizeLinear + /encoder/pan_blocks.1/bottlenecks/bottlenecks.0/conv/Conv + PWN(/encoder/pan_blocks.1/bottlenecks/bottlenecks.0/act/Sigmoid, /encoder/pan_blocks.1/bottlenecks/bottlenecks.0/act/Mul)", "timeMs" : 3.49786, "averageMs" : 0.317987, "medianMs" : 0.318048, "percentage" : 0.0548371 }
+, { "name" : "encoder.pan_blocks.1.bottlenecks.1.conv.weight + encoder.pan_blocks.1.bottlenecks.1.conv.weight_QuantizeLinear + /encoder/pan_blocks.1/bottlenecks/bottlenecks.1/conv/Conv + PWN(/encoder/pan_blocks.1/bottlenecks/bottlenecks.1/act/Sigmoid, /encoder/pan_blocks.1/bottlenecks/bottlenecks.1/act/Mul)", "timeMs" : 3.47267, "averageMs" : 0.315697, "medianMs" : 0.315776, "percentage" : 0.0544423 }
+, { "name" : "encoder.pan_blocks.1.bottlenecks.2.conv.weight + encoder.pan_blocks.1.bottlenecks.2.conv.weight_QuantizeLinear + /encoder/pan_blocks.1/bottlenecks/bottlenecks.2/conv/Conv + PWN(/encoder/pan_blocks.1/bottlenecks/bottlenecks.2/act/Sigmoid, /encoder/pan_blocks.1/bottlenecks/bottlenecks.2/act/Mul)", "timeMs" : 3.47523, "averageMs" : 0.31593, "medianMs" : 0.316224, "percentage" : 0.0544824 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to PWN(/encoder/pan_blocks.1/Add)", "timeMs" : 0.884384, "averageMs" : 0.0803985, "medianMs" : 0.08048, "percentage" : 0.0138648 }
+, { "name" : "Reformatting CopyNode for Input Tensor 1 to PWN(/encoder/pan_blocks.1/Add)", "timeMs" : 0.873056, "averageMs" : 0.0793687, "medianMs" : 0.079424, "percentage" : 0.0136872 }
+, { "name" : "__mye54_0_myl144_0", "timeMs" : 0.011232, "averageMs" : 0.00102109, "medianMs" : 0.001024, "percentage" : 0.000176088 }
+, { "name" : "__myl_CasMulCasCasMulCasAddCasMulMinMaxRouCas_myl144_1", "timeMs" : 0.615648, "averageMs" : 0.055968, "medianMs" : 0.055936, "percentage" : 0.00965173 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to onnx::Conv_4350 + onnx::Conv_4350_QuantizeLinear + /decoder/input_proj.2/conv/Conv", "timeMs" : 0.973152, "averageMs" : 0.0884684, "medianMs" : 0.088608, "percentage" : 0.0152564 }
+, { "name" : "onnx::Conv_4350 + onnx::Conv_4350_QuantizeLinear + /decoder/input_proj.2/conv/Conv", "timeMs" : 0.672096, "averageMs" : 0.0610996, "medianMs" : 0.061248, "percentage" : 0.0105367 }
+, { "name" : "Reformatting CopyNode for Input Tensor 2 to {ForeignNode[/Constant_output_0...boxes_cast_to_fp32]}", "timeMs" : 0.560256, "averageMs" : 0.0509324, "medianMs" : 0.051168, "percentage" : 0.00878333 }
+, { "name" : "__mye69292_0_myl148_0", "timeMs" : 0.011584, "averageMs" : 0.00105309, "medianMs" : 0.001056, "percentage" : 0.000181606 }
+, { "name" : "__mye309767_hc_init_myl148_1", "timeMs" : 0.010336, "averageMs" : 0.000939636, "medianMs" : 0.000928, "percentage" : 0.000162041 }
+, { "name" : "__myl_MulMinMaxRouCasMulMinMaxRouCasMulMinMaxRouCasConTraCasMulMulMinMaxRouCas_myl148_2", "timeMs" : 31.1481, "averageMs" : 2.83164, "medianMs" : 2.83187, "percentage" : 0.488319 }
+, { "name" : "__myl_FcMulCasAdd_myl148_3", "timeMs" : 62.3208, "averageMs" : 5.66553, "medianMs" : 5.66755, "percentage" : 0.977025 }
+, { "name" : "/decoder/enc_output/proj/MatMul_myl148_4", "timeMs" : 4.75814, "averageMs" : 0.432559, "medianMs" : 0.43216, "percentage" : 0.074595 }
+, { "name" : "__myl_CasMulCasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl148_5", "timeMs" : 15.229, "averageMs" : 1.38445, "medianMs" : 1.38448, "percentage" : 0.23875 }
+, { "name" : "/decoder/enc_score_head/MatMul_myl148_6", "timeMs" : 5.2489, "averageMs" : 0.477172, "medianMs" : 0.477216, "percentage" : 0.0822887 }
+, { "name" : "__myl_CasAddMaxMulMin_myl148_7", "timeMs" : 4.04122, "averageMs" : 0.367383, "medianMs" : 0.367104, "percentage" : 0.0633555 }
+, { "name" : "__myl_MaxRouCasResTop_myl148_8", "timeMs" : 0.662528, "averageMs" : 0.0602298, "medianMs" : 0.060256, "percentage" : 0.0103867 }
+, { "name" : "/decoder/enc_bbox_head/layers_0/MatMul_myl148_9", "timeMs" : 4.65226, "averageMs" : 0.422932, "medianMs" : 0.422944, "percentage" : 0.072935 }
+, { "name" : "__myl_FcCasAddRel_myl148_10", "timeMs" : 9.16522, "averageMs" : 0.833201, "medianMs" : 0.833408, "percentage" : 0.143686 }
+, { "name" : "/decoder/enc_bbox_head/layers_2/MatMul_myl148_11", "timeMs" : 6.15565, "averageMs" : 0.559604, "medianMs" : 0.559776, "percentage" : 0.0965042 }
+, { "name" : "__myl_CasResRepSliCasRepAddGatResNegExpAddDivMulMinMaxRouCasResResSliSli_myl148_12", "timeMs" : 0.139072, "averageMs" : 0.0126429, "medianMs" : 0.012704, "percentage" : 0.00218028 }
+, { "name" : "/decoder/decoder/query_pos_head/layers_0/MatMul_myl148_13", "timeMs" : 0.685856, "averageMs" : 0.0623505, "medianMs" : 0.062368, "percentage" : 0.0107524 }
+, { "name" : "__myl_RelMulMinMaxRouCas_myl148_14", "timeMs" : 0.45056, "averageMs" : 0.04096, "medianMs" : 0.040992, "percentage" : 0.00706358 }
+, { "name" : "/decoder/decoder/query_pos_head/layers_1/MatMul_myl148_15", "timeMs" : 0.708896, "averageMs" : 0.0644451, "medianMs" : 0.064448, "percentage" : 0.0111136 }
+, { "name" : "__myl_ResCasMulRepSliCasRepMulMinMaxRouCasResGatGatResCasMulResCasMulMulMinMaxRouCasResTraCasMulEtc_myl148_16", "timeMs" : 4.49952, "averageMs" : 0.409047, "medianMs" : 0.409216, "percentage" : 0.0705405 }
+, { "name" : "__myl_FcCasAdd_myl148_17", "timeMs" : 0.501408, "averageMs" : 0.0455825, "medianMs" : 0.045664, "percentage" : 0.00786075 }
+, { "name" : "__myl_FcMulCasAdd_myl148_18", "timeMs" : 0.793088, "averageMs" : 0.0720989, "medianMs" : 0.072032, "percentage" : 0.0124335 }
+, { "name" : "__mye309035_myl148_19", "timeMs" : 0.012544, "averageMs" : 0.00114036, "medianMs" : 0.001152, "percentage" : 0.000196657 }
+, { "name" : "cast_hvar^309031i64_myl148_20", "timeMs" : 0.011648, "averageMs" : 0.00105891, "medianMs" : 0.001056, "percentage" : 0.00018261 }
+, { "name" : "off_add_myl148_21", "timeMs" : 0.010656, "averageMs" : 0.000968727, "medianMs" : 0.00096, "percentage" : 0.000167058 }
+, { "name" : "_gemm_mha_v2_myl148_22", "timeMs" : 2.22102, "averageMs" : 0.201911, "medianMs" : 0.202112, "percentage" : 0.0348198 }
+, { "name" : "__myl_Tra_myl148_23", "timeMs" : 0.206816, "averageMs" : 0.0188015, "medianMs" : 0.018848, "percentage" : 0.00324233 }
+, { "name" : "/decoder/decoder/layers_0/self_attn/Gemm_myl148_24", "timeMs" : 0.27104, "averageMs" : 0.02464, "medianMs" : 0.02464, "percentage" : 0.00424919 }
+, { "name" : "__myl_ResResTraCasMulAddCasMeaSubMulMeaAddSqrDivMulCasMulAddAddMulMinMaxRouCas_myl148_25", "timeMs" : 0.633056, "averageMs" : 0.0575505, "medianMs" : 0.057664, "percentage" : 0.00992464 }
+, { "name" : "__mye308972_myl148_26", "timeMs" : 0.011584, "averageMs" : 0.00105309, "medianMs" : 0.001056, "percentage" : 0.000181606 }
+, { "name" : "cast_hvar^308968i64_myl148_27", "timeMs" : 0.011264, "averageMs" : 0.001024, "medianMs" : 0.001024, "percentage" : 0.00017659 }
+, { "name" : "__myl_ResTraResSli_myl148_28", "timeMs" : 83.2044, "averageMs" : 7.56403, "medianMs" : 7.56429, "percentage" : 1.30442 }
+, { "name" : "__myl_SliResTraCas_myl148_29", "timeMs" : 0.965472, "averageMs" : 0.0877702, "medianMs" : 0.087808, "percentage" : 0.015136 }
+, { "name" : "__myl_FcCasAdd_myl148_30", "timeMs" : 0.313408, "averageMs" : 0.0284916, "medianMs" : 0.02848, "percentage" : 0.0049134 }
+, { "name" : "__myl_ResMaxSubExpSum_myl148_31", "timeMs" : 0.7368, "averageMs" : 0.0669818, "medianMs" : 0.067104, "percentage" : 0.0115511 }
+, { "name" : "__myl_FcCasAdd_myl148_32", "timeMs" : 0.359232, "averageMs" : 0.0326575, "medianMs" : 0.032704, "percentage" : 0.0056318 }
+, { "name" : "copy_h2d___mye292334_myl148_33", "timeMs" : 0.02048, "averageMs" : 0.00186182, "medianMs" : 0.001856, "percentage" : 0.000321072 }
+, { "name" : "__myl_SliResCasMulResMulMinMaxRouCasCasMulMulMulMinMaxRouCasCasMulAddMulAddTraResSliCasRevConCasEtc_myl148_34", "timeMs" : 11.428, "averageMs" : 1.03891, "medianMs" : 1.03904, "percentage" : 0.17916 }
+, { "name" : "__myl_ResDivMulMulMinMaxRouCasTraResCasMulMaxMinGatCasSelCasTraTraCasMaxMinGatCasSelCasTraMulMinEtc_myl148_35", "timeMs" : 30.1799, "averageMs" : 2.74363, "medianMs" : 2.74371, "percentage" : 0.473141 }
+, { "name" : "__myl_MaxRouCasResTra_myl148_36", "timeMs" : 0.603104, "averageMs" : 0.0548276, "medianMs" : 0.05488, "percentage" : 0.00945507 }
+, { "name" : "/decoder/decoder/layers_0/cross_attn/output_proj/MatMul_myl148_37", "timeMs" : 0.27072, "averageMs" : 0.0246109, "medianMs" : 0.024576, "percentage" : 0.00424417 }
+, { "name" : "__myl_MulMinMaxRouCasCasMulCasMulResAddCasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl148_38", "timeMs" : 0.588896, "averageMs" : 0.053536, "medianMs" : 0.053536, "percentage" : 0.00923233 }
+, { "name" : "/decoder/decoder/layers_0/linear1/MatMul_myl148_39", "timeMs" : 1.40109, "averageMs" : 0.127372, "medianMs" : 0.127584, "percentage" : 0.0219653 }
+, { "name" : "/decoder/decoder/layers_0/linear2/MatMul_myl148_40", "timeMs" : 0.95968, "averageMs" : 0.0872436, "medianMs" : 0.087424, "percentage" : 0.0150452 }
+, { "name" : "__myl_CasMulCasMulResAddCasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl148_41", "timeMs" : 0.552544, "averageMs" : 0.0502313, "medianMs" : 0.050272, "percentage" : 0.00866242 }
+, { "name" : "/decoder/decoder/dec_bbox_head_0/layers_0/MatMul_myl148_42", "timeMs" : 0.285344, "averageMs" : 0.0259404, "medianMs" : 0.02592, "percentage" : 0.00447344 }
+, { "name" : "__myl_FcCasAddRel_myl148_43", "timeMs" : 0.503264, "averageMs" : 0.0457513, "medianMs" : 0.045792, "percentage" : 0.00788984 }
+, { "name" : "/decoder/decoder/dec_bbox_head_0/layers_2/MatMul_myl148_44", "timeMs" : 0.406208, "averageMs" : 0.036928, "medianMs" : 0.036928, "percentage" : 0.00636826 }
+, { "name" : "__myl_MinMaxMaxSubMaxMinMinDivLogAddNegExpAddDivMulMinMaxRouCasResResSliSli_myl148_45", "timeMs" : 0.105344, "averageMs" : 0.00957673, "medianMs" : 0.009664, "percentage" : 0.00165151 }
+, { "name" : "/decoder/decoder/query_pos_head/layers_0_1/MatMul_myl148_46", "timeMs" : 0.668096, "averageMs" : 0.060736, "medianMs" : 0.060864, "percentage" : 0.010474 }
+, { "name" : "__myl_RelMulMinMaxRouCas_myl148_47", "timeMs" : 0.448192, "averageMs" : 0.0407447, "medianMs" : 0.040736, "percentage" : 0.00702646 }
+, { "name" : "/decoder/decoder/query_pos_head/layers_1_1/MatMul_myl148_48", "timeMs" : 0.699776, "averageMs" : 0.063616, "medianMs" : 0.063584, "percentage" : 0.0109706 }
+, { "name" : "__myl_CasMulMulMinMaxRouCasTraCasMulResAddMulMinMaxRouCasTra_myl148_49", "timeMs" : 0.6688, "averageMs" : 0.0608, "medianMs" : 0.060864, "percentage" : 0.010485 }
+, { "name" : "__myl_FcCasAdd_myl148_50", "timeMs" : 0.502304, "averageMs" : 0.045664, "medianMs" : 0.045632, "percentage" : 0.00787479 }
+, { "name" : "__myl_FcMulCasAdd_myl148_51", "timeMs" : 0.79488, "averageMs" : 0.0722618, "medianMs" : 0.07232, "percentage" : 0.0124616 }
+, { "name" : "__mye308905_myl148_52", "timeMs" : 0.010208, "averageMs" : 0.000928, "medianMs" : 0.000928, "percentage" : 0.000160034 }
+, { "name" : "cast_hvar^308901i64_myl148_53", "timeMs" : 0.011616, "averageMs" : 0.001056, "medianMs" : 0.001056, "percentage" : 0.000182108 }
+, { "name" : "off_add_myl148_54", "timeMs" : 0.011936, "averageMs" : 0.00108509, "medianMs" : 0.001088, "percentage" : 0.000187125 }
+, { "name" : "_gemm_mha_v2_myl148_55", "timeMs" : 2.19968, "averageMs" : 0.199971, "medianMs" : 0.2, "percentage" : 0.0344851 }
+, { "name" : "__myl_Tra_myl148_56", "timeMs" : 0.203552, "averageMs" : 0.0185047, "medianMs" : 0.018496, "percentage" : 0.00319115 }
+, { "name" : "/decoder/decoder/layers_1/self_attn/Gemm_myl148_57", "timeMs" : 0.271104, "averageMs" : 0.0246458, "medianMs" : 0.024672, "percentage" : 0.00425019 }
+, { "name" : "__myl_TraCasMulAddCasMeaSubMulMeaAddSqrDivMulCasMulAddAddMulMinMaxRouCas_myl148_58", "timeMs" : 0.624224, "averageMs" : 0.0567476, "medianMs" : 0.056832, "percentage" : 0.00978618 }
+, { "name" : "__mye308842_myl148_59", "timeMs" : 0.0104, "averageMs" : 0.000945454, "medianMs" : 0.000928, "percentage" : 0.000163044 }
+, { "name" : "cast_hvar^308838i64_myl148_60", "timeMs" : 0.012928, "averageMs" : 0.00117527, "medianMs" : 0.001184, "percentage" : 0.000202677 }
+, { "name" : "__myl_ResTraResSli_myl148_61", "timeMs" : 83.1952, "averageMs" : 7.5632, "medianMs" : 7.56189, "percentage" : 1.30428 }
+, { "name" : "__myl_SliResTraCas_myl148_62", "timeMs" : 0.975744, "averageMs" : 0.088704, "medianMs" : 0.088736, "percentage" : 0.0152971 }
+, { "name" : "__myl_FcCasAdd_myl148_63", "timeMs" : 0.330016, "averageMs" : 0.0300015, "medianMs" : 0.030112, "percentage" : 0.00517377 }
+, { "name" : "__myl_ResMaxSubExpSum_myl148_64", "timeMs" : 0.727424, "averageMs" : 0.0661294, "medianMs" : 0.066144, "percentage" : 0.0114041 }
+, { "name" : "__myl_FcCasAdd_myl148_65", "timeMs" : 0.361568, "averageMs" : 0.0328698, "medianMs" : 0.032928, "percentage" : 0.00566843 }
+, { "name" : "__myl_SliResCasMulResMulMinMaxRouCasCasMulMulMulMinMaxRouCasCasMulAddMulAddTraResSliCasRevAddMulEtc_myl148_66", "timeMs" : 10.7929, "averageMs" : 0.981175, "medianMs" : 0.981248, "percentage" : 0.169204 }
+, { "name" : "__myl_ResDivMulMulMinMaxRouCasTraResCasMulMaxMinGatCasSelCasTraTraCasMaxMinGatCasSelCasTraMulMinEtc_myl148_67", "timeMs" : 30.1797, "averageMs" : 2.74361, "medianMs" : 2.74368, "percentage" : 0.473137 }
+, { "name" : "__myl_MaxRouCasResTra_myl148_68", "timeMs" : 0.599584, "averageMs" : 0.0545076, "medianMs" : 0.054496, "percentage" : 0.00939988 }
+, { "name" : "/decoder/decoder/layers_1/cross_attn/output_proj/MatMul_myl148_69", "timeMs" : 0.269376, "averageMs" : 0.0244887, "medianMs" : 0.024384, "percentage" : 0.0042231 }
+, { "name" : "__myl_MulMinMaxRouCasCasMulCasMulResAddCasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl148_70", "timeMs" : 0.586912, "averageMs" : 0.0533556, "medianMs" : 0.053376, "percentage" : 0.00920122 }
+, { "name" : "/decoder/decoder/layers_1/linear1/MatMul_myl148_71", "timeMs" : 1.36867, "averageMs" : 0.124425, "medianMs" : 0.124352, "percentage" : 0.0214571 }
+, { "name" : "/decoder/decoder/layers_1/linear2/MatMul_myl148_72", "timeMs" : 0.955392, "averageMs" : 0.0868538, "medianMs" : 0.08704, "percentage" : 0.014978 }
+, { "name" : "__myl_CasMulCasMulResAddCasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl148_73", "timeMs" : 0.547584, "averageMs" : 0.0497804, "medianMs" : 0.049856, "percentage" : 0.00858466 }
+, { "name" : "/decoder/decoder/dec_bbox_head_1/layers_0/MatMul_myl148_74", "timeMs" : 0.273728, "averageMs" : 0.0248844, "medianMs" : 0.024896, "percentage" : 0.00429133 }
+, { "name" : "__myl_FcCasAddRel_myl148_75", "timeMs" : 0.515328, "averageMs" : 0.046848, "medianMs" : 0.046976, "percentage" : 0.00807898 }
+, { "name" : "/decoder/decoder/dec_bbox_head_1/layers_2/MatMul_myl148_76", "timeMs" : 0.406272, "averageMs" : 0.0369338, "medianMs" : 0.036992, "percentage" : 0.00636927 }
+, { "name" : "__myl_MinMaxMaxSubMaxMinMinDivLogAddNegExpAddDivMulMinMaxRouCasResResSliSli_myl148_77", "timeMs" : 0.108672, "averageMs" : 0.00987927, "medianMs" : 0.009888, "percentage" : 0.00170369 }
+, { "name" : "/decoder/decoder/query_pos_head/layers_0_2/MatMul_myl148_78", "timeMs" : 0.665856, "averageMs" : 0.0605324, "medianMs" : 0.06064, "percentage" : 0.0104389 }
+, { "name" : "__myl_RelMulMinMaxRouCas_myl148_79", "timeMs" : 0.453312, "averageMs" : 0.0412102, "medianMs" : 0.04112, "percentage" : 0.00710673 }
+, { "name" : "/decoder/decoder/query_pos_head/layers_1_2/MatMul_myl148_80", "timeMs" : 0.700896, "averageMs" : 0.0637178, "medianMs" : 0.063776, "percentage" : 0.0109882 }
+, { "name" : "__myl_CasMulMulMinMaxRouCasTraCasMulResAddMulMinMaxRouCasTra_myl148_81", "timeMs" : 0.66576, "averageMs" : 0.0605236, "medianMs" : 0.06048, "percentage" : 0.0104373 }
+, { "name" : "__myl_FcCasAdd_myl148_82", "timeMs" : 0.495392, "averageMs" : 0.0450356, "medianMs" : 0.045088, "percentage" : 0.00776643 }
+, { "name" : "__myl_FcMulCasAdd_myl148_83", "timeMs" : 0.797856, "averageMs" : 0.0725324, "medianMs" : 0.072576, "percentage" : 0.0125083 }
+, { "name" : "__mye308775_myl148_84", "timeMs" : 0.01072, "averageMs" : 0.000974545, "medianMs" : 0.00096, "percentage" : 0.000168061 }
+, { "name" : "cast_hvar^308771i64_myl148_85", "timeMs" : 0.011616, "averageMs" : 0.001056, "medianMs" : 0.001056, "percentage" : 0.000182108 }
+, { "name" : "off_add_myl148_86", "timeMs" : 0.011936, "averageMs" : 0.00108509, "medianMs" : 0.001088, "percentage" : 0.000187125 }
+, { "name" : "_gemm_mha_v2_myl148_87", "timeMs" : 2.21386, "averageMs" : 0.20126, "medianMs" : 0.201248, "percentage" : 0.0347074 }
+, { "name" : "__myl_Tra_myl148_88", "timeMs" : 0.20672, "averageMs" : 0.0187927, "medianMs" : 0.018848, "percentage" : 0.00324082 }
+, { "name" : "/decoder/decoder/layers_2/self_attn/Gemm_myl148_89", "timeMs" : 0.27568, "averageMs" : 0.0250618, "medianMs" : 0.025152, "percentage" : 0.00432193 }
+, { "name" : "__myl_TraCasMulAddCasMeaSubMulMeaAddSqrDivMulCasMulAddAddMulMinMaxRouCas_myl148_90", "timeMs" : 0.627904, "averageMs" : 0.0570822, "medianMs" : 0.057184, "percentage" : 0.00984387 }
+, { "name" : "__mye308712_myl148_91", "timeMs" : 0.010688, "averageMs" : 0.000971636, "medianMs" : 0.00096, "percentage" : 0.000167559 }
+, { "name" : "cast_hvar^308708i64_myl148_92", "timeMs" : 0.011648, "averageMs" : 0.00105891, "medianMs" : 0.001056, "percentage" : 0.00018261 }
+, { "name" : "__myl_ResTraResSli_myl148_93", "timeMs" : 83.4017, "averageMs" : 7.58198, "medianMs" : 7.58314, "percentage" : 1.30752 }
+, { "name" : "__myl_SliResTraCas_myl148_94", "timeMs" : 0.964448, "averageMs" : 0.0876771, "medianMs" : 0.087744, "percentage" : 0.01512 }
+, { "name" : "__myl_FcCasAdd_myl148_95", "timeMs" : 0.308384, "averageMs" : 0.0280349, "medianMs" : 0.027968, "percentage" : 0.00483464 }
+, { "name" : "__myl_ResMaxSubExpSum_myl148_96", "timeMs" : 0.725088, "averageMs" : 0.0659171, "medianMs" : 0.06592, "percentage" : 0.0113675 }
+, { "name" : "__myl_FcCasAdd_myl148_97", "timeMs" : 0.369568, "averageMs" : 0.0335971, "medianMs" : 0.033664, "percentage" : 0.00579384 }
+, { "name" : "__myl_SliResCasMulResMulMinMaxRouCasCasMulMulMulMinMaxRouCasCasMulAddMulAddTraResSliCasRevAddMulEtc_myl148_98", "timeMs" : 10.797, "averageMs" : 0.981542, "medianMs" : 0.981696, "percentage" : 0.169268 }
+, { "name" : "__myl_ResDivMulMulMinMaxRouCasTraResCasMulMaxMinGatCasSelCasTraTraCasMaxMinGatCasSelCasTraMulMinEtc_myl148_99", "timeMs" : 30.1819, "averageMs" : 2.74381, "medianMs" : 2.74394, "percentage" : 0.473171 }
+, { "name" : "__myl_MaxRouCasResTra_myl148_100", "timeMs" : 0.604704, "averageMs" : 0.0549731, "medianMs" : 0.05504, "percentage" : 0.00948015 }
+, { "name" : "/decoder/decoder/layers_2/cross_attn/output_proj/MatMul_myl148_101", "timeMs" : 0.27776, "averageMs" : 0.0252509, "medianMs" : 0.02528, "percentage" : 0.00435454 }
+, { "name" : "__myl_MulMinMaxRouCasCasMulCasMulResAddCasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl148_102", "timeMs" : 0.593184, "averageMs" : 0.0539258, "medianMs" : 0.053952, "percentage" : 0.00929955 }
+, { "name" : "/decoder/decoder/layers_2/linear1/MatMul_myl148_103", "timeMs" : 1.38256, "averageMs" : 0.125687, "medianMs" : 0.1256, "percentage" : 0.0216749 }
+, { "name" : "/decoder/decoder/layers_2/linear2/MatMul_myl148_104", "timeMs" : 0.961504, "averageMs" : 0.0874094, "medianMs" : 0.087648, "percentage" : 0.0150738 }
+, { "name" : "__myl_CasMulCasMulResAddCasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl148_105", "timeMs" : 0.540352, "averageMs" : 0.0491229, "medianMs" : 0.049152, "percentage" : 0.00847129 }
+, { "name" : "/decoder/decoder/dec_bbox_head_2/layers_0/MatMul_myl148_106", "timeMs" : 0.277184, "averageMs" : 0.0251985, "medianMs" : 0.025248, "percentage" : 0.00434551 }
+, { "name" : "__myl_FcCasAddRel_myl148_107", "timeMs" : 0.501248, "averageMs" : 0.045568, "medianMs" : 0.045664, "percentage" : 0.00785824 }
+, { "name" : "/decoder/decoder/dec_bbox_head_2/layers_2/MatMul_myl148_108", "timeMs" : 0.409184, "averageMs" : 0.0371985, "medianMs" : 0.037248, "percentage" : 0.00641492 }
+, { "name" : "__myl_MinMaxMaxSubMaxMinMinDivLogAddNegExpAddDivMulMinMaxRouCasResResSliSli_myl148_109", "timeMs" : 0.108832, "averageMs" : 0.00989382, "medianMs" : 0.00992, "percentage" : 0.0017062 }
+, { "name" : "/decoder/decoder/query_pos_head/layers_0_3/MatMul_myl148_110", "timeMs" : 0.661952, "averageMs" : 0.0601775, "medianMs" : 0.060256, "percentage" : 0.0103776 }
+, { "name" : "__myl_RelMulMinMaxRouCas_myl148_111", "timeMs" : 0.450784, "averageMs" : 0.0409804, "medianMs" : 0.041056, "percentage" : 0.0070671 }
+, { "name" : "/decoder/decoder/query_pos_head/layers_1_3/MatMul_myl148_112", "timeMs" : 0.69952, "averageMs" : 0.0635927, "medianMs" : 0.063648, "percentage" : 0.0109666 }
+, { "name" : "__myl_CasMulMulMinMaxRouCasTraCasMulResAddMulMinMaxRouCasTra_myl148_113", "timeMs" : 0.675232, "averageMs" : 0.0613847, "medianMs" : 0.061504, "percentage" : 0.0105858 }
+, { "name" : "__myl_FcCasAdd_myl148_114", "timeMs" : 0.500384, "averageMs" : 0.0454895, "medianMs" : 0.045504, "percentage" : 0.00784469 }
+, { "name" : "__myl_FcMulCasAdd_myl148_115", "timeMs" : 0.798656, "averageMs" : 0.0726051, "medianMs" : 0.072704, "percentage" : 0.0125208 }
+, { "name" : "__mye308645_myl148_116", "timeMs" : 0.01072, "averageMs" : 0.000974545, "medianMs" : 0.00096, "percentage" : 0.000168061 }
+, { "name" : "cast_hvar^308641i64_myl148_117", "timeMs" : 0.011648, "averageMs" : 0.00105891, "medianMs" : 0.001056, "percentage" : 0.00018261 }
+, { "name" : "off_add_myl148_118", "timeMs" : 0.011968, "averageMs" : 0.001088, "medianMs" : 0.001088, "percentage" : 0.000187626 }
+, { "name" : "_gemm_mha_v2_myl148_119", "timeMs" : 2.20778, "averageMs" : 0.200707, "medianMs" : 0.200672, "percentage" : 0.0346121 }
+, { "name" : "__myl_Tra_myl148_120", "timeMs" : 0.21088, "averageMs" : 0.0191709, "medianMs" : 0.019232, "percentage" : 0.00330604 }
+, { "name" : "/decoder/decoder/layers_3/self_attn/Gemm_myl148_121", "timeMs" : 0.277376, "averageMs" : 0.025216, "medianMs" : 0.025216, "percentage" : 0.00434852 }
+, { "name" : "__myl_TraCasMulAddCasMeaSubMulMeaAddSqrDivMulCasMulAddAddMulMinMaxRouCas_myl148_122", "timeMs" : 0.6328, "averageMs" : 0.0575273, "medianMs" : 0.057632, "percentage" : 0.00992062 }
+, { "name" : "__mye308582_myl148_123", "timeMs" : 0.010656, "averageMs" : 0.000968727, "medianMs" : 0.00096, "percentage" : 0.000167058 }
+, { "name" : "cast_hvar^308578i64_myl148_124", "timeMs" : 0.012576, "averageMs" : 0.00114327, "medianMs" : 0.001152, "percentage" : 0.000197158 }
+, { "name" : "__myl_ResTraResSli_myl148_125", "timeMs" : 83.3774, "averageMs" : 7.57976, "medianMs" : 7.58134, "percentage" : 1.30714 }
+, { "name" : "__myl_SliResTraCas_myl148_126", "timeMs" : 0.971328, "averageMs" : 0.0883026, "medianMs" : 0.08832, "percentage" : 0.0152278 }
+, { "name" : "__myl_FcCasAdd_myl148_127", "timeMs" : 0.312992, "averageMs" : 0.0284538, "medianMs" : 0.028448, "percentage" : 0.00490688 }
+, { "name" : "__myl_ResMaxSubExpSum_myl148_128", "timeMs" : 0.7296, "averageMs" : 0.0663273, "medianMs" : 0.066336, "percentage" : 0.0114382 }
+, { "name" : "__myl_FcCasAdd_myl148_129", "timeMs" : 0.363296, "averageMs" : 0.0330269, "medianMs" : 0.03312, "percentage" : 0.00569552 }
+, { "name" : "__myl_SliResCasMulResMulMinMaxRouCasCasMulMulMulMinMaxRouCasCasMulAddMulAddTraResSliCasRevAddMulEtc_myl148_130", "timeMs" : 10.7939, "averageMs" : 0.981266, "medianMs" : 0.981344, "percentage" : 0.16922 }
+, { "name" : "__myl_ResDivMulMulMinMaxRouCasTraResCasMulMaxMinGatCasSelCasTraTraCasMaxMinGatCasSelCasTraMulMinEtc_myl148_131", "timeMs" : 30.1656, "averageMs" : 2.74233, "medianMs" : 2.7423, "percentage" : 0.472917 }
+, { "name" : "__myl_MaxRouCasResTra_myl148_132", "timeMs" : 0.602752, "averageMs" : 0.0547956, "medianMs" : 0.054848, "percentage" : 0.00944955 }
+, { "name" : "/decoder/decoder/layers_3/cross_attn/output_proj/MatMul_myl148_133", "timeMs" : 0.271584, "averageMs" : 0.0246895, "medianMs" : 0.024704, "percentage" : 0.00425772 }
+, { "name" : "__myl_MulMinMaxRouCasCasMulCasMulResAddCasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl148_134", "timeMs" : 0.59488, "averageMs" : 0.05408, "medianMs" : 0.054112, "percentage" : 0.00932614 }
+, { "name" : "/decoder/decoder/layers_3/linear1/MatMul_myl148_135", "timeMs" : 1.38128, "averageMs" : 0.125571, "medianMs" : 0.12528, "percentage" : 0.0216548 }
+, { "name" : "/decoder/decoder/layers_3/linear2/MatMul_myl148_136", "timeMs" : 0.955744, "averageMs" : 0.0868858, "medianMs" : 0.086944, "percentage" : 0.0149835 }
+, { "name" : "__myl_CasMulCasMulResAddCasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl148_137", "timeMs" : 0.537408, "averageMs" : 0.0488553, "medianMs" : 0.048896, "percentage" : 0.00842513 }
+, { "name" : "/decoder/decoder/dec_bbox_head_3/layers_0/MatMul_myl148_138", "timeMs" : 0.280512, "averageMs" : 0.0255011, "medianMs" : 0.025568, "percentage" : 0.00439768 }
+, { "name" : "__myl_FcCasAddRel_myl148_139", "timeMs" : 0.515936, "averageMs" : 0.0469033, "medianMs" : 0.046976, "percentage" : 0.00808851 }
+, { "name" : "/decoder/decoder/dec_bbox_head_3/layers_2/MatMul_myl148_140", "timeMs" : 0.4048, "averageMs" : 0.0368, "medianMs" : 0.036832, "percentage" : 0.00634619 }
+, { "name" : "__myl_MinMaxMaxSubMaxMinMinDivLogAddNegExpAddDivMulMinMaxRouCasResResSliSli_myl148_141", "timeMs" : 0.11376, "averageMs" : 0.0103418, "medianMs" : 0.010464, "percentage" : 0.00178345 }
+, { "name" : "/decoder/decoder/query_pos_head/layers_0_4/MatMul_myl148_142", "timeMs" : 0.663904, "averageMs" : 0.0603549, "medianMs" : 0.06048, "percentage" : 0.0104083 }
+, { "name" : "__myl_RelMulMinMaxRouCas_myl148_143", "timeMs" : 0.453536, "averageMs" : 0.0412305, "medianMs" : 0.041216, "percentage" : 0.00711024 }
+, { "name" : "/decoder/decoder/query_pos_head/layers_1_4/MatMul_myl148_144", "timeMs" : 0.715424, "averageMs" : 0.0650385, "medianMs" : 0.065184, "percentage" : 0.0112159 }
+, { "name" : "__myl_CasMulMulMinMaxRouCasTraCasMulResAddMulMinMaxRouCasTra_myl148_145", "timeMs" : 0.667968, "averageMs" : 0.0607244, "medianMs" : 0.060704, "percentage" : 0.010472 }
+, { "name" : "__myl_FcCasAdd_myl148_146", "timeMs" : 0.4872, "averageMs" : 0.0442909, "medianMs" : 0.044288, "percentage" : 0.007638 }
+, { "name" : "__myl_FcMulCasAdd_myl148_147", "timeMs" : 0.802688, "averageMs" : 0.0729716, "medianMs" : 0.073152, "percentage" : 0.012584 }
+, { "name" : "__mye308515_myl148_148", "timeMs" : 0.010528, "averageMs" : 0.000957091, "medianMs" : 0.00096, "percentage" : 0.000165051 }
+, { "name" : "cast_hvar^308511i64_myl148_149", "timeMs" : 0.011552, "averageMs" : 0.00105018, "medianMs" : 0.001056, "percentage" : 0.000181105 }
+, { "name" : "off_add_myl148_150", "timeMs" : 0.01264, "averageMs" : 0.00114909, "medianMs" : 0.001152, "percentage" : 0.000198162 }
+, { "name" : "_gemm_mha_v2_myl148_151", "timeMs" : 2.17706, "averageMs" : 0.197914, "medianMs" : 0.197984, "percentage" : 0.0341305 }
+, { "name" : "__myl_Tra_myl148_152", "timeMs" : 0.208768, "averageMs" : 0.0189789, "medianMs" : 0.01904, "percentage" : 0.00327293 }
+, { "name" : "/decoder/decoder/layers_4/self_attn/Gemm_myl148_153", "timeMs" : 0.275072, "averageMs" : 0.0250065, "medianMs" : 0.025056, "percentage" : 0.0043124 }
+, { "name" : "__myl_TraCasMulAddCasMeaSubMulMeaAddSqrDivMulCasMulAddAddMulMinMaxRouCas_myl148_154", "timeMs" : 0.629504, "averageMs" : 0.0572276, "medianMs" : 0.057376, "percentage" : 0.00986895 }
+, { "name" : "__mye308452_myl148_155", "timeMs" : 0.011936, "averageMs" : 0.00108509, "medianMs" : 0.001088, "percentage" : 0.000187125 }
+, { "name" : "cast_hvar^308448i64_myl148_156", "timeMs" : 0.011936, "averageMs" : 0.00108509, "medianMs" : 0.001088, "percentage" : 0.000187125 }
+, { "name" : "__myl_ResTraResSli_myl148_157", "timeMs" : 83.0774, "averageMs" : 7.55249, "medianMs" : 7.55043, "percentage" : 1.30243 }
+, { "name" : "__myl_SliResTraCas_myl148_158", "timeMs" : 0.97024, "averageMs" : 0.0882036, "medianMs" : 0.088256, "percentage" : 0.0152108 }
+, { "name" : "__myl_FcCasAdd_myl148_159", "timeMs" : 0.337856, "averageMs" : 0.0307142, "medianMs" : 0.030752, "percentage" : 0.00529669 }
+, { "name" : "__myl_ResMaxSubExpSum_myl148_160", "timeMs" : 0.731008, "averageMs" : 0.0664553, "medianMs" : 0.066496, "percentage" : 0.0114603 }
+, { "name" : "__myl_FcCasAdd_myl148_161", "timeMs" : 0.365088, "averageMs" : 0.0331898, "medianMs" : 0.03328, "percentage" : 0.00572361 }
+, { "name" : "__myl_SliResCasMulResMulMinMaxRouCasCasMulMulMulMinMaxRouCasCasMulAddMulAddTraResSliCasRevAddMulEtc_myl148_162", "timeMs" : 10.7845, "averageMs" : 0.98041, "medianMs" : 0.980416, "percentage" : 0.169073 }
+, { "name" : "__myl_ResDivMulMulMinMaxRouCasTraResCasMulMaxMinGatCasSelCasTraTraCasMaxMinGatCasSelCasTraMulMinEtc_myl148_163", "timeMs" : 30.18, "averageMs" : 2.74363, "medianMs" : 2.74365, "percentage" : 0.473142 }
+, { "name" : "__myl_MaxRouCasResTra_myl148_164", "timeMs" : 0.606656, "averageMs" : 0.0551505, "medianMs" : 0.055232, "percentage" : 0.00951075 }
+, { "name" : "/decoder/decoder/layers_4/cross_attn/output_proj/MatMul_myl148_165", "timeMs" : 0.279232, "averageMs" : 0.0253847, "medianMs" : 0.025472, "percentage" : 0.00437762 }
+, { "name" : "__myl_MulMinMaxRouCasCasMulCasMulResAddCasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl148_166", "timeMs" : 0.595424, "averageMs" : 0.0541295, "medianMs" : 0.054144, "percentage" : 0.00933467 }
+, { "name" : "/decoder/decoder/layers_4/linear1/MatMul_myl148_167", "timeMs" : 1.38794, "averageMs" : 0.126176, "medianMs" : 0.126016, "percentage" : 0.0217592 }
+, { "name" : "/decoder/decoder/layers_4/linear2/MatMul_myl148_168", "timeMs" : 0.948608, "averageMs" : 0.0862371, "medianMs" : 0.086432, "percentage" : 0.0148717 }
+, { "name" : "__myl_CasMulCasMulResAddCasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl148_169", "timeMs" : 0.541728, "averageMs" : 0.049248, "medianMs" : 0.049312, "percentage" : 0.00849286 }
+, { "name" : "/decoder/decoder/dec_bbox_head_4/layers_0/MatMul_myl148_170", "timeMs" : 0.27376, "averageMs" : 0.0248873, "medianMs" : 0.024928, "percentage" : 0.00429183 }
+, { "name" : "__myl_FcCasAddRel_myl148_171", "timeMs" : 0.49376, "averageMs" : 0.0448873, "medianMs" : 0.044864, "percentage" : 0.00774085 }
+, { "name" : "/decoder/decoder/dec_bbox_head_4/layers_2/MatMul_myl148_172", "timeMs" : 0.401408, "averageMs" : 0.0364916, "medianMs" : 0.036512, "percentage" : 0.00629301 }
+, { "name" : "__myl_MinMaxMaxSubMaxMinMinDivLogAddNegExpAddDivMulMinMaxRouCasResResSliSli_myl148_173", "timeMs" : 0.112544, "averageMs" : 0.0102313, "medianMs" : 0.010336, "percentage" : 0.00176439 }
+, { "name" : "/decoder/decoder/query_pos_head/layers_0_5/MatMul_myl148_174", "timeMs" : 0.667872, "averageMs" : 0.0607156, "medianMs" : 0.0608, "percentage" : 0.0104705 }
+, { "name" : "__myl_RelMulMinMaxRouCas_myl148_175", "timeMs" : 0.46816, "averageMs" : 0.04256, "medianMs" : 0.04272, "percentage" : 0.00733951 }
+, { "name" : "/decoder/decoder/query_pos_head/layers_1_5/MatMul_myl148_176", "timeMs" : 0.699488, "averageMs" : 0.0635898, "medianMs" : 0.063616, "percentage" : 0.0109661 }
+, { "name" : "__myl_CasMulMulMinMaxRouCasTraCasMulResAddMulMinMaxRouCasTra_myl148_177", "timeMs" : 0.68528, "averageMs" : 0.0622982, "medianMs" : 0.062432, "percentage" : 0.0107434 }
+, { "name" : "__myl_FcCasAdd_myl148_178", "timeMs" : 0.493344, "averageMs" : 0.0448495, "medianMs" : 0.044896, "percentage" : 0.00773432 }
+, { "name" : "__myl_FcMulCasAdd_myl148_179", "timeMs" : 0.789152, "averageMs" : 0.0717411, "medianMs" : 0.071904, "percentage" : 0.0123718 }
+, { "name" : "__mye308425_myl148_180", "timeMs" : 0.012736, "averageMs" : 0.00115782, "medianMs" : 0.001152, "percentage" : 0.000199667 }
+, { "name" : "cast_hvar^308421i64_myl148_181", "timeMs" : 0.012224, "averageMs" : 0.00111127, "medianMs" : 0.00112, "percentage" : 0.00019164 }
+, { "name" : "off_add_myl148_182", "timeMs" : 0.011968, "averageMs" : 0.001088, "medianMs" : 0.001088, "percentage" : 0.000187626 }
+, { "name" : "_gemm_mha_v2_myl148_183", "timeMs" : 2.23254, "averageMs" : 0.202959, "medianMs" : 0.20304, "percentage" : 0.0350004 }
+, { "name" : "__myl_Tra_myl148_184", "timeMs" : 0.207008, "averageMs" : 0.0188189, "medianMs" : 0.01888, "percentage" : 0.00324534 }
+, { "name" : "/decoder/decoder/layers_5/self_attn/Gemm_myl148_185", "timeMs" : 0.271712, "averageMs" : 0.0247011, "medianMs" : 0.024768, "percentage" : 0.00425972 }
+, { "name" : "__myl_TraCasMulAddCasMeaSubMulMeaAddSqrDivMulCasMulAddAddMulMinMaxRouCas_myl148_186", "timeMs" : 0.63136, "averageMs" : 0.0573964, "medianMs" : 0.057504, "percentage" : 0.00989805 }
+, { "name" : "__myl_ResTraResSli_myl148_187", "timeMs" : 83.2941, "averageMs" : 7.57219, "medianMs" : 7.57331, "percentage" : 1.30583 }
+, { "name" : "__myl_SliResTraCas_myl148_188", "timeMs" : 0.983072, "averageMs" : 0.0893702, "medianMs" : 0.08944, "percentage" : 0.015412 }
+, { "name" : "__myl_FcCasAdd_myl148_189", "timeMs" : 0.320576, "averageMs" : 0.0291433, "medianMs" : 0.02928, "percentage" : 0.00502578 }
+, { "name" : "__myl_ResMaxSubExpSum_myl148_190", "timeMs" : 0.728736, "averageMs" : 0.0662487, "medianMs" : 0.066272, "percentage" : 0.0114246 }
+, { "name" : "__myl_FcCasAdd_myl148_191", "timeMs" : 0.355008, "averageMs" : 0.0322735, "medianMs" : 0.032256, "percentage" : 0.00556558 }
+, { "name" : "__myl_SliResCasMulResMulMinMaxRouCasCasMulMulMulMinMaxRouCasCasMulAddMulAddTraResSliCasRevAddMulEtc_myl148_192", "timeMs" : 10.7872, "averageMs" : 0.980652, "medianMs" : 0.98064, "percentage" : 0.169114 }
+, { "name" : "__myl_ResDivMulMulMinMaxRouCasTraResCasMulMaxMinGatCasSelCasTraTraCasMaxMinGatCasSelCasTraMulMinEtc_myl148_193", "timeMs" : 30.1875, "averageMs" : 2.74431, "medianMs" : 2.74451, "percentage" : 0.473259 }
+, { "name" : "__myl_MaxRouCasResTra_myl148_194", "timeMs" : 0.601632, "averageMs" : 0.0546938, "medianMs" : 0.054752, "percentage" : 0.00943199 }
+, { "name" : "/decoder/decoder/layers_5/cross_attn/output_proj/MatMul_myl148_195", "timeMs" : 0.275488, "averageMs" : 0.0250444, "medianMs" : 0.02512, "percentage" : 0.00431892 }
+, { "name" : "__myl_MulMinMaxRouCasCasMulCasMulResAddCasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl148_196", "timeMs" : 0.595808, "averageMs" : 0.0541644, "medianMs" : 0.054176, "percentage" : 0.00934069 }
+, { "name" : "/decoder/decoder/layers_5/linear1/MatMul_myl148_197", "timeMs" : 1.40157, "averageMs" : 0.127415, "medianMs" : 0.127712, "percentage" : 0.0219729 }
+, { "name" : "/decoder/decoder/layers_5/linear2/MatMul_myl148_198", "timeMs" : 0.944768, "averageMs" : 0.085888, "medianMs" : 0.085568, "percentage" : 0.0148115 }
+, { "name" : "__myl_CasMulCasMulResAddCasMeaSubMulMeaAddSqrDivMulCasMulAddMulMinMaxRouCas_myl148_199", "timeMs" : 0.544128, "averageMs" : 0.0494662, "medianMs" : 0.049536, "percentage" : 0.00853048 }
+, { "name" : "__myl_FcCasAdd_myl148_200", "timeMs" : 0.259488, "averageMs" : 0.0235898, "medianMs" : 0.023584, "percentage" : 0.00406808 }
+, { "name" : "__myl_ResGatResNeg_myl148_201", "timeMs" : 0.281504, "averageMs" : 0.0255913, "medianMs" : 0.025664, "percentage" : 0.00441324 }
+, { "name" : "__myl_ExpAddDivResTop_myl148_202", "timeMs" : 1.73805, "averageMs" : 0.158004, "medianMs" : 0.158048, "percentage" : 0.027248 }
+, { "name" : "/decoder/decoder/dec_bbox_head_5/layers_0/MatMul_myl148_203", "timeMs" : 0.265344, "averageMs" : 0.0241222, "medianMs" : 0.024224, "percentage" : 0.00415989 }
+, { "name" : "__myl_FcCasAddRel_myl148_204", "timeMs" : 0.4664, "averageMs" : 0.0424, "medianMs" : 0.042368, "percentage" : 0.00731191 }
+, { "name" : "/decoder/decoder/dec_bbox_head_5/layers_2/MatMul_myl148_205", "timeMs" : 0.4, "averageMs" : 0.0363636, "medianMs" : 0.036384, "percentage" : 0.00627094 }
+, { "name" : "__myl_MinMaxMaxSubMaxMinMinDivLogCasDivResRepSliCasRepMulSubGatAddNegExpAddDivMulMinMaxRouCasResEtc_myl148_206", "timeMs" : 0.21024, "averageMs" : 0.0191127, "medianMs" : 0.0192, "percentage" : 0.003296 }
+, { "name" : "__myl_Cas_myl148_207", "timeMs" : 0.084992, "averageMs" : 0.00772655, "medianMs" : 0.007808, "percentage" : 0.00133245 }
+, { "name" : "__myl_Cas_myl148_208", "timeMs" : 0.066368, "averageMs" : 0.00603346, "medianMs" : 0.006112, "percentage" : 0.00104047 }
+]

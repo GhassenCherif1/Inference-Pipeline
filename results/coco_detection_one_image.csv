@@ -1,0 +1,8 @@
+Model_Config,Avg_Latency_ms,Throughput_FPS,Peak_Unified_RAM_Delta_MB,Avg_GPU_Util_Pct,Peak_GPU_Util_Pct,CO2_Produced_kg,mAP_0.5:0.95,mAP_0.5,Num_Detections,Images_Skipped
+convnext-base-ltdetr-coco-flat-int8-modelopt.engine,70.50,14.2,347.3,76.2,99,0.000253,0.442,0.711,75506,0
+convnext-base-ltdetr-coco-flat-fp16.engine,84.42,11.8,424.5,77.9,99,0.000296,0.546,0.742,80277,0
+convnext-base-ltdetr-coco-flat-fp32.engine,166.93,6.0,349.9,92.3,99,0.000496,0.549,0.742,81322,0
+convnext-base-ltdetr-coco-flat-fp16.engine,72.46,13.8,344.3,76.8,99,0.000255,0.548,0.742,81128,0
+convnext-base-ltdetr-coco-flat-int4.engine,73.57,13.6,371.0,75.6,99,0.000264,0.549,0.742,81115,0
+convnext-base-ltdetr-coco-flat-int4.engine,77.37,12.9,576.5,77.9,99,0.000272,0.533,0.723,70870,0
+convnext-base-ltdetr-coco-flat-int4.engine,79.84,12.5,573.1,77.7,99,0.000279,0.533,0.724,71000,0

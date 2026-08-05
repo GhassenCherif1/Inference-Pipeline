@@ -1,0 +1,597 @@
+[
+  { "count" : 11 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to /backbone/downsample_layers.0/downsample_layers.0.0/Conv", "timeMs" : 9.21552, "averageMs" : 0.837775, "medianMs" : 0.825728, "percentage" : 0.152245 }
+, { "name" : "/backbone/downsample_layers.0/downsample_layers.0.0/Conv", "timeMs" : 15.7416, "averageMs" : 1.43106, "medianMs" : 1.43168, "percentage" : 0.260059 }
+, { "name" : "__mye397_0_myl2_0", "timeMs" : 0.012576, "averageMs" : 0.00114327, "medianMs" : 0.001152, "percentage" : 0.000207762 }
+, { "name" : "__myl_MovMeaSubMulMeaAddSqrDivMulMulAdd_myl2_1", "timeMs" : 17.8555, "averageMs" : 1.62322, "medianMs" : 1.62378, "percentage" : 0.294981 }
+, { "name" : "Reformatting CopyNode for Output Tensor 0 to {ForeignNode[/backbone/downsample_layers.0/downsample_layers.0.1/ReduceMean.../backbone/downsample_layers.0/downsample_layers.0.1/Add_1]}", "timeMs" : 19.9964, "averageMs" : 1.81785, "medianMs" : 1.82576, "percentage" : 0.330349 }
+, { "name" : "/backbone/stages.0/stages.0.0/dwconv/Conv", "timeMs" : 45.7074, "averageMs" : 4.15522, "medianMs" : 4.15536, "percentage" : 0.755108 }
+, { "name" : "__mye267_0_myl5_0", "timeMs" : 0.01344, "averageMs" : 0.00122182, "medianMs" : 0.001248, "percentage" : 0.000222035 }
+, { "name" : "__myl_Tra_myl5_1", "timeMs" : 12.8783, "averageMs" : 1.17075, "medianMs" : 1.16835, "percentage" : 0.212756 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl5_2", "timeMs" : 15.2958, "averageMs" : 1.39053, "medianMs" : 1.3903, "percentage" : 0.252694 }
+, { "name" : "/backbone/stages_0/stages_0_0/pwconv1/MatMul_myl5_3", "timeMs" : 59.939, "averageMs" : 5.449, "medianMs" : 5.45606, "percentage" : 0.990221 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl5_4", "timeMs" : 60.9929, "averageMs" : 5.54481, "medianMs" : 5.56643, "percentage" : 1.00763 }
+, { "name" : "/backbone/stages_0/stages_0_0/pwconv2/MatMul_myl5_5", "timeMs" : 38.0441, "averageMs" : 3.45855, "medianMs" : 3.45949, "percentage" : 0.628506 }
+, { "name" : "__myl_AddMulTraAdd_myl5_6", "timeMs" : 31.374, "averageMs" : 2.85218, "medianMs" : 2.85635, "percentage" : 0.518313 }
+, { "name" : "/backbone/stages.0/stages.0.1/dwconv/Conv", "timeMs" : 46.4937, "averageMs" : 4.2267, "medianMs" : 4.20438, "percentage" : 0.768098 }
+, { "name" : "__mye267_0_myl7_0", "timeMs" : 0.013888, "averageMs" : 0.00126255, "medianMs" : 0.00128, "percentage" : 0.000229436 }
+, { "name" : "__myl_Tra_myl7_1", "timeMs" : 12.861, "averageMs" : 1.16918, "medianMs" : 1.16826, "percentage" : 0.21247 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl7_2", "timeMs" : 15.3171, "averageMs" : 1.39247, "medianMs" : 1.39245, "percentage" : 0.253046 }
+, { "name" : "/backbone/stages_0/stages_0_1/pwconv1/MatMul_myl7_3", "timeMs" : 60.8365, "averageMs" : 5.53059, "medianMs" : 5.54189, "percentage" : 1.00505 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl7_4", "timeMs" : 60.8386, "averageMs" : 5.53078, "medianMs" : 5.51923, "percentage" : 1.00508 }
+, { "name" : "/backbone/stages_0/stages_0_1/pwconv2/MatMul_myl7_5", "timeMs" : 37.9944, "averageMs" : 3.45404, "medianMs" : 3.4543, "percentage" : 0.627686 }
+, { "name" : "__myl_AddMulTraAdd_myl7_6", "timeMs" : 31.3506, "averageMs" : 2.85006, "medianMs" : 2.8504, "percentage" : 0.517927 }
+, { "name" : "/backbone/stages.0/stages.0.2/dwconv/Conv", "timeMs" : 46.2117, "averageMs" : 4.20106, "medianMs" : 4.19558, "percentage" : 0.763439 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to {ForeignNode[backbone.backbone.stages.0.2.norm.weight + ONNXTRT_Broadcast_40.../backbone/downsample_layers.1/downsample_layers.1.0/Add_1]}", "timeMs" : 13.0834, "averageMs" : 1.1894, "medianMs" : 1.1889, "percentage" : 0.216144 }
+, { "name" : "Reformatting CopyNode for Input Tensor 1 to {ForeignNode[backbone.backbone.stages.0.2.norm.weight + ONNXTRT_Broadcast_40.../backbone/downsample_layers.1/downsample_layers.1.0/Add_1]}", "timeMs" : 15.505, "averageMs" : 1.40954, "medianMs" : 1.5064, "percentage" : 0.256149 }
+, { "name" : "__mye637_0_myl11_0", "timeMs" : 0.0136, "averageMs" : 0.00123636, "medianMs" : 0.001248, "percentage" : 0.000224678 }
+, { "name" : "__myl_TraCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl11_1", "timeMs" : 17.412, "averageMs" : 1.58291, "medianMs" : 1.58509, "percentage" : 0.287654 }
+, { "name" : "/backbone/stages_0/stages_0_2/pwconv1/MatMul_myl11_2", "timeMs" : 59.8753, "averageMs" : 5.44321, "medianMs" : 5.43018, "percentage" : 0.989168 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl11_3", "timeMs" : 61.5366, "averageMs" : 5.59424, "medianMs" : 5.62074, "percentage" : 1.01661 }
+, { "name" : "/backbone/stages_0/stages_0_2/pwconv2/MatMul_myl11_4", "timeMs" : 38.0873, "averageMs" : 3.46248, "medianMs" : 3.46384, "percentage" : 0.62922 }
+, { "name" : "__myl_AddMulTraAddMeaSubMulMeaAddSqrDivMulMulAdd_myl11_5", "timeMs" : 21.1266, "averageMs" : 1.9206, "medianMs" : 1.92128, "percentage" : 0.349021 }
+, { "name" : "/backbone/downsample_layers.1/downsample_layers.1.1/Conv", "timeMs" : 23.8168, "averageMs" : 2.16517, "medianMs" : 2.1337, "percentage" : 0.393465 }
+, { "name" : "Reformatting CopyNode for Output Tensor 0 to /backbone/downsample_layers.1/downsample_layers.1.1/Conv", "timeMs" : 6.74192, "averageMs" : 0.612902, "medianMs" : 0.612, "percentage" : 0.11138 }
+, { "name" : "/backbone/stages.1/stages.1.0/dwconv/Conv", "timeMs" : 26.6722, "averageMs" : 2.42474, "medianMs" : 2.4615, "percentage" : 0.440637 }
+, { "name" : "__mye267_0_myl15_0", "timeMs" : 0.011008, "averageMs" : 0.00100073, "medianMs" : 0.000992, "percentage" : 0.000181857 }
+, { "name" : "__myl_Tra_myl15_1", "timeMs" : 6.81366, "averageMs" : 0.619424, "medianMs" : 0.619744, "percentage" : 0.112565 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl15_2", "timeMs" : 7.89351, "averageMs" : 0.717591, "medianMs" : 0.717696, "percentage" : 0.130404 }
+, { "name" : "/backbone/stages_1/stages_1_0/pwconv1/MatMul_myl15_3", "timeMs" : 40.4977, "averageMs" : 3.68161, "medianMs" : 3.68122, "percentage" : 0.669042 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl15_4", "timeMs" : 33.0509, "averageMs" : 3.00463, "medianMs" : 3.03645, "percentage" : 0.546017 }
+, { "name" : "/backbone/stages_1/stages_1_0/pwconv2/MatMul_myl15_5", "timeMs" : 30.134, "averageMs" : 2.73946, "medianMs" : 2.76077, "percentage" : 0.497828 }
+, { "name" : "__myl_AddMulTraAdd_myl15_6", "timeMs" : 18.1069, "averageMs" : 1.64608, "medianMs" : 1.61776, "percentage" : 0.299135 }
+, { "name" : "/backbone/stages.1/stages.1.1/dwconv/Conv", "timeMs" : 23.067, "averageMs" : 2.097, "medianMs" : 2.09856, "percentage" : 0.381077 }
+, { "name" : "__mye267_0_myl17_0", "timeMs" : 0.015296, "averageMs" : 0.00139055, "medianMs" : 0.001408, "percentage" : 0.000252697 }
+, { "name" : "__myl_Tra_myl17_1", "timeMs" : 6.7689, "averageMs" : 0.615354, "medianMs" : 0.61536, "percentage" : 0.111825 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl17_2", "timeMs" : 7.92086, "averageMs" : 0.720078, "medianMs" : 0.720256, "percentage" : 0.130856 }
+, { "name" : "/backbone/stages_1/stages_1_1/pwconv1/MatMul_myl17_3", "timeMs" : 40.7872, "averageMs" : 3.70793, "medianMs" : 3.69315, "percentage" : 0.673824 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl17_4", "timeMs" : 33.2446, "averageMs" : 3.02223, "medianMs" : 3.03632, "percentage" : 0.549216 }
+, { "name" : "/backbone/stages_1/stages_1_1/pwconv2/MatMul_myl17_5", "timeMs" : 30.6882, "averageMs" : 2.78983, "medianMs" : 2.81405, "percentage" : 0.506983 }
+, { "name" : "__myl_AddMulTraAdd_myl17_6", "timeMs" : 17.4855, "averageMs" : 1.58959, "medianMs" : 1.56256, "percentage" : 0.288868 }
+, { "name" : "/backbone/stages.1/stages.1.2/dwconv/Conv", "timeMs" : 23.08, "averageMs" : 2.09818, "medianMs" : 2.09821, "percentage" : 0.381292 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to {ForeignNode[backbone.backbone.stages.1.2.norm.weight + ONNXTRT_Broadcast_96.../backbone/downsample_layers.2/downsample_layers.2.0/Add_1]}", "timeMs" : 6.45283, "averageMs" : 0.586621, "medianMs" : 0.586368, "percentage" : 0.106604 }
+, { "name" : "Reformatting CopyNode for Input Tensor 1 to {ForeignNode[backbone.backbone.stages.1.2.norm.weight + ONNXTRT_Broadcast_96.../backbone/downsample_layers.2/downsample_layers.2.0/Add_1]}", "timeMs" : 6.75072, "averageMs" : 0.613702, "medianMs" : 0.577152, "percentage" : 0.111525 }
+, { "name" : "__mye637_0_myl21_0", "timeMs" : 0.011904, "averageMs" : 0.00108218, "medianMs" : 0.001088, "percentage" : 0.00019666 }
+, { "name" : "__myl_TraCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl21_1", "timeMs" : 11.4472, "averageMs" : 1.04065, "medianMs" : 1.07309, "percentage" : 0.189113 }
+, { "name" : "/backbone/stages_1/stages_1_2/pwconv1/MatMul_myl21_2", "timeMs" : 40.9434, "averageMs" : 3.72213, "medianMs" : 3.72016, "percentage" : 0.676405 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl21_3", "timeMs" : 33.3154, "averageMs" : 3.02868, "medianMs" : 3.03222, "percentage" : 0.550387 }
+, { "name" : "/backbone/stages_1/stages_1_2/pwconv2/MatMul_myl21_4", "timeMs" : 27.1185, "averageMs" : 2.46531, "medianMs" : 2.46464, "percentage" : 0.44801 }
+, { "name" : "__myl_AddMulTraAddMeaSubMulMeaAddSqrDivMulMulAdd_myl21_5", "timeMs" : 13.3681, "averageMs" : 1.21528, "medianMs" : 1.21542, "percentage" : 0.220847 }
+, { "name" : "/encoder/input_proj.0/conv/Conv", "timeMs" : 19.2033, "averageMs" : 1.74576, "medianMs" : 1.74, "percentage" : 0.317248 }
+, { "name" : "Reformatting CopyNode for Output Tensor 0 to /encoder/input_proj.0/conv/Conv", "timeMs" : 10.6785, "averageMs" : 0.970775, "medianMs" : 0.960096, "percentage" : 0.176414 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to /backbone/downsample_layers.2/downsample_layers.2.1/Conv", "timeMs" : 6.16643, "averageMs" : 0.560585, "medianMs" : 0.560704, "percentage" : 0.101872 }
+, { "name" : "/backbone/downsample_layers.2/downsample_layers.2.1/Conv", "timeMs" : 7.62371, "averageMs" : 0.693065, "medianMs" : 0.68464, "percentage" : 0.125947 }
+, { "name" : "Reformatting CopyNode for Output Tensor 0 to /backbone/downsample_layers.2/downsample_layers.2.1/Conv", "timeMs" : 3.66195, "averageMs" : 0.332905, "medianMs" : 0.333376, "percentage" : 0.0604972 }
+, { "name" : "/backbone/stages.2/stages.2.0/dwconv/Conv", "timeMs" : 11.5508, "averageMs" : 1.05008, "medianMs" : 1.04902, "percentage" : 0.190825 }
+, { "name" : "__mye267_0_myl28_0", "timeMs" : 0.010368, "averageMs" : 0.000942545, "medianMs" : 0.000928, "percentage" : 0.000171284 }
+, { "name" : "__myl_Tra_myl28_1", "timeMs" : 3.32294, "averageMs" : 0.302086, "medianMs" : 0.30208, "percentage" : 0.0548966 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl28_2", "timeMs" : 3.7977, "averageMs" : 0.345245, "medianMs" : 0.345248, "percentage" : 0.0627397 }
+, { "name" : "/backbone/stages_2/stages_2_0/pwconv1/MatMul_myl28_3", "timeMs" : 31.7088, "averageMs" : 2.88262, "medianMs" : 2.87987, "percentage" : 0.523844 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl28_4", "timeMs" : 17.1146, "averageMs" : 1.55588, "medianMs" : 1.5592, "percentage" : 0.282742 }
+, { "name" : "/backbone/stages_2/stages_2_0/pwconv2/MatMul_myl28_5", "timeMs" : 28.6448, "averageMs" : 2.60408, "medianMs" : 2.59776, "percentage" : 0.473226 }
+, { "name" : "__myl_AddMulTraAdd_myl28_6", "timeMs" : 7.41354, "averageMs" : 0.673958, "medianMs" : 0.678368, "percentage" : 0.122475 }
+, { "name" : "/backbone/stages.2/stages.2.1/dwconv/Conv", "timeMs" : 11.5662, "averageMs" : 1.05147, "medianMs" : 1.05104, "percentage" : 0.191079 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to {ForeignNode[backbone.backbone.stages.2.1.norm.weight + ONNXTRT_Broadcast_136.../backbone/stages.2/stages.2.1/Add]}", "timeMs" : 3.42035, "averageMs" : 0.310941, "medianMs" : 0.310752, "percentage" : 0.0565058 }
+, { "name" : "Reformatting CopyNode for Input Tensor 1 to {ForeignNode[backbone.backbone.stages.2.1.norm.weight + ONNXTRT_Broadcast_136.../backbone/stages.2/stages.2.1/Add]}", "timeMs" : 3.39142, "averageMs" : 0.308311, "medianMs" : 0.308544, "percentage" : 0.0560279 }
+, { "name" : "__mye267_0_myl32_0", "timeMs" : 0.011712, "averageMs" : 0.00106473, "medianMs" : 0.001024, "percentage" : 0.000193488 }
+, { "name" : "__myl_TraCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl32_1", "timeMs" : 3.81478, "averageMs" : 0.346799, "medianMs" : 0.347008, "percentage" : 0.063022 }
+, { "name" : "/backbone/stages_2/stages_2_1/pwconv1/MatMul_myl32_2", "timeMs" : 31.2477, "averageMs" : 2.8407, "medianMs" : 2.83315, "percentage" : 0.516227 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl32_3", "timeMs" : 16.6293, "averageMs" : 1.51175, "medianMs" : 1.51754, "percentage" : 0.274724 }
+, { "name" : "/backbone/stages_2/stages_2_1/pwconv2/MatMul_myl32_4", "timeMs" : 28.8301, "averageMs" : 2.62092, "medianMs" : 2.61453, "percentage" : 0.476287 }
+, { "name" : "__myl_AddMulTraAdd_myl32_5", "timeMs" : 4.55725, "averageMs" : 0.414295, "medianMs" : 0.41456, "percentage" : 0.0752879 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to /backbone/stages.2/stages.2.2/dwconv/Conv", "timeMs" : 3.66288, "averageMs" : 0.332989, "medianMs" : 0.295232, "percentage" : 0.0605125 }
+, { "name" : "/backbone/stages.2/stages.2.2/dwconv/Conv", "timeMs" : 11.5843, "averageMs" : 1.05311, "medianMs" : 1.05229, "percentage" : 0.191377 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to {ForeignNode[backbone.backbone.stages.2.2.norm.weight + ONNXTRT_Broadcast_152.../backbone/stages.2/stages.2.2/Add]}", "timeMs" : 3.40966, "averageMs" : 0.309969, "medianMs" : 0.309632, "percentage" : 0.0563293 }
+, { "name" : "__mye267_0_myl36_0", "timeMs" : 0.013888, "averageMs" : 0.00126255, "medianMs" : 0.00128, "percentage" : 0.000229436 }
+, { "name" : "__myl_TraCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl36_1", "timeMs" : 3.80669, "averageMs" : 0.346063, "medianMs" : 0.345888, "percentage" : 0.0628883 }
+, { "name" : "/backbone/stages_2/stages_2_2/pwconv1/MatMul_myl36_2", "timeMs" : 33.2914, "averageMs" : 3.02649, "medianMs" : 3.056, "percentage" : 0.54999 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl36_3", "timeMs" : 15.0634, "averageMs" : 1.3694, "medianMs" : 1.3441, "percentage" : 0.248854 }
+, { "name" : "/backbone/stages_2/stages_2_2/pwconv2/MatMul_myl36_4", "timeMs" : 27.2988, "averageMs" : 2.48171, "medianMs" : 2.47376, "percentage" : 0.45099 }
+, { "name" : "__myl_AddMulTraAdd_myl36_5", "timeMs" : 4.57267, "averageMs" : 0.415697, "medianMs" : 0.415936, "percentage" : 0.0755427 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to /backbone/stages.2/stages.2.3/dwconv/Conv", "timeMs" : 3.46256, "averageMs" : 0.314778, "medianMs" : 0.296224, "percentage" : 0.0572031 }
+, { "name" : "/backbone/stages.2/stages.2.3/dwconv/Conv", "timeMs" : 11.5816, "averageMs" : 1.05287, "medianMs" : 1.05245, "percentage" : 0.191333 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to {ForeignNode[backbone.backbone.stages.2.3.norm.weight + ONNXTRT_Broadcast_168.../backbone/stages.2/stages.2.3/Add]}", "timeMs" : 3.40634, "averageMs" : 0.309667, "medianMs" : 0.30992, "percentage" : 0.0562743 }
+, { "name" : "__mye267_0_myl40_0", "timeMs" : 0.01104, "averageMs" : 0.00100364, "medianMs" : 0.000992, "percentage" : 0.000182386 }
+, { "name" : "__myl_TraCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl40_1", "timeMs" : 3.808, "averageMs" : 0.346182, "medianMs" : 0.346304, "percentage" : 0.06291 }
+, { "name" : "/backbone/stages_2/stages_2_3/pwconv1/MatMul_myl40_2", "timeMs" : 33.5754, "averageMs" : 3.05231, "medianMs" : 3.05318, "percentage" : 0.554682 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl40_3", "timeMs" : 14.7601, "averageMs" : 1.34182, "medianMs" : 1.34173, "percentage" : 0.243843 }
+, { "name" : "/backbone/stages_2/stages_2_3/pwconv2/MatMul_myl40_4", "timeMs" : 26.5038, "averageMs" : 2.40944, "medianMs" : 2.40883, "percentage" : 0.437855 }
+, { "name" : "__myl_AddMulTraAdd_myl40_5", "timeMs" : 4.5401, "averageMs" : 0.412736, "medianMs" : 0.412992, "percentage" : 0.0750045 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to /backbone/stages.2/stages.2.4/dwconv/Conv", "timeMs" : 4.17763, "averageMs" : 0.379785, "medianMs" : 0.29712, "percentage" : 0.0690165 }
+, { "name" : "/backbone/stages.2/stages.2.4/dwconv/Conv", "timeMs" : 11.5902, "averageMs" : 1.05366, "medianMs" : 1.0544, "percentage" : 0.191476 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to {ForeignNode[backbone.backbone.stages.2.4.norm.weight + ONNXTRT_Broadcast_184.../backbone/stages.2/stages.2.4/Add]}", "timeMs" : 3.40781, "averageMs" : 0.309801, "medianMs" : 0.309888, "percentage" : 0.0562986 }
+, { "name" : "__mye267_0_myl44_0", "timeMs" : 0.012896, "averageMs" : 0.00117236, "medianMs" : 0.001184, "percentage" : 0.000213048 }
+, { "name" : "__myl_TraCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl44_1", "timeMs" : 3.78374, "averageMs" : 0.343977, "medianMs" : 0.343744, "percentage" : 0.0625092 }
+, { "name" : "/backbone/stages_2/stages_2_4/pwconv1/MatMul_myl44_2", "timeMs" : 32.7007, "averageMs" : 2.97279, "medianMs" : 2.96752, "percentage" : 0.540232 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl44_3", "timeMs" : 15.4288, "averageMs" : 1.40262, "medianMs" : 1.40704, "percentage" : 0.254892 }
+, { "name" : "/backbone/stages_2/stages_2_4/pwconv2/MatMul_myl44_4", "timeMs" : 30.3251, "averageMs" : 2.75683, "medianMs" : 2.75654, "percentage" : 0.500985 }
+, { "name" : "__myl_AddMulTraAdd_myl44_5", "timeMs" : 4.54915, "averageMs" : 0.413559, "medianMs" : 0.413472, "percentage" : 0.0751541 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to /backbone/stages.2/stages.2.5/dwconv/Conv", "timeMs" : 3.69942, "averageMs" : 0.336311, "medianMs" : 0.29728, "percentage" : 0.0611162 }
+, { "name" : "/backbone/stages.2/stages.2.5/dwconv/Conv", "timeMs" : 11.5804, "averageMs" : 1.05277, "medianMs" : 1.05299, "percentage" : 0.191314 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to {ForeignNode[backbone.backbone.stages.2.5.norm.weight + ONNXTRT_Broadcast_200.../backbone/stages.2/stages.2.5/Add]}", "timeMs" : 3.40803, "averageMs" : 0.309821, "medianMs" : 0.30992, "percentage" : 0.0563023 }
+, { "name" : "__mye267_0_myl48_0", "timeMs" : 0.011424, "averageMs" : 0.00103855, "medianMs" : 0.001024, "percentage" : 0.00018873 }
+, { "name" : "__myl_TraCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl48_1", "timeMs" : 3.80298, "averageMs" : 0.345725, "medianMs" : 0.345792, "percentage" : 0.062827 }
+, { "name" : "/backbone/stages_2/stages_2_5/pwconv1/MatMul_myl48_2", "timeMs" : 31.9835, "averageMs" : 2.90759, "medianMs" : 2.90365, "percentage" : 0.528382 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl48_3", "timeMs" : 16.1902, "averageMs" : 1.47184, "medianMs" : 1.47619, "percentage" : 0.26747 }
+, { "name" : "/backbone/stages_2/stages_2_5/pwconv2/MatMul_myl48_4", "timeMs" : 29.5671, "averageMs" : 2.68792, "medianMs" : 2.68134, "percentage" : 0.488462 }
+, { "name" : "__myl_AddMulTraAdd_myl48_5", "timeMs" : 4.5625, "averageMs" : 0.414772, "medianMs" : 0.414912, "percentage" : 0.0753746 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to /backbone/stages.2/stages.2.6/dwconv/Conv", "timeMs" : 3.83421, "averageMs" : 0.348564, "medianMs" : 0.295264, "percentage" : 0.0633429 }
+, { "name" : "/backbone/stages.2/stages.2.6/dwconv/Conv", "timeMs" : 11.5629, "averageMs" : 1.05117, "medianMs" : 1.05091, "percentage" : 0.191025 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to {ForeignNode[backbone.backbone.stages.2.6.norm.weight + ONNXTRT_Broadcast_216.../backbone/stages.2/stages.2.6/Add]}", "timeMs" : 3.40688, "averageMs" : 0.309716, "medianMs" : 0.30976, "percentage" : 0.0562833 }
+, { "name" : "__mye267_0_myl52_0", "timeMs" : 0.012512, "averageMs" : 0.00113745, "medianMs" : 0.00112, "percentage" : 0.000206704 }
+, { "name" : "__myl_TraCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl52_1", "timeMs" : 3.80355, "averageMs" : 0.345777, "medianMs" : 0.346016, "percentage" : 0.0628365 }
+, { "name" : "/backbone/stages_2/stages_2_6/pwconv1/MatMul_myl52_2", "timeMs" : 30.3102, "averageMs" : 2.75547, "medianMs" : 2.74381, "percentage" : 0.500739 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl52_3", "timeMs" : 17.6244, "averageMs" : 1.60222, "medianMs" : 1.6127, "percentage" : 0.291164 }
+, { "name" : "/backbone/stages_2/stages_2_6/pwconv2/MatMul_myl52_4", "timeMs" : 28.1148, "averageMs" : 2.5559, "medianMs" : 2.54653, "percentage" : 0.464471 }
+, { "name" : "__myl_AddMulTraAdd_myl52_5", "timeMs" : 4.57424, "averageMs" : 0.41584, "medianMs" : 0.415872, "percentage" : 0.0755686 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to /backbone/stages.2/stages.2.7/dwconv/Conv", "timeMs" : 3.81978, "averageMs" : 0.347252, "medianMs" : 0.296608, "percentage" : 0.0631045 }
+, { "name" : "/backbone/stages.2/stages.2.7/dwconv/Conv", "timeMs" : 11.5929, "averageMs" : 1.0539, "medianMs" : 1.0527, "percentage" : 0.19152 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to {ForeignNode[backbone.backbone.stages.2.7.norm.weight + ONNXTRT_Broadcast_232.../backbone/stages.2/stages.2.7/Add]}", "timeMs" : 3.40266, "averageMs" : 0.309332, "medianMs" : 0.309408, "percentage" : 0.0562135 }
+, { "name" : "__mye267_0_myl56_0", "timeMs" : 0.010656, "averageMs" : 0.000968727, "medianMs" : 0.00096, "percentage" : 0.000176042 }
+, { "name" : "__myl_TraCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl56_1", "timeMs" : 3.77763, "averageMs" : 0.343421, "medianMs" : 0.34336, "percentage" : 0.0624083 }
+, { "name" : "/backbone/stages_2/stages_2_7/pwconv1/MatMul_myl56_2", "timeMs" : 33.5088, "averageMs" : 3.04625, "medianMs" : 3.04605, "percentage" : 0.553581 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl56_3", "timeMs" : 15.1123, "averageMs" : 1.37385, "medianMs" : 1.34138, "percentage" : 0.249663 }
+, { "name" : "/backbone/stages_2/stages_2_7/pwconv2/MatMul_myl56_4", "timeMs" : 26.8171, "averageMs" : 2.43792, "medianMs" : 2.40726, "percentage" : 0.443031 }
+, { "name" : "__myl_AddMulTraAdd_myl56_5", "timeMs" : 4.55152, "averageMs" : 0.413775, "medianMs" : 0.413824, "percentage" : 0.0751933 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to /backbone/stages.2/stages.2.8/dwconv/Conv", "timeMs" : 3.68842, "averageMs" : 0.335311, "medianMs" : 0.295904, "percentage" : 0.0609344 }
+, { "name" : "/backbone/stages.2/stages.2.8/dwconv/Conv", "timeMs" : 11.5744, "averageMs" : 1.05222, "medianMs" : 1.0528, "percentage" : 0.191215 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to {ForeignNode[backbone.backbone.stages.2.8.norm.weight + ONNXTRT_Broadcast_248.../backbone/stages.2/stages.2.8/Add]}", "timeMs" : 3.40554, "averageMs" : 0.309594, "medianMs" : 0.309664, "percentage" : 0.0562611 }
+, { "name" : "__mye267_0_myl60_0", "timeMs" : 0.013984, "averageMs" : 0.00127127, "medianMs" : 0.00128, "percentage" : 0.000231022 }
+, { "name" : "__myl_TraCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl60_1", "timeMs" : 3.80886, "averageMs" : 0.34626, "medianMs" : 0.346176, "percentage" : 0.0629242 }
+, { "name" : "/backbone/stages_2/stages_2_8/pwconv1/MatMul_myl60_2", "timeMs" : 33.3084, "averageMs" : 3.02804, "medianMs" : 3.03664, "percentage" : 0.550271 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl60_3", "timeMs" : 14.9638, "averageMs" : 1.36035, "medianMs" : 1.35251, "percentage" : 0.247209 }
+, { "name" : "/backbone/stages_2/stages_2_8/pwconv2/MatMul_myl60_4", "timeMs" : 30.1747, "averageMs" : 2.74316, "medianMs" : 2.7447, "percentage" : 0.498501 }
+, { "name" : "__myl_AddMulTraAdd_myl60_5", "timeMs" : 4.5543, "averageMs" : 0.414028, "medianMs" : 0.414112, "percentage" : 0.0752393 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to /backbone/stages.2/stages.2.9/dwconv/Conv", "timeMs" : 3.58093, "averageMs" : 0.325539, "medianMs" : 0.29616, "percentage" : 0.0591586 }
+, { "name" : "/backbone/stages.2/stages.2.9/dwconv/Conv", "timeMs" : 11.5725, "averageMs" : 1.05204, "medianMs" : 1.05306, "percentage" : 0.191183 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to {ForeignNode[backbone.backbone.stages.2.9.norm.weight + ONNXTRT_Broadcast_264.../backbone/stages.2/stages.2.9/Add]}", "timeMs" : 3.39965, "averageMs" : 0.309059, "medianMs" : 0.309024, "percentage" : 0.0561638 }
+, { "name" : "__mye267_0_myl64_0", "timeMs" : 0.011808, "averageMs" : 0.00107345, "medianMs" : 0.001056, "percentage" : 0.000195074 }
+, { "name" : "__myl_TraCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl64_1", "timeMs" : 3.80202, "averageMs" : 0.345638, "medianMs" : 0.345664, "percentage" : 0.0628111 }
+, { "name" : "/backbone/stages_2/stages_2_9/pwconv1/MatMul_myl64_2", "timeMs" : 32.3509, "averageMs" : 2.941, "medianMs" : 2.9535, "percentage" : 0.534453 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl64_3", "timeMs" : 15.8435, "averageMs" : 1.44032, "medianMs" : 1.43046, "percentage" : 0.261742 }
+, { "name" : "/backbone/stages_2/stages_2_9/pwconv2/MatMul_myl64_4", "timeMs" : 30.0202, "averageMs" : 2.72911, "medianMs" : 2.74144, "percentage" : 0.495947 }
+, { "name" : "__myl_AddMulTraAdd_myl64_5", "timeMs" : 4.55379, "averageMs" : 0.413981, "medianMs" : 0.41408, "percentage" : 0.0752308 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to /backbone/stages.2/stages.2.10/dwconv/Conv", "timeMs" : 3.81811, "averageMs" : 0.347101, "medianMs" : 0.29744, "percentage" : 0.063077 }
+, { "name" : "/backbone/stages.2/stages.2.10/dwconv/Conv", "timeMs" : 11.5685, "averageMs" : 1.05169, "medianMs" : 1.05155, "percentage" : 0.191118 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to {ForeignNode[backbone.backbone.stages.2.10.norm.weight + ONNXTRT_Broadcast_280.../backbone/stages.2/stages.2.10/Add]}", "timeMs" : 3.40032, "averageMs" : 0.30912, "medianMs" : 0.30928, "percentage" : 0.0561749 }
+, { "name" : "__mye267_0_myl68_0", "timeMs" : 0.0128, "averageMs" : 0.00116364, "medianMs" : 0.001152, "percentage" : 0.000211462 }
+, { "name" : "__myl_TraCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl68_1", "timeMs" : 3.83517, "averageMs" : 0.348652, "medianMs" : 0.348768, "percentage" : 0.0633588 }
+, { "name" : "/backbone/stages_2/stages_2_10/pwconv1/MatMul_myl68_2", "timeMs" : 31.6292, "averageMs" : 2.87538, "medianMs" : 2.85709, "percentage" : 0.522529 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl68_3", "timeMs" : 16.412, "averageMs" : 1.492, "medianMs" : 1.50672, "percentage" : 0.271135 }
+, { "name" : "/backbone/stages_2/stages_2_10/pwconv2/MatMul_myl68_4", "timeMs" : 29.2221, "averageMs" : 2.65656, "medianMs" : 2.67478, "percentage" : 0.482764 }
+, { "name" : "__myl_AddMulTraAdd_myl68_5", "timeMs" : 4.56682, "averageMs" : 0.415165, "medianMs" : 0.4152, "percentage" : 0.075446 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to /backbone/stages.2/stages.2.11/dwconv/Conv", "timeMs" : 3.93539, "averageMs" : 0.357763, "medianMs" : 0.32688, "percentage" : 0.0650145 }
+, { "name" : "/backbone/stages.2/stages.2.11/dwconv/Conv", "timeMs" : 11.5853, "averageMs" : 1.05321, "medianMs" : 1.05338, "percentage" : 0.191394 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to {ForeignNode[backbone.backbone.stages.2.11.norm.weight + ONNXTRT_Broadcast_296.../backbone/stages.2/stages.2.11/Add]}", "timeMs" : 3.40941, "averageMs" : 0.309946, "medianMs" : 0.309792, "percentage" : 0.056325 }
+, { "name" : "__mye267_0_myl72_0", "timeMs" : 0.012416, "averageMs" : 0.00112873, "medianMs" : 0.00112, "percentage" : 0.000205118 }
+, { "name" : "__myl_TraCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl72_1", "timeMs" : 3.79206, "averageMs" : 0.344733, "medianMs" : 0.344704, "percentage" : 0.0626467 }
+, { "name" : "/backbone/stages_2/stages_2_11/pwconv1/MatMul_myl72_2", "timeMs" : 29.9844, "averageMs" : 2.72585, "medianMs" : 2.69322, "percentage" : 0.495356 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl72_3", "timeMs" : 17.9061, "averageMs" : 1.62783, "medianMs" : 1.65597, "percentage" : 0.295817 }
+, { "name" : "/backbone/stages_2/stages_2_11/pwconv2/MatMul_myl72_4", "timeMs" : 27.4109, "averageMs" : 2.4919, "medianMs" : 2.50099, "percentage" : 0.452842 }
+, { "name" : "__myl_AddMulTraAdd_myl72_5", "timeMs" : 4.55946, "averageMs" : 0.414496, "medianMs" : 0.414752, "percentage" : 0.0753244 }
+, { "name" : "Reformatting CopyNode for Output Tensor 0 to {ForeignNode[backbone.backbone.stages.2.11.norm.weight + ONNXTRT_Broadcast_296.../backbone/stages.2/stages.2.11/Add]}", "timeMs" : 4.24333, "averageMs" : 0.385757, "medianMs" : 0.357376, "percentage" : 0.0701018 }
+, { "name" : "/backbone/stages.2/stages.2.12/dwconv/Conv", "timeMs" : 11.5877, "averageMs" : 1.05343, "medianMs" : 1.05258, "percentage" : 0.191434 }
+, { "name" : "__mye267_0_myl75_0", "timeMs" : 0.01424, "averageMs" : 0.00129455, "medianMs" : 0.00128, "percentage" : 0.000235252 }
+, { "name" : "__myl_Tra_myl75_1", "timeMs" : 3.324, "averageMs" : 0.302182, "medianMs" : 0.302432, "percentage" : 0.0549141 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl75_2", "timeMs" : 3.76931, "averageMs" : 0.342665, "medianMs" : 0.342112, "percentage" : 0.0622708 }
+, { "name" : "/backbone/stages_2/stages_2_12/pwconv1/MatMul_myl75_3", "timeMs" : 33.5084, "averageMs" : 3.04622, "medianMs" : 3.05402, "percentage" : 0.553575 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl75_4", "timeMs" : 14.8583, "averageMs" : 1.35075, "medianMs" : 1.34429, "percentage" : 0.245466 }
+, { "name" : "/backbone/stages_2/stages_2_12/pwconv2/MatMul_myl75_5", "timeMs" : 26.9313, "averageMs" : 2.4483, "medianMs" : 2.41853, "percentage" : 0.444917 }
+, { "name" : "__myl_AddMulTraAdd_myl75_6", "timeMs" : 9.10003, "averageMs" : 0.827276, "medianMs" : 0.85632, "percentage" : 0.150337 }
+, { "name" : "/backbone/stages.2/stages.2.13/dwconv/Conv", "timeMs" : 11.6071, "averageMs" : 1.05519, "medianMs" : 1.05238, "percentage" : 0.191754 }
+, { "name" : "__mye267_0_myl77_0", "timeMs" : 0.012288, "averageMs" : 0.00111709, "medianMs" : 0.00112, "percentage" : 0.000203004 }
+, { "name" : "__myl_Tra_myl77_1", "timeMs" : 3.36598, "averageMs" : 0.305999, "medianMs" : 0.30608, "percentage" : 0.0556077 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl77_2", "timeMs" : 3.82109, "averageMs" : 0.347372, "medianMs" : 0.347488, "percentage" : 0.0631262 }
+, { "name" : "/backbone/stages_2/stages_2_13/pwconv1/MatMul_myl77_3", "timeMs" : 32.1769, "averageMs" : 2.92517, "medianMs" : 2.94698, "percentage" : 0.531578 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl77_4", "timeMs" : 15.8909, "averageMs" : 1.44463, "medianMs" : 1.42496, "percentage" : 0.262525 }
+, { "name" : "/backbone/stages_2/stages_2_13/pwconv2/MatMul_myl77_5", "timeMs" : 29.9029, "averageMs" : 2.71845, "medianMs" : 2.73789, "percentage" : 0.494011 }
+, { "name" : "__myl_AddMulTraAdd_myl77_6", "timeMs" : 6.24602, "averageMs" : 0.56782, "medianMs" : 0.548768, "percentage" : 0.103187 }
+, { "name" : "/backbone/stages.2/stages.2.14/dwconv/Conv", "timeMs" : 11.5948, "averageMs" : 1.05408, "medianMs" : 1.05174, "percentage" : 0.191552 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to {ForeignNode[backbone.backbone.stages.2.14.norm.weight + ONNXTRT_Broadcast_344.../backbone/stages.2/stages.2.14/Add]}", "timeMs" : 3.43069, "averageMs" : 0.311881, "medianMs" : 0.311392, "percentage" : 0.0566766 }
+, { "name" : "Reformatting CopyNode for Input Tensor 1 to {ForeignNode[backbone.backbone.stages.2.14.norm.weight + ONNXTRT_Broadcast_344.../backbone/stages.2/stages.2.14/Add]}", "timeMs" : 3.4145, "averageMs" : 0.310409, "medianMs" : 0.309792, "percentage" : 0.0564091 }
+, { "name" : "__mye267_0_myl81_0", "timeMs" : 0.011328, "averageMs" : 0.00102982, "medianMs" : 0.001024, "percentage" : 0.000187144 }
+, { "name" : "__myl_TraCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl81_1", "timeMs" : 3.7961, "averageMs" : 0.3451, "medianMs" : 0.345216, "percentage" : 0.0627133 }
+, { "name" : "/backbone/stages_2/stages_2_14/pwconv1/MatMul_myl81_2", "timeMs" : 32.98, "averageMs" : 2.99819, "medianMs" : 3.00797, "percentage" : 0.544846 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl81_3", "timeMs" : 15.324, "averageMs" : 1.39309, "medianMs" : 1.37888, "percentage" : 0.25316 }
+, { "name" : "/backbone/stages_2/stages_2_14/pwconv2/MatMul_myl81_4", "timeMs" : 30.0512, "averageMs" : 2.73193, "medianMs" : 2.74042, "percentage" : 0.49646 }
+, { "name" : "__myl_AddMulTraAdd_myl81_5", "timeMs" : 4.57613, "averageMs" : 0.416012, "medianMs" : 0.416096, "percentage" : 0.0755998 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to /backbone/stages.2/stages.2.15/dwconv/Conv", "timeMs" : 3.43549, "averageMs" : 0.312317, "medianMs" : 0.296832, "percentage" : 0.0567559 }
+, { "name" : "/backbone/stages.2/stages.2.15/dwconv/Conv", "timeMs" : 11.5738, "averageMs" : 1.05216, "medianMs" : 1.05254, "percentage" : 0.191204 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to {ForeignNode[backbone.backbone.stages.2.15.norm.weight + ONNXTRT_Broadcast_360.../backbone/stages.2/stages.2.15/Add]}", "timeMs" : 3.39763, "averageMs" : 0.308876, "medianMs" : 0.309216, "percentage" : 0.0561305 }
+, { "name" : "__mye267_0_myl85_0", "timeMs" : 0.0128, "averageMs" : 0.00116364, "medianMs" : 0.00112, "percentage" : 0.000211462 }
+, { "name" : "__myl_TraCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl85_1", "timeMs" : 3.79386, "averageMs" : 0.344896, "medianMs" : 0.34464, "percentage" : 0.0626763 }
+, { "name" : "/backbone/stages_2/stages_2_15/pwconv1/MatMul_myl85_2", "timeMs" : 32.101, "averageMs" : 2.91827, "medianMs" : 2.90515, "percentage" : 0.530324 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl85_3", "timeMs" : 15.9465, "averageMs" : 1.44968, "medianMs" : 1.46035, "percentage" : 0.263443 }
+, { "name" : "/backbone/stages_2/stages_2_15/pwconv2/MatMul_myl85_4", "timeMs" : 29.5253, "averageMs" : 2.68412, "medianMs" : 2.70106, "percentage" : 0.487772 }
+, { "name" : "__myl_AddMulTraAdd_myl85_5", "timeMs" : 4.58896, "averageMs" : 0.417178, "medianMs" : 0.417344, "percentage" : 0.0758118 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to /backbone/stages.2/stages.2.16/dwconv/Conv", "timeMs" : 4.53869, "averageMs" : 0.412608, "medianMs" : 0.442688, "percentage" : 0.0749813 }
+, { "name" : "/backbone/stages.2/stages.2.16/dwconv/Conv", "timeMs" : 11.5741, "averageMs" : 1.05219, "medianMs" : 1.05216, "percentage" : 0.19121 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to {ForeignNode[backbone.backbone.stages.2.16.norm.weight + ONNXTRT_Broadcast_376.../backbone/stages.2/stages.2.16/Add]}", "timeMs" : 3.39754, "averageMs" : 0.308867, "medianMs" : 0.309376, "percentage" : 0.0561289 }
+, { "name" : "__mye267_0_myl89_0", "timeMs" : 0.01376, "averageMs" : 0.00125091, "medianMs" : 0.001248, "percentage" : 0.000227322 }
+, { "name" : "__myl_TraCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl89_1", "timeMs" : 3.82157, "averageMs" : 0.347415, "medianMs" : 0.347744, "percentage" : 0.0631341 }
+, { "name" : "/backbone/stages_2/stages_2_16/pwconv1/MatMul_myl89_2", "timeMs" : 30.8721, "averageMs" : 2.80656, "medianMs" : 2.78214, "percentage" : 0.510022 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl89_3", "timeMs" : 17.1546, "averageMs" : 1.55951, "medianMs" : 1.58138, "percentage" : 0.283402 }
+, { "name" : "/backbone/stages_2/stages_2_16/pwconv2/MatMul_myl89_4", "timeMs" : 28.3216, "averageMs" : 2.57469, "medianMs" : 2.59158, "percentage" : 0.467886 }
+, { "name" : "__myl_AddMulTraAdd_myl89_5", "timeMs" : 4.56307, "averageMs" : 0.414825, "medianMs" : 0.415104, "percentage" : 0.0753841 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to /backbone/stages.2/stages.2.17/dwconv/Conv", "timeMs" : 3.69859, "averageMs" : 0.336236, "medianMs" : 0.29632, "percentage" : 0.0611025 }
+, { "name" : "/backbone/stages.2/stages.2.17/dwconv/Conv", "timeMs" : 11.5855, "averageMs" : 1.05322, "medianMs" : 1.05315, "percentage" : 0.191398 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to {ForeignNode[backbone.backbone.stages.2.17.norm.weight + ONNXTRT_Broadcast_392.../backbone/stages.2/stages.2.17/Add]}", "timeMs" : 3.4113, "averageMs" : 0.310118, "medianMs" : 0.310144, "percentage" : 0.0563562 }
+, { "name" : "__mye267_0_myl93_0", "timeMs" : 0.01328, "averageMs" : 0.00120727, "medianMs" : 0.001216, "percentage" : 0.000219392 }
+, { "name" : "__myl_TraCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl93_1", "timeMs" : 3.8017, "averageMs" : 0.345609, "medianMs" : 0.345664, "percentage" : 0.0628058 }
+, { "name" : "/backbone/stages_2/stages_2_17/pwconv1/MatMul_myl93_2", "timeMs" : 33.4493, "averageMs" : 3.04085, "medianMs" : 3.04483, "percentage" : 0.552599 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl93_3", "timeMs" : 14.7668, "averageMs" : 1.34244, "medianMs" : 1.33878, "percentage" : 0.243955 }
+, { "name" : "/backbone/stages_2/stages_2_17/pwconv2/MatMul_myl93_4", "timeMs" : 27.0467, "averageMs" : 2.45879, "medianMs" : 2.42973, "percentage" : 0.446824 }
+, { "name" : "__myl_AddMulTraAdd_myl93_5", "timeMs" : 4.56336, "averageMs" : 0.414851, "medianMs" : 0.415008, "percentage" : 0.0753889 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to /backbone/stages.2/stages.2.18/dwconv/Conv", "timeMs" : 3.41222, "averageMs" : 0.310202, "medianMs" : 0.29568, "percentage" : 0.0563716 }
+, { "name" : "/backbone/stages.2/stages.2.18/dwconv/Conv", "timeMs" : 11.5716, "averageMs" : 1.05197, "medianMs" : 1.05174, "percentage" : 0.191169 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to {ForeignNode[backbone.backbone.stages.2.18.norm.weight + ONNXTRT_Broadcast_408.../backbone/stages.2/stages.2.18/Add]}", "timeMs" : 3.40787, "averageMs" : 0.309807, "medianMs" : 0.310176, "percentage" : 0.0562997 }
+, { "name" : "__mye267_0_myl97_0", "timeMs" : 0.011424, "averageMs" : 0.00103855, "medianMs" : 0.001024, "percentage" : 0.00018873 }
+, { "name" : "__myl_TraCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl97_1", "timeMs" : 3.77603, "averageMs" : 0.343276, "medianMs" : 0.3432, "percentage" : 0.0623818 }
+, { "name" : "/backbone/stages_2/stages_2_18/pwconv1/MatMul_myl97_2", "timeMs" : 33.3835, "averageMs" : 3.03487, "medianMs" : 3.04778, "percentage" : 0.551512 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl97_3", "timeMs" : 14.8725, "averageMs" : 1.35204, "medianMs" : 1.34045, "percentage" : 0.2457 }
+, { "name" : "/backbone/stages_2/stages_2_18/pwconv2/MatMul_myl97_4", "timeMs" : 30.2697, "averageMs" : 2.75179, "medianMs" : 2.75712, "percentage" : 0.50007 }
+, { "name" : "__myl_AddMulTraAdd_myl97_5", "timeMs" : 4.54899, "averageMs" : 0.413545, "medianMs" : 0.413696, "percentage" : 0.0751515 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to /backbone/stages.2/stages.2.19/dwconv/Conv", "timeMs" : 3.40019, "averageMs" : 0.309108, "medianMs" : 0.295744, "percentage" : 0.0561728 }
+, { "name" : "/backbone/stages.2/stages.2.19/dwconv/Conv", "timeMs" : 11.5695, "averageMs" : 1.05178, "medianMs" : 1.05181, "percentage" : 0.191134 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to {ForeignNode[backbone.backbone.stages.2.19.norm.weight + ONNXTRT_Broadcast_424.../backbone/stages.2/stages.2.19/Add]}", "timeMs" : 3.40067, "averageMs" : 0.309152, "medianMs" : 0.309504, "percentage" : 0.0561807 }
+, { "name" : "__mye267_0_myl101_0", "timeMs" : 0.01392, "averageMs" : 0.00126545, "medianMs" : 0.00128, "percentage" : 0.000229965 }
+, { "name" : "__myl_TraCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl101_1", "timeMs" : 3.81229, "averageMs" : 0.346572, "medianMs" : 0.346752, "percentage" : 0.0629808 }
+, { "name" : "/backbone/stages_2/stages_2_19/pwconv1/MatMul_myl101_2", "timeMs" : 32.8432, "averageMs" : 2.98574, "medianMs" : 3.00787, "percentage" : 0.542585 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl101_3", "timeMs" : 15.4248, "averageMs" : 1.40225, "medianMs" : 1.38301, "percentage" : 0.254824 }
+, { "name" : "/backbone/stages_2/stages_2_19/pwconv2/MatMul_myl101_4", "timeMs" : 30.0963, "averageMs" : 2.73602, "medianMs" : 2.75082, "percentage" : 0.497204 }
+, { "name" : "__myl_AddMulTraAdd_myl101_5", "timeMs" : 4.56029, "averageMs" : 0.414572, "medianMs" : 0.414656, "percentage" : 0.0753381 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to /backbone/stages.2/stages.2.20/dwconv/Conv", "timeMs" : 3.8384, "averageMs" : 0.348945, "medianMs" : 0.296608, "percentage" : 0.0634122 }
+, { "name" : "/backbone/stages.2/stages.2.20/dwconv/Conv", "timeMs" : 11.5791, "averageMs" : 1.05265, "medianMs" : 1.05229, "percentage" : 0.191292 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to {ForeignNode[backbone.backbone.stages.2.20.norm.weight + ONNXTRT_Broadcast_440.../backbone/stages.2/stages.2.20/Add]}", "timeMs" : 3.39805, "averageMs" : 0.308913, "medianMs" : 0.309056, "percentage" : 0.0561374 }
+, { "name" : "__mye267_0_myl105_0", "timeMs" : 0.012256, "averageMs" : 0.00111418, "medianMs" : 0.001088, "percentage" : 0.000202475 }
+, { "name" : "__myl_TraCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl105_1", "timeMs" : 3.78326, "averageMs" : 0.343933, "medianMs" : 0.343712, "percentage" : 0.0625013 }
+, { "name" : "/backbone/stages_2/stages_2_20/pwconv1/MatMul_myl105_2", "timeMs" : 32.1896, "averageMs" : 2.92633, "medianMs" : 2.91446, "percentage" : 0.531788 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl105_3", "timeMs" : 15.9523, "averageMs" : 1.45021, "medianMs" : 1.46083, "percentage" : 0.263539 }
+, { "name" : "/backbone/stages_2/stages_2_20/pwconv2/MatMul_myl105_4", "timeMs" : 29.2571, "averageMs" : 2.65973, "medianMs" : 2.68582, "percentage" : 0.483341 }
+, { "name" : "__myl_AddMulTraAdd_myl105_5", "timeMs" : 4.57082, "averageMs" : 0.415529, "medianMs" : 0.415712, "percentage" : 0.075512 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to /backbone/stages.2/stages.2.21/dwconv/Conv", "timeMs" : 4.30074, "averageMs" : 0.390976, "medianMs" : 0.390304, "percentage" : 0.0710502 }
+, { "name" : "/backbone/stages.2/stages.2.21/dwconv/Conv", "timeMs" : 11.5759, "averageMs" : 1.05235, "medianMs" : 1.0513, "percentage" : 0.191239 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to {ForeignNode[backbone.backbone.stages.2.21.norm.weight + ONNXTRT_Broadcast_456.../backbone/stages.2/stages.2.21/Add]}", "timeMs" : 3.40432, "averageMs" : 0.309484, "medianMs" : 0.309408, "percentage" : 0.056241 }
+, { "name" : "__mye267_0_myl109_0", "timeMs" : 0.011456, "averageMs" : 0.00104145, "medianMs" : 0.001024, "percentage" : 0.000189259 }
+, { "name" : "__myl_TraCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl109_1", "timeMs" : 3.8, "averageMs" : 0.345455, "medianMs" : 0.345184, "percentage" : 0.0627778 }
+, { "name" : "/backbone/stages_2/stages_2_21/pwconv1/MatMul_myl109_2", "timeMs" : 30.7601, "averageMs" : 2.79637, "medianMs" : 2.77251, "percentage" : 0.508171 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl109_3", "timeMs" : 17.248, "averageMs" : 1.568, "medianMs" : 1.59005, "percentage" : 0.284945 }
+, { "name" : "/backbone/stages_2/stages_2_21/pwconv2/MatMul_myl109_4", "timeMs" : 28.7047, "averageMs" : 2.60952, "medianMs" : 2.59574, "percentage" : 0.474216 }
+, { "name" : "__myl_AddMulTraAdd_myl109_5", "timeMs" : 4.58394, "averageMs" : 0.416721, "medianMs" : 0.417152, "percentage" : 0.0757288 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to /backbone/stages.2/stages.2.22/dwconv/Conv", "timeMs" : 3.6689, "averageMs" : 0.333536, "medianMs" : 0.296928, "percentage" : 0.0606119 }
+, { "name" : "/backbone/stages.2/stages.2.22/dwconv/Conv", "timeMs" : 11.5769, "averageMs" : 1.05245, "medianMs" : 1.0521, "percentage" : 0.191256 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to {ForeignNode[backbone.backbone.stages.2.22.norm.weight + ONNXTRT_Broadcast_472.../backbone/stages.2/stages.2.22/Add]}", "timeMs" : 3.40528, "averageMs" : 0.309571, "medianMs" : 0.309888, "percentage" : 0.0562568 }
+, { "name" : "__mye267_0_myl113_0", "timeMs" : 0.011616, "averageMs" : 0.001056, "medianMs" : 0.001056, "percentage" : 0.000191902 }
+, { "name" : "__myl_TraCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl113_1", "timeMs" : 3.78419, "averageMs" : 0.344017, "medianMs" : 0.344032, "percentage" : 0.0625167 }
+, { "name" : "/backbone/stages_2/stages_2_22/pwconv1/MatMul_myl113_2", "timeMs" : 33.4814, "averageMs" : 3.04376, "medianMs" : 3.05283, "percentage" : 0.553128 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl113_3", "timeMs" : 14.8738, "averageMs" : 1.35216, "medianMs" : 1.3448, "percentage" : 0.245722 }
+, { "name" : "/backbone/stages_2/stages_2_22/pwconv2/MatMul_myl113_4", "timeMs" : 27.0188, "averageMs" : 2.45625, "medianMs" : 2.42778, "percentage" : 0.446363 }
+, { "name" : "__myl_AddMulTraAdd_myl113_5", "timeMs" : 4.57066, "averageMs" : 0.415514, "medianMs" : 0.415776, "percentage" : 0.0755094 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to /backbone/stages.2/stages.2.23/dwconv/Conv", "timeMs" : 3.41008, "averageMs" : 0.310007, "medianMs" : 0.295712, "percentage" : 0.0563361 }
+, { "name" : "/backbone/stages.2/stages.2.23/dwconv/Conv", "timeMs" : 11.5651, "averageMs" : 1.05137, "medianMs" : 1.0511, "percentage" : 0.191061 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to {ForeignNode[backbone.backbone.stages.2.23.norm.weight + ONNXTRT_Broadcast_488.../backbone/stages.2/stages.2.23/Add]}", "timeMs" : 3.4121, "averageMs" : 0.310191, "medianMs" : 0.310432, "percentage" : 0.0563694 }
+, { "name" : "__mye267_0_myl117_0", "timeMs" : 0.0144, "averageMs" : 0.00130909, "medianMs" : 0.001312, "percentage" : 0.000237895 }
+, { "name" : "__myl_TraCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl117_1", "timeMs" : 3.8095, "averageMs" : 0.346319, "medianMs" : 0.346496, "percentage" : 0.0629348 }
+, { "name" : "/backbone/stages_2/stages_2_23/pwconv1/MatMul_myl117_2", "timeMs" : 33.3647, "averageMs" : 3.03315, "medianMs" : 3.05002, "percentage" : 0.5512 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl117_3", "timeMs" : 14.9499, "averageMs" : 1.35908, "medianMs" : 1.34419, "percentage" : 0.24698 }
+, { "name" : "/backbone/stages_2/stages_2_23/pwconv2/MatMul_myl117_4", "timeMs" : 30.157, "averageMs" : 2.74154, "medianMs" : 2.74787, "percentage" : 0.498207 }
+, { "name" : "__myl_AddMulTraAdd_myl117_5", "timeMs" : 4.58685, "averageMs" : 0.416986, "medianMs" : 0.417248, "percentage" : 0.0757769 }
+, { "name" : "Reformatting CopyNode for Output Tensor 0 to {ForeignNode[backbone.backbone.stages.2.23.norm.weight + ONNXTRT_Broadcast_488.../backbone/stages.2/stages.2.23/Add]}", "timeMs" : 3.35888, "averageMs" : 0.305353, "medianMs" : 0.295808, "percentage" : 0.0554903 }
+, { "name" : "/backbone/stages.2/stages.2.24/dwconv/Conv", "timeMs" : 11.5744, "averageMs" : 1.05222, "medianMs" : 1.0529, "percentage" : 0.191215 }
+, { "name" : "__mye267_0_myl120_0", "timeMs" : 0.012, "averageMs" : 0.00109091, "medianMs" : 0.001088, "percentage" : 0.000198246 }
+, { "name" : "__myl_Tra_myl120_1", "timeMs" : 3.34406, "averageMs" : 0.304006, "medianMs" : 0.303872, "percentage" : 0.0552455 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl120_2", "timeMs" : 3.81251, "averageMs" : 0.346592, "medianMs" : 0.3472, "percentage" : 0.0629845 }
+, { "name" : "/backbone/stages_2/stages_2_24/pwconv1/MatMul_myl120_3", "timeMs" : 32.6319, "averageMs" : 2.96653, "medianMs" : 2.99507, "percentage" : 0.539094 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl120_4", "timeMs" : 15.5193, "averageMs" : 1.41085, "medianMs" : 1.38566, "percentage" : 0.256386 }
+, { "name" : "/backbone/stages_2/stages_2_24/pwconv2/MatMul_myl120_5", "timeMs" : 30.0518, "averageMs" : 2.73199, "medianMs" : 2.75389, "percentage" : 0.496471 }
+, { "name" : "__myl_AddMulTraAdd_myl120_6", "timeMs" : 6.08611, "averageMs" : 0.553283, "medianMs" : 0.53104, "percentage" : 0.100545 }
+, { "name" : "/backbone/stages.2/stages.2.25/dwconv/Conv", "timeMs" : 11.6013, "averageMs" : 1.05467, "medianMs" : 1.05226, "percentage" : 0.19166 }
+, { "name" : "__mye267_0_myl122_0", "timeMs" : 0.012256, "averageMs" : 0.00111418, "medianMs" : 0.00112, "percentage" : 0.000202475 }
+, { "name" : "__myl_Tra_myl122_1", "timeMs" : 3.35098, "averageMs" : 0.304634, "medianMs" : 0.304512, "percentage" : 0.0553597 }
+, { "name" : "__myl_CasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl122_2", "timeMs" : 3.78922, "averageMs" : 0.344474, "medianMs" : 0.344224, "percentage" : 0.0625996 }
+, { "name" : "/backbone/stages_2/stages_2_25/pwconv1/MatMul_myl122_3", "timeMs" : 30.7304, "averageMs" : 2.79367, "medianMs" : 2.76854, "percentage" : 0.507681 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl122_4", "timeMs" : 17.3366, "averageMs" : 1.57606, "medianMs" : 1.59962, "percentage" : 0.286409 }
+, { "name" : "/backbone/stages_2/stages_2_25/pwconv2/MatMul_myl122_5", "timeMs" : 28.2075, "averageMs" : 2.56431, "medianMs" : 2.57914, "percentage" : 0.466001 }
+, { "name" : "__myl_AddMulTraAdd_myl122_6", "timeMs" : 7.9584, "averageMs" : 0.723491, "medianMs" : 0.7104, "percentage" : 0.131477 }
+, { "name" : "/backbone/stages.2/stages.2.26/dwconv/Conv", "timeMs" : 11.6896, "averageMs" : 1.06269, "medianMs" : 1.05293, "percentage" : 0.193118 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to {ForeignNode[backbone.backbone.stages.2.26.norm.weight + ONNXTRT_Broadcast_536.../backbone/downsample_layers.3/downsample_layers.3.0/Add_1]}", "timeMs" : 3.41469, "averageMs" : 0.310426, "medianMs" : 0.310368, "percentage" : 0.0564123 }
+, { "name" : "Reformatting CopyNode for Input Tensor 1 to {ForeignNode[backbone.backbone.stages.2.26.norm.weight + ONNXTRT_Broadcast_536.../backbone/downsample_layers.3/downsample_layers.3.0/Add_1]}", "timeMs" : 3.39562, "averageMs" : 0.308692, "medianMs" : 0.308768, "percentage" : 0.0560972 }
+, { "name" : "__mye637_0_myl126_0", "timeMs" : 0.01136, "averageMs" : 0.00103273, "medianMs" : 0.001024, "percentage" : 0.000187673 }
+, { "name" : "__myl_TraCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl126_1", "timeMs" : 3.76784, "averageMs" : 0.342531, "medianMs" : 0.342624, "percentage" : 0.0622465 }
+, { "name" : "/backbone/stages_2/stages_2_26/pwconv1/MatMul_myl126_2", "timeMs" : 30.7125, "averageMs" : 2.79205, "medianMs" : 2.76717, "percentage" : 0.507385 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl126_3", "timeMs" : 17.1274, "averageMs" : 1.55704, "medianMs" : 1.57856, "percentage" : 0.282953 }
+, { "name" : "/backbone/stages_2/stages_2_26/pwconv2/MatMul_myl126_4", "timeMs" : 28.4273, "averageMs" : 2.5843, "medianMs" : 2.60109, "percentage" : 0.469633 }
+, { "name" : "__myl_AddMulTraAddMeaSubMulMeaAddSqrDivMulMulAdd_myl126_5", "timeMs" : 6.29312, "averageMs" : 0.572102, "medianMs" : 0.572288, "percentage" : 0.103965 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to /encoder/input_proj.1/conv/Conv", "timeMs" : 4.20285, "averageMs" : 0.382077, "medianMs" : 0.329632, "percentage" : 0.069433 }
+, { "name" : "/encoder/input_proj.1/conv/Conv", "timeMs" : 3.06259, "averageMs" : 0.278417, "medianMs" : 0.278016, "percentage" : 0.0505955 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to /backbone/downsample_layers.3/downsample_layers.3.1/Conv", "timeMs" : 3.43686, "averageMs" : 0.312442, "medianMs" : 0.289632, "percentage" : 0.0567786 }
+, { "name" : "/backbone/downsample_layers.3/downsample_layers.3.1/Conv", "timeMs" : 6.68013, "averageMs" : 0.607284, "medianMs" : 0.588256, "percentage" : 0.110359 }
+, { "name" : "Reformatting CopyNode for Output Tensor 0 to /backbone/downsample_layers.3/downsample_layers.3.1/Conv", "timeMs" : 2.17373, "averageMs" : 0.197612, "medianMs" : 0.183296, "percentage" : 0.035911 }
+, { "name" : "/backbone/stages.3/stages.3.0/dwconv/Conv", "timeMs" : 10.2044, "averageMs" : 0.927671, "medianMs" : 0.870624, "percentage" : 0.168581 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to {ForeignNode[backbone.backbone.stages.3.0.norm.weight + ONNXTRT_Broadcast_560.../backbone/stages.3/stages.3.0/Add]}", "timeMs" : 2.30061, "averageMs" : 0.209146, "medianMs" : 0.209056, "percentage" : 0.0380071 }
+, { "name" : "Reformatting CopyNode for Input Tensor 1 to {ForeignNode[backbone.backbone.stages.3.0.norm.weight + ONNXTRT_Broadcast_560.../backbone/stages.3/stages.3.0/Add]}", "timeMs" : 2.2993, "averageMs" : 0.209027, "medianMs" : 0.209408, "percentage" : 0.0379855 }
+, { "name" : "__mye267_0_myl135_0", "timeMs" : 0.01136, "averageMs" : 0.00103273, "medianMs" : 0.001024, "percentage" : 0.000187673 }
+, { "name" : "__myl_TraCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl135_1", "timeMs" : 2.28845, "averageMs" : 0.208041, "medianMs" : 0.208, "percentage" : 0.0378062 }
+, { "name" : "/backbone/stages_3/stages_3_0/pwconv1/MatMul_myl135_2", "timeMs" : 33.1126, "averageMs" : 3.01024, "medianMs" : 3.01008, "percentage" : 0.547036 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl135_3", "timeMs" : 9.53379, "averageMs" : 0.866709, "medianMs" : 0.86816, "percentage" : 0.157503 }
+, { "name" : "/backbone/stages_3/stages_3_0/pwconv2/MatMul_myl135_4", "timeMs" : 30.4316, "averageMs" : 2.76651, "medianMs" : 2.76621, "percentage" : 0.502744 }
+, { "name" : "__myl_AddMulTraAdd_myl135_5", "timeMs" : 2.27072, "averageMs" : 0.206429, "medianMs" : 0.206624, "percentage" : 0.0375134 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to /backbone/stages.3/stages.3.1/dwconv/Conv", "timeMs" : 1.81382, "averageMs" : 0.164893, "medianMs" : 0.151744, "percentage" : 0.0299652 }
+, { "name" : "/backbone/stages.3/stages.3.1/dwconv/Conv", "timeMs" : 9.5761, "averageMs" : 0.870554, "medianMs" : 0.870176, "percentage" : 0.158202 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to {ForeignNode[backbone.backbone.stages.3.1.norm.weight + ONNXTRT_Broadcast_576.../backbone/stages.3/stages.3.1/Add]}", "timeMs" : 2.29517, "averageMs" : 0.208652, "medianMs" : 0.208768, "percentage" : 0.0379173 }
+, { "name" : "__mye267_0_myl139_0", "timeMs" : 0.01136, "averageMs" : 0.00103273, "medianMs" : 0.001024, "percentage" : 0.000187673 }
+, { "name" : "__myl_TraCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl139_1", "timeMs" : 2.28147, "averageMs" : 0.207407, "medianMs" : 0.20752, "percentage" : 0.037691 }
+, { "name" : "/backbone/stages_3/stages_3_1/pwconv1/MatMul_myl139_2", "timeMs" : 35.0043, "averageMs" : 3.18221, "medianMs" : 3.18019, "percentage" : 0.578288 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl139_3", "timeMs" : 7.47901, "averageMs" : 0.67991, "medianMs" : 0.680064, "percentage" : 0.123557 }
+, { "name" : "/backbone/stages_3/stages_3_1/pwconv2/MatMul_myl139_4", "timeMs" : 26.8594, "averageMs" : 2.44177, "medianMs" : 2.4415, "percentage" : 0.44373 }
+, { "name" : "__myl_AddMulTraAdd_myl139_5", "timeMs" : 2.27904, "averageMs" : 0.207185, "medianMs" : 0.20736, "percentage" : 0.0376508 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to /backbone/stages.3/stages.3.2/dwconv/Conv", "timeMs" : 2.71686, "averageMs" : 0.246988, "medianMs" : 0.267968, "percentage" : 0.0448839 }
+, { "name" : "/backbone/stages.3/stages.3.2/dwconv/Conv", "timeMs" : 11.2354, "averageMs" : 1.0214, "medianMs" : 1.05338, "percentage" : 0.185613 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to {ForeignNode[backbone.backbone.stages.3.2.norm.weight + ONNXTRT_Broadcast_592.../backbone/Transpose_1 + /backbone/Reshape_5]}", "timeMs" : 2.29616, "averageMs" : 0.208742, "medianMs" : 0.208608, "percentage" : 0.0379336 }
+, { "name" : "__mye824_0_myl143_0", "timeMs" : 0.013312, "averageMs" : 0.00121018, "medianMs" : 0.001216, "percentage" : 0.000219921 }
+, { "name" : "__myl_TraCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl143_1", "timeMs" : 2.27597, "averageMs" : 0.206906, "medianMs" : 0.206976, "percentage" : 0.0376001 }
+, { "name" : "/backbone/stages_3/stages_3_2/pwconv1/MatMul_myl143_2", "timeMs" : 35.0793, "averageMs" : 3.18903, "medianMs" : 3.18986, "percentage" : 0.579527 }
+, { "name" : "__myl_AddDivCasErfCasAddMulMul_myl143_3", "timeMs" : 7.44707, "averageMs" : 0.677006, "medianMs" : 0.677088, "percentage" : 0.123029 }
+, { "name" : "/backbone/stages_3/stages_3_2/pwconv2/MatMul_myl143_4", "timeMs" : 27.8863, "averageMs" : 2.53512, "medianMs" : 2.53485, "percentage" : 0.460695 }
+, { "name" : "__myl_AddMulTraAddRes_myl143_5", "timeMs" : 19.6604, "averageMs" : 1.78731, "medianMs" : 1.78829, "percentage" : 0.3248 }
+, { "name" : "__myl_Tra_myl143_6", "timeMs" : 2.36957, "averageMs" : 0.215415, "medianMs" : 0.215328, "percentage" : 0.0391464 }
+, { "name" : "__myl_CasMeaSubMulMea_myl143_7", "timeMs" : 2.3657, "averageMs" : 0.215063, "medianMs" : 0.215232, "percentage" : 0.0390824 }
+, { "name" : "__myl_AddSqrDivMulCasMulAddTraRes_myl143_8", "timeMs" : 5.23075, "averageMs" : 0.475523, "medianMs" : 0.475488, "percentage" : 0.0864145 }
+, { "name" : "/encoder/input_proj.2/conv/Conv", "timeMs" : 2.49552, "averageMs" : 0.226865, "medianMs" : 0.227328, "percentage" : 0.0412272 }
+, { "name" : "__mye2062_0_myl145_0", "timeMs" : 0.011296, "averageMs" : 0.00102691, "medianMs" : 0.001024, "percentage" : 0.000186615 }
+, { "name" : "__mye11086_hc_init_myl145_1", "timeMs" : 0.013024, "averageMs" : 0.001184, "medianMs" : 0.001184, "percentage" : 0.000215163 }
+, { "name" : "__myl_Res_myl145_2", "timeMs" : 3.2464, "averageMs" : 0.295127, "medianMs" : 0.295424, "percentage" : 0.0536321 }
+, { "name" : "__mye10785_myl145_3", "timeMs" : 0, "averageMs" : 0, "medianMs" : 0, "percentage" : 0 }
+, { "name" : "__myl_AddTra_myl145_4", "timeMs" : 1.48509, "averageMs" : 0.135008, "medianMs" : 0.135168, "percentage" : 0.0245344 }
+, { "name" : "/encoder/encoder_0/layers_0/self_attn/MatMul_1+/encoder/encoder_0/layers_0/self_attn/MatMul_myl145_5", "timeMs" : 2.80995, "averageMs" : 0.25545, "medianMs" : 0.255232, "percentage" : 0.0464217 }
+, { "name" : "__mye10787_myl145_6", "timeMs" : 0, "averageMs" : 0, "medianMs" : 0, "percentage" : 0 }
+, { "name" : "__myl_Tra_myl145_7", "timeMs" : 2.2031, "averageMs" : 0.200282, "medianMs" : 0.20048, "percentage" : 0.0363963 }
+, { "name" : "/encoder/encoder_0/layers_0/self_attn/MatMul_2_myl145_8", "timeMs" : 11.7295, "averageMs" : 1.06632, "medianMs" : 1.0663, "percentage" : 0.193778 }
+, { "name" : "__mye10789_myl145_9", "timeMs" : 0, "averageMs" : 0, "medianMs" : 0, "percentage" : 0 }
+, { "name" : "__mye10791_myl145_10", "timeMs" : 0, "averageMs" : 0, "medianMs" : 0, "percentage" : 0 }
+, { "name" : "__mye10877_myl145_11", "timeMs" : 0.010688, "averageMs" : 0.000971636, "medianMs" : 0.00096, "percentage" : 0.000176571 }
+, { "name" : "cast_hvar^10873i64_myl145_12", "timeMs" : 0.011296, "averageMs" : 0.00102691, "medianMs" : 0.001024, "percentage" : 0.000186615 }
+, { "name" : "off_add_myl145_13", "timeMs" : 0.01168, "averageMs" : 0.00106182, "medianMs" : 0.001056, "percentage" : 0.000192959 }
+, { "name" : "_gemm_mha_v2_myl145_14", "timeMs" : 5.31482, "averageMs" : 0.483165, "medianMs" : 0.483296, "percentage" : 0.0878033 }
+, { "name" : "__myl_Tra_myl145_15", "timeMs" : 0.597184, "averageMs" : 0.0542895, "medianMs" : 0.0544, "percentage" : 0.00986576 }
+, { "name" : "/encoder/encoder_0/layers_0/self_attn/Gemm_myl145_16", "timeMs" : 1.31466, "averageMs" : 0.119514, "medianMs" : 0.119552, "percentage" : 0.0217187 }
+, { "name" : "__myl_TraTraAddCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl145_17", "timeMs" : 6.57402, "averageMs" : 0.597638, "medianMs" : 0.597984, "percentage" : 0.108606 }
+, { "name" : "__myl_Fc_myl145_18", "timeMs" : 6.64531, "averageMs" : 0.604119, "medianMs" : 0.603936, "percentage" : 0.109784 }
+, { "name" : "/encoder/encoder_0/layers_0/linear2/MatMul_myl145_19", "timeMs" : 4.50813, "averageMs" : 0.40983, "medianMs" : 0.409504, "percentage" : 0.0744764 }
+, { "name" : "__myl_ResAddCasMeaSubMulMea_myl145_20", "timeMs" : 1.28038, "averageMs" : 0.116399, "medianMs" : 0.11632, "percentage" : 0.0211526 }
+, { "name" : "__myl_AddSqrDivMulCasMulAddResTraRes_myl145_21", "timeMs" : 3.55683, "averageMs" : 0.323348, "medianMs" : 0.323232, "percentage" : 0.0587605 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to /encoder/lateral_convs.0/conv/Conv + PWN(PWN(/encoder/lateral_convs.0/act/Sigmoid), PWN(/encoder/lateral_convs.0/act/Mul))", "timeMs" : 1.45184, "averageMs" : 0.131985, "medianMs" : 0.15088, "percentage" : 0.0239851 }
+, { "name" : "/encoder/lateral_convs.0/conv/Conv + PWN(PWN(/encoder/lateral_convs.0/act/Sigmoid), PWN(/encoder/lateral_convs.0/act/Mul))", "timeMs" : 1.38547, "averageMs" : 0.125952, "medianMs" : 0.140256, "percentage" : 0.0228887 }
+, { "name" : "/encoder/Resize", "timeMs" : 1.89027, "averageMs" : 0.171843, "medianMs" : 0.195776, "percentage" : 0.0312282 }
+, { "name" : "/encoder/Resize_output_0 copy", "timeMs" : 2.16918, "averageMs" : 0.197199, "medianMs" : 0.185504, "percentage" : 0.0358359 }
+, { "name" : "/encoder/fpn_blocks.0/conv1/conv/Conv + PWN(PWN(/encoder/fpn_blocks.0/conv1/act/Sigmoid), PWN(/encoder/fpn_blocks.0/conv1/act/Mul))", "timeMs" : 3.77606, "averageMs" : 0.343279, "medianMs" : 0.343584, "percentage" : 0.0623824 }
+, { "name" : "/encoder/fpn_blocks.0/bottlenecks/bottlenecks.0/conv/Conv + PWN(PWN(/encoder/fpn_blocks.0/bottlenecks/bottlenecks.0/act/Sigmoid), PWN(/encoder/fpn_blocks.0/bottlenecks/bottlenecks.0/act/Mul))", "timeMs" : 13.3113, "averageMs" : 1.21012, "medianMs" : 1.21072, "percentage" : 0.219909 }
+, { "name" : "/encoder/fpn_blocks.0/bottlenecks/bottlenecks.1/conv/Conv + PWN(PWN(/encoder/fpn_blocks.0/bottlenecks/bottlenecks.1/act/Sigmoid), PWN(/encoder/fpn_blocks.0/bottlenecks/bottlenecks.1/act/Mul))", "timeMs" : 13.2442, "averageMs" : 1.20402, "medianMs" : 1.20458, "percentage" : 0.218801 }
+, { "name" : "/encoder/fpn_blocks.0/bottlenecks/bottlenecks.2/conv/Conv", "timeMs" : 12.7243, "averageMs" : 1.15675, "medianMs" : 1.15706, "percentage" : 0.210211 }
+, { "name" : "/encoder/fpn_blocks.0/conv2/conv/Conv + PWN(PWN(PWN(/encoder/fpn_blocks.0/bottlenecks/bottlenecks.2/act/Sigmoid), PWN(/encoder/fpn_blocks.0/bottlenecks/bottlenecks.2/act/Mul)), PWN(PWN(PWN(/encoder/fpn_blocks.0/conv2/act/Sigmoid), PWN(/encoder/fpn_blocks.0/conv2/act/Mul)), PWN(/encoder/fpn_blocks.0/Add)))", "timeMs" : 4.74566, "averageMs" : 0.431424, "medianMs" : 0.431712, "percentage" : 0.0784006 }
+, { "name" : "/encoder/lateral_convs.1/conv/Conv + PWN(PWN(/encoder/lateral_convs.1/act/Sigmoid), PWN(/encoder/lateral_convs.1/act/Mul))", "timeMs" : 2.56147, "averageMs" : 0.232861, "medianMs" : 0.232768, "percentage" : 0.0423167 }
+, { "name" : "/encoder/Resize_1", "timeMs" : 4.40634, "averageMs" : 0.400576, "medianMs" : 0.400544, "percentage" : 0.0727948 }
+, { "name" : "/encoder/Resize_1_output_0 copy", "timeMs" : 7.62966, "averageMs" : 0.693606, "medianMs" : 0.693376, "percentage" : 0.126046 }
+, { "name" : "/encoder/fpn_blocks.1/conv1/conv/Conv + PWN(PWN(/encoder/fpn_blocks.1/conv1/act/Sigmoid), PWN(/encoder/fpn_blocks.1/conv1/act/Mul))", "timeMs" : 18.3764, "averageMs" : 1.67059, "medianMs" : 1.67904, "percentage" : 0.303588 }
+, { "name" : "/encoder/fpn_blocks.1/bottlenecks/bottlenecks.0/conv/Conv + PWN(PWN(/encoder/fpn_blocks.1/bottlenecks/bottlenecks.0/act/Sigmoid), PWN(/encoder/fpn_blocks.1/bottlenecks/bottlenecks.0/act/Mul))", "timeMs" : 50.6767, "averageMs" : 4.60697, "medianMs" : 4.59786, "percentage" : 0.837203 }
+, { "name" : "/encoder/fpn_blocks.1/bottlenecks/bottlenecks.1/conv/Conv + PWN(PWN(/encoder/fpn_blocks.1/bottlenecks/bottlenecks.1/act/Sigmoid), PWN(/encoder/fpn_blocks.1/bottlenecks/bottlenecks.1/act/Mul))", "timeMs" : 50.5286, "averageMs" : 4.59351, "medianMs" : 4.5929, "percentage" : 0.834756 }
+, { "name" : "/encoder/fpn_blocks.1/conv2/conv/Conv", "timeMs" : 20.43, "averageMs" : 1.85728, "medianMs" : 1.85686, "percentage" : 0.337514 }
+, { "name" : "/encoder/fpn_blocks.1/bottlenecks/bottlenecks.2/conv/Conv + PWN(PWN(PWN(/encoder/fpn_blocks.1/bottlenecks/bottlenecks.2/act/Sigmoid), PWN(/encoder/fpn_blocks.1/bottlenecks/bottlenecks.2/act/Mul)), PWN(PWN(PWN(/encoder/fpn_blocks.1/conv2/act/Sigmoid), PWN(/encoder/fpn_blocks.1/conv2/act/Mul)), PWN(/encoder/fpn_blocks.1/Add)))", "timeMs" : 60.6782, "averageMs" : 5.5162, "medianMs" : 5.51629, "percentage" : 1.00243 }
+, { "name" : "/encoder/downsample_convs.0/conv/Conv + PWN(PWN(/encoder/downsample_convs.0/act/Sigmoid), PWN(/encoder/downsample_convs.0/act/Mul))", "timeMs" : 17.8288, "averageMs" : 1.6208, "medianMs" : 1.63216, "percentage" : 0.294541 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to /decoder/input_proj.0/conv/Conv", "timeMs" : 8.85862, "averageMs" : 0.80533, "medianMs" : 0.800224, "percentage" : 0.146349 }
+, { "name" : "/decoder/input_proj.0/conv/Conv", "timeMs" : 12.4748, "averageMs" : 1.13407, "medianMs" : 1.08394, "percentage" : 0.206089 }
+, { "name" : "/encoder/lateral_convs.1/act/Mul_output_0 copy", "timeMs" : 2.92995, "averageMs" : 0.266359, "medianMs" : 0.29872, "percentage" : 0.0484042 }
+, { "name" : "/encoder/pan_blocks.0/conv1/conv/Conv + PWN(PWN(/encoder/pan_blocks.0/conv1/act/Sigmoid), PWN(/encoder/pan_blocks.0/conv1/act/Mul))", "timeMs" : 4.79629, "averageMs" : 0.436026, "medianMs" : 0.457888, "percentage" : 0.079237 }
+, { "name" : "/encoder/pan_blocks.0/bottlenecks/bottlenecks.0/conv/Conv + PWN(PWN(/encoder/pan_blocks.0/bottlenecks/bottlenecks.0/act/Sigmoid), PWN(/encoder/pan_blocks.0/bottlenecks/bottlenecks.0/act/Mul))", "timeMs" : 14.1077, "averageMs" : 1.28252, "medianMs" : 1.21056, "percentage" : 0.233066 }
+, { "name" : "/encoder/pan_blocks.0/bottlenecks/bottlenecks.1/conv/Conv + PWN(PWN(/encoder/pan_blocks.0/bottlenecks/bottlenecks.1/act/Sigmoid), PWN(/encoder/pan_blocks.0/bottlenecks/bottlenecks.1/act/Mul))", "timeMs" : 13.2686, "averageMs" : 1.20624, "medianMs" : 1.20643, "percentage" : 0.219204 }
+, { "name" : "/encoder/pan_blocks.0/conv2/conv/Conv", "timeMs" : 3.84509, "averageMs" : 0.349553, "medianMs" : 0.349056, "percentage" : 0.0635227 }
+, { "name" : "/encoder/pan_blocks.0/bottlenecks/bottlenecks.2/conv/Conv + PWN(PWN(PWN(/encoder/pan_blocks.0/bottlenecks/bottlenecks.2/act/Sigmoid), PWN(/encoder/pan_blocks.0/bottlenecks/bottlenecks.2/act/Mul)), PWN(PWN(PWN(/encoder/pan_blocks.0/conv2/act/Sigmoid), PWN(/encoder/pan_blocks.0/conv2/act/Mul)), PWN(/encoder/pan_blocks.0/Add)))", "timeMs" : 20.4929, "averageMs" : 1.86299, "medianMs" : 1.68131, "percentage" : 0.338552 }
+, { "name" : "/encoder/downsample_convs.1/conv/Conv + PWN(PWN(/encoder/downsample_convs.1/act/Sigmoid), PWN(/encoder/downsample_convs.1/act/Mul))", "timeMs" : 3.74954, "averageMs" : 0.340867, "medianMs" : 0.340736, "percentage" : 0.0619441 }
+, { "name" : "/decoder/input_proj.1/conv/Conv", "timeMs" : 2.00381, "averageMs" : 0.182164, "medianMs" : 0.178336, "percentage" : 0.0331039 }
+, { "name" : "/encoder/lateral_convs.0/act/Mul_output_0 copy", "timeMs" : 0.584128, "averageMs" : 0.0531025, "medianMs" : 0.051104, "percentage" : 0.00965007 }
+, { "name" : "/encoder/pan_blocks.1/conv1/conv/Conv + PWN(PWN(/encoder/pan_blocks.1/conv1/act/Sigmoid), PWN(/encoder/pan_blocks.1/conv1/act/Mul))", "timeMs" : 1.41706, "averageMs" : 0.128823, "medianMs" : 0.121824, "percentage" : 0.0234104 }
+, { "name" : "/encoder/pan_blocks.1/bottlenecks/bottlenecks.0/conv/Conv + PWN(PWN(/encoder/pan_blocks.1/bottlenecks/bottlenecks.0/act/Sigmoid), PWN(/encoder/pan_blocks.1/bottlenecks/bottlenecks.0/act/Mul))", "timeMs" : 3.7136, "averageMs" : 0.3376, "medianMs" : 0.32048, "percentage" : 0.0613504 }
+, { "name" : "/encoder/pan_blocks.1/bottlenecks/bottlenecks.1/conv/Conv + PWN(PWN(/encoder/pan_blocks.1/bottlenecks/bottlenecks.1/act/Sigmoid), PWN(/encoder/pan_blocks.1/bottlenecks/bottlenecks.1/act/Mul))", "timeMs" : 3.47978, "averageMs" : 0.316343, "medianMs" : 0.316704, "percentage" : 0.0574876 }
+, { "name" : "/encoder/pan_blocks.1/conv2/conv/Conv", "timeMs" : 1.22224, "averageMs" : 0.111113, "medianMs" : 0.111168, "percentage" : 0.020192 }
+, { "name" : "/encoder/pan_blocks.1/bottlenecks/bottlenecks.2/conv/Conv + PWN(PWN(PWN(/encoder/pan_blocks.1/bottlenecks/bottlenecks.2/act/Sigmoid), PWN(/encoder/pan_blocks.1/bottlenecks/bottlenecks.2/act/Mul)), PWN(PWN(PWN(/encoder/pan_blocks.1/conv2/act/Sigmoid), PWN(/encoder/pan_blocks.1/conv2/act/Mul)), PWN(/encoder/pan_blocks.1/Add)))", "timeMs" : 3.82803, "averageMs" : 0.348003, "medianMs" : 0.34848, "percentage" : 0.0632409 }
+, { "name" : "/decoder/input_proj.2/conv/Conv", "timeMs" : 0.750688, "averageMs" : 0.0682444, "medianMs" : 0.068448, "percentage" : 0.0124017 }
+, { "name" : "Reformatting CopyNode for Input Tensor 1 to {ForeignNode[/Constant_output_0.../postprocessor/GatherElements]}", "timeMs" : 2.18138, "averageMs" : 0.198307, "medianMs" : 0.198656, "percentage" : 0.0360374 }
+, { "name" : "Reformatting CopyNode for Input Tensor 2 to {ForeignNode[/Constant_output_0.../postprocessor/GatherElements]}", "timeMs" : 0.645824, "averageMs" : 0.0587113, "medianMs" : 0.05888, "percentage" : 0.0106693 }
+, { "name" : "__mye63918_0_myl183_0", "timeMs" : 0.013664, "averageMs" : 0.00124218, "medianMs" : 0.001248, "percentage" : 0.000225736 }
+, { "name" : "__mye284154_hc_init_myl183_1", "timeMs" : 0.010688, "averageMs" : 0.000971636, "medianMs" : 0.00096, "percentage" : 0.000176571 }
+, { "name" : "__myl_ResResResConTraMul_myl183_2", "timeMs" : 11.8519, "averageMs" : 1.07744, "medianMs" : 1.07763, "percentage" : 0.195799 }
+, { "name" : "__myl_FcCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl183_3", "timeMs" : 16.4507, "averageMs" : 1.49551, "medianMs" : 1.51565, "percentage" : 0.271773 }
+, { "name" : "/decoder/enc_score_head/MatMul_myl183_4", "timeMs" : 6.76096, "averageMs" : 0.614633, "medianMs" : 0.623072, "percentage" : 0.111694 }
+, { "name" : "__myl_Max_myl183_5", "timeMs" : 2.00147, "averageMs" : 0.181952, "medianMs" : 0.18192, "percentage" : 0.0330653 }
+, { "name" : "__myl_Top_myl183_6", "timeMs" : 0.539648, "averageMs" : 0.0490589, "medianMs" : 0.04912, "percentage" : 0.00891524 }
+, { "name" : "/decoder/enc_bbox_head/layers_0/MatMul_myl183_7", "timeMs" : 10.8646, "averageMs" : 0.987692, "medianMs" : 0.98736, "percentage" : 0.179488 }
+, { "name" : "/decoder/enc_bbox_head/layers_1/MatMul_myl183_8", "timeMs" : 14.3211, "averageMs" : 1.30192, "medianMs" : 1.30285, "percentage" : 0.236592 }
+, { "name" : "/decoder/enc_bbox_head/layers_2/MatMul_myl183_9", "timeMs" : 6.24752, "averageMs" : 0.567956, "medianMs" : 0.568, "percentage" : 0.103212 }
+, { "name" : "__myl_CasResRepSliCasRepAddGatResNegExpAddDiv_myl183_10", "timeMs" : 0.121696, "averageMs" : 0.0110633, "medianMs" : 0.011168, "percentage" : 0.00201048 }
+, { "name" : "/decoder/decoder/query_pos_head/layers_0/MatMul_myl183_11", "timeMs" : 0.576128, "averageMs" : 0.0523753, "medianMs" : 0.052384, "percentage" : 0.00951791 }
+, { "name" : "__myl_Rel_myl183_12", "timeMs" : 0.626016, "averageMs" : 0.0569105, "medianMs" : 0.05696, "percentage" : 0.0103421 }
+, { "name" : "/decoder/decoder/query_pos_head/layers_1/MatMul_myl183_13", "timeMs" : 0.908416, "averageMs" : 0.0825833, "medianMs" : 0.082784, "percentage" : 0.0150075 }
+, { "name" : "__myl_ResRepSliCasRepGatTraResAddResTra_myl183_14", "timeMs" : 3.22909, "averageMs" : 0.293553, "medianMs" : 0.293664, "percentage" : 0.0533461 }
+, { "name" : "/decoder/decoder/layers_0/self_attn/MatMul_2_myl183_15", "timeMs" : 0.564544, "averageMs" : 0.0513222, "medianMs" : 0.05136, "percentage" : 0.00932654 }
+, { "name" : "/decoder/decoder/layers_0/self_attn/MatMul_1+/decoder/decoder/layers_0/self_attn/MatMul_myl183_16", "timeMs" : 1.00557, "averageMs" : 0.0914153, "medianMs" : 0.09136, "percentage" : 0.0166125 }
+, { "name" : "__mye283731_myl183_17", "timeMs" : 0.011296, "averageMs" : 0.00102691, "medianMs" : 0.001024, "percentage" : 0.000186615 }
+, { "name" : "cast_hvar^283727i64_myl183_18", "timeMs" : 0.011616, "averageMs" : 0.001056, "medianMs" : 0.001056, "percentage" : 0.000191902 }
+, { "name" : "off_add_myl183_19", "timeMs" : 0.011968, "averageMs" : 0.001088, "medianMs" : 0.001088, "percentage" : 0.000197717 }
+, { "name" : "_gemm_mha_v2_myl183_20", "timeMs" : 2.24538, "averageMs" : 0.204125, "medianMs" : 0.204128, "percentage" : 0.0370947 }
+, { "name" : "__myl_Tra_myl183_21", "timeMs" : 0.311776, "averageMs" : 0.0283433, "medianMs" : 0.02832, "percentage" : 0.00515069 }
+, { "name" : "/decoder/decoder/layers_0/self_attn/Gemm_myl183_22", "timeMs" : 0.590304, "averageMs" : 0.053664, "medianMs" : 0.05376, "percentage" : 0.0097521 }
+, { "name" : "__myl_TraAddCasMeaSubMulMeaAddSqrDivMulCasMulAddResAdd_myl183_23", "timeMs" : 0.784672, "averageMs" : 0.0713338, "medianMs" : 0.071456, "percentage" : 0.0129632 }
+, { "name" : "/decoder/decoder/layers_0/cross_attn/attention_weights/MatMul+/decoder/decoder/layers_0/cross_attn/sampling_offsets/MatMul_myl183_24", "timeMs" : 0.685952, "averageMs" : 0.0623593, "medianMs" : 0.062336, "percentage" : 0.0113323 }
+, { "name" : "/decoder/decoder/layers_0/cross_attn/value_proj/MatMul+/decoder/decoder/layers_1/cross_attn/value_proj/MatMul+/decoder/decoder/layers_2/cross_attn/value_proj/MatMul+/decoder/decoder/layers_3/cross_attn/value_proj/MatMul+/decoder/decoder/layers_4/cross_attn/value_proj/MatMul+/decoder/decoder/layers_5/cross_attn/value_proj/MatMul_myl183_25", "timeMs" : 80.6074, "averageMs" : 7.32795, "medianMs" : 7.35594, "percentage" : 1.33167 }
+, { "name" : "__myl_ResMaxSubExpSum_myl183_26", "timeMs" : 1.33901, "averageMs" : 0.121728, "medianMs" : 0.1272, "percentage" : 0.022121 }
+, { "name" : "__myl_Res_myl183_27", "timeMs" : 8.10992, "averageMs" : 0.737266, "medianMs" : 0.73776, "percentage" : 0.13398 }
+, { "name" : "__myl_TraResSli_myl183_28", "timeMs" : 83.3246, "averageMs" : 7.57496, "medianMs" : 7.58026, "percentage" : 1.37656 }
+, { "name" : "copy_h2d___mye269991_myl183_29", "timeMs" : 0.01888, "averageMs" : 0.00171636, "medianMs" : 0.001664, "percentage" : 0.000311907 }
+, { "name" : "__myl_ResSliSliResMulMulMulAddMulAddTraResSliSliSliSliResSliResResCasRevTraCasConCasSliAddCasAddEtc_myl183_30", "timeMs" : 18.8553, "averageMs" : 1.71412, "medianMs" : 1.71414, "percentage" : 0.311498 }
+, { "name" : "__myl_DivMulTraResConMulSum_myl183_31", "timeMs" : 16.2041, "averageMs" : 1.4731, "medianMs" : 1.47325, "percentage" : 0.267699 }
+, { "name" : "__myl_Tra_myl183_32", "timeMs" : 0.412192, "averageMs" : 0.037472, "medianMs" : 0.037536, "percentage" : 0.00680961 }
+, { "name" : "/decoder/decoder/layers_0/cross_attn/output_proj/MatMul_myl183_33", "timeMs" : 0.635456, "averageMs" : 0.0577687, "medianMs" : 0.057792, "percentage" : 0.010498 }
+, { "name" : "__myl_AddCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl183_34", "timeMs" : 0.517056, "averageMs" : 0.0470051, "medianMs" : 0.047104, "percentage" : 0.00854201 }
+, { "name" : "/decoder/decoder/layers_0/linear1/MatMul_myl183_35", "timeMs" : 1.672, "averageMs" : 0.152, "medianMs" : 0.151872, "percentage" : 0.0276222 }
+, { "name" : "/decoder/decoder/layers_0/linear2/MatMul_myl183_36", "timeMs" : 1.37011, "averageMs" : 0.124556, "medianMs" : 0.12464, "percentage" : 0.0226349 }
+, { "name" : "__myl_AddCasMeaSubMulMea_myl183_37", "timeMs" : 0.63872, "averageMs" : 0.0580655, "medianMs" : 0.058112, "percentage" : 0.010552 }
+, { "name" : "__myl_AddSqrDivMulCasMulAddResTra_myl183_38", "timeMs" : 0.896704, "averageMs" : 0.0815186, "medianMs" : 0.081632, "percentage" : 0.014814 }
+, { "name" : "/decoder/decoder/layers_1/self_attn/MatMul_2_myl183_39", "timeMs" : 0.546656, "averageMs" : 0.049696, "medianMs" : 0.049696, "percentage" : 0.00903102 }
+, { "name" : "/decoder/decoder/dec_bbox_head_0/layers_0/MatMul_myl183_40", "timeMs" : 0.574048, "averageMs" : 0.0521862, "medianMs" : 0.052256, "percentage" : 0.00948354 }
+, { "name" : "/decoder/decoder/dec_bbox_head_0/layers_1/MatMul_myl183_41", "timeMs" : 0.542144, "averageMs" : 0.0492858, "medianMs" : 0.04928, "percentage" : 0.00895647 }
+, { "name" : "/decoder/decoder/dec_bbox_head_0/layers_2/MatMul_myl183_42", "timeMs" : 0.58352, "averageMs" : 0.0530473, "medianMs" : 0.052992, "percentage" : 0.00964002 }
+, { "name" : "__myl_MinMaxMaxSubMinMaxMinDivLogAddNegExpAddDiv_myl183_43", "timeMs" : 0.0928, "averageMs" : 0.00843636, "medianMs" : 0.008512, "percentage" : 0.0015331 }
+, { "name" : "/decoder/decoder/query_pos_head/layers_0_1/MatMul_myl183_44", "timeMs" : 0.586752, "averageMs" : 0.0533411, "medianMs" : 0.053472, "percentage" : 0.00969342 }
+, { "name" : "__myl_Rel_myl183_45", "timeMs" : 0.66784, "averageMs" : 0.0607127, "medianMs" : 0.060736, "percentage" : 0.011033 }
+, { "name" : "/decoder/decoder/query_pos_head/layers_1_1/MatMul_myl183_46", "timeMs" : 0.900448, "averageMs" : 0.0818589, "medianMs" : 0.081856, "percentage" : 0.0148758 }
+, { "name" : "__myl_AddResTra_myl183_47", "timeMs" : 0.511392, "averageMs" : 0.0464902, "medianMs" : 0.046528, "percentage" : 0.00844844 }
+, { "name" : "/decoder/decoder/layers_1/self_attn/MatMul_1+/decoder/decoder/layers_1/self_attn/MatMul_myl183_48", "timeMs" : 0.975712, "averageMs" : 0.0887011, "medianMs" : 0.088864, "percentage" : 0.0161192 }
+, { "name" : "__mye283668_myl183_49", "timeMs" : 0.013376, "averageMs" : 0.001216, "medianMs" : 0.001216, "percentage" : 0.000220978 }
+, { "name" : "cast_hvar^283664i64_myl183_50", "timeMs" : 0.011808, "averageMs" : 0.00107345, "medianMs" : 0.001088, "percentage" : 0.000195074 }
+, { "name" : "off_add_myl183_51", "timeMs" : 0.012256, "averageMs" : 0.00111418, "medianMs" : 0.00112, "percentage" : 0.000202475 }
+, { "name" : "_gemm_mha_v2_myl183_52", "timeMs" : 2.22173, "averageMs" : 0.201975, "medianMs" : 0.201824, "percentage" : 0.036704 }
+, { "name" : "__myl_TraResMov_myl183_53", "timeMs" : 0.323712, "averageMs" : 0.0294284, "medianMs" : 0.029472, "percentage" : 0.00534787 }
+, { "name" : "/decoder/decoder/layers_1/self_attn/Gemm_myl183_54", "timeMs" : 0.607424, "averageMs" : 0.0552204, "medianMs" : 0.05536, "percentage" : 0.0100349 }
+, { "name" : "__myl_TraAddCasMeaSubMulMeaAddSqrDivMulCasMulAddResAdd_myl183_55", "timeMs" : 0.782048, "averageMs" : 0.0710953, "medianMs" : 0.071136, "percentage" : 0.0129198 }
+, { "name" : "/decoder/decoder/layers_1/cross_attn/attention_weights/MatMul+/decoder/decoder/layers_1/cross_attn/sampling_offsets/MatMul_myl183_56", "timeMs" : 0.69376, "averageMs" : 0.0630691, "medianMs" : 0.063072, "percentage" : 0.0114612 }
+, { "name" : "__myl_ResMaxSubExpSum_myl183_57", "timeMs" : 0.740032, "averageMs" : 0.0672756, "medianMs" : 0.06736, "percentage" : 0.0122257 }
+, { "name" : "__myl_Res_myl183_58", "timeMs" : 8.17094, "averageMs" : 0.742813, "medianMs" : 0.742912, "percentage" : 0.134988 }
+, { "name" : "__myl_TraResSli_myl183_59", "timeMs" : 83.3352, "averageMs" : 7.57593, "medianMs" : 7.5761, "percentage" : 1.37674 }
+, { "name" : "__myl_ResSliSliResMulMulMulAddMulAddTraResSliSliSliSliResSliResResCasRevTraCasAddMulAddMulRouCasEtc_myl183_60", "timeMs" : 21.6233, "averageMs" : 1.96575, "medianMs" : 1.96586, "percentage" : 0.357227 }
+, { "name" : "__myl_DivMulTraResMovConMulSum_myl183_61", "timeMs" : 19.0254, "averageMs" : 1.72959, "medianMs" : 1.72979, "percentage" : 0.314309 }
+, { "name" : "__myl_Tra_myl183_62", "timeMs" : 0.39296, "averageMs" : 0.0357236, "medianMs" : 0.035776, "percentage" : 0.00649189 }
+, { "name" : "/decoder/decoder/layers_1/cross_attn/output_proj/MatMul_myl183_63", "timeMs" : 0.633696, "averageMs" : 0.0576087, "medianMs" : 0.057632, "percentage" : 0.010469 }
+, { "name" : "__myl_AddCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl183_64", "timeMs" : 0.5048, "averageMs" : 0.0458909, "medianMs" : 0.045952, "percentage" : 0.00833953 }
+, { "name" : "/decoder/decoder/layers_1/linear1/MatMul_myl183_65", "timeMs" : 1.66157, "averageMs" : 0.151052, "medianMs" : 0.1512, "percentage" : 0.0274499 }
+, { "name" : "/decoder/decoder/layers_1/linear2/MatMul_myl183_66", "timeMs" : 1.38998, "averageMs" : 0.126362, "medianMs" : 0.12624, "percentage" : 0.0229632 }
+, { "name" : "__myl_AddCasMeaSubMulMea_myl183_67", "timeMs" : 0.628544, "averageMs" : 0.0571404, "medianMs" : 0.057248, "percentage" : 0.0103838 }
+, { "name" : "__myl_AddSqrDivMulCasMulAddResTra_myl183_68", "timeMs" : 0.891776, "averageMs" : 0.0810705, "medianMs" : 0.081056, "percentage" : 0.0147326 }
+, { "name" : "/decoder/decoder/layers_2/self_attn/MatMul_2_myl183_69", "timeMs" : 0.547392, "averageMs" : 0.0497629, "medianMs" : 0.049856, "percentage" : 0.00904317 }
+, { "name" : "/decoder/decoder/dec_bbox_head_1/layers_0/MatMul_myl183_70", "timeMs" : 0.571872, "averageMs" : 0.0519884, "medianMs" : 0.052032, "percentage" : 0.0094476 }
+, { "name" : "/decoder/decoder/dec_bbox_head_1/layers_1/MatMul_myl183_71", "timeMs" : 0.5096, "averageMs" : 0.0463273, "medianMs" : 0.046368, "percentage" : 0.00841883 }
+, { "name" : "/decoder/decoder/dec_bbox_head_1/layers_2/MatMul_myl183_72", "timeMs" : 0.583232, "averageMs" : 0.0530211, "medianMs" : 0.053088, "percentage" : 0.00963527 }
+, { "name" : "__myl_MinMaxMaxSubMinMaxMinDivLogAddNegExpAddDiv_myl183_73", "timeMs" : 0.089696, "averageMs" : 0.00815418, "medianMs" : 0.008192, "percentage" : 0.00148182 }
+, { "name" : "/decoder/decoder/query_pos_head/layers_0_2/MatMul_myl183_74", "timeMs" : 0.577568, "averageMs" : 0.0525062, "medianMs" : 0.052544, "percentage" : 0.0095417 }
+, { "name" : "__myl_Rel_myl183_75", "timeMs" : 0.669664, "averageMs" : 0.0608785, "medianMs" : 0.06096, "percentage" : 0.0110632 }
+, { "name" : "/decoder/decoder/query_pos_head/layers_1_2/MatMul_myl183_76", "timeMs" : 0.909888, "averageMs" : 0.0827171, "medianMs" : 0.08288, "percentage" : 0.0150318 }
+, { "name" : "__myl_AddResTra_myl183_77", "timeMs" : 0.505472, "averageMs" : 0.045952, "medianMs" : 0.04592, "percentage" : 0.00835064 }
+, { "name" : "/decoder/decoder/layers_2/self_attn/MatMul_1+/decoder/decoder/layers_2/self_attn/MatMul_myl183_78", "timeMs" : 0.983168, "averageMs" : 0.0893789, "medianMs" : 0.089568, "percentage" : 0.0162424 }
+, { "name" : "__mye283605_myl183_79", "timeMs" : 0.01264, "averageMs" : 0.00114909, "medianMs" : 0.001152, "percentage" : 0.000208819 }
+, { "name" : "cast_hvar^283601i64_myl183_80", "timeMs" : 0.01184, "averageMs" : 0.00107636, "medianMs" : 0.001088, "percentage" : 0.000195602 }
+, { "name" : "off_add_myl183_81", "timeMs" : 0.01168, "averageMs" : 0.00106182, "medianMs" : 0.001056, "percentage" : 0.000192959 }
+, { "name" : "_gemm_mha_v2_myl183_82", "timeMs" : 2.24163, "averageMs" : 0.203785, "medianMs" : 0.20368, "percentage" : 0.0370328 }
+, { "name" : "__myl_TraResMov_myl183_83", "timeMs" : 0.321856, "averageMs" : 0.0292596, "medianMs" : 0.029312, "percentage" : 0.00531721 }
+, { "name" : "/decoder/decoder/layers_2/self_attn/Gemm_myl183_84", "timeMs" : 0.598688, "averageMs" : 0.0544262, "medianMs" : 0.0544, "percentage" : 0.00989061 }
+, { "name" : "__myl_TraAddCasMeaSubMulMeaAddSqrDivMulCasMulAddResAdd_myl183_85", "timeMs" : 0.78144, "averageMs" : 0.07104, "medianMs" : 0.071008, "percentage" : 0.0129098 }
+, { "name" : "/decoder/decoder/layers_2/cross_attn/attention_weights/MatMul+/decoder/decoder/layers_2/cross_attn/sampling_offsets/MatMul_myl183_86", "timeMs" : 0.698272, "averageMs" : 0.0634793, "medianMs" : 0.063552, "percentage" : 0.0115358 }
+, { "name" : "__myl_ResMaxSubExpSum_myl183_87", "timeMs" : 0.735328, "averageMs" : 0.066848, "medianMs" : 0.06688, "percentage" : 0.012148 }
+, { "name" : "__myl_Res_myl183_88", "timeMs" : 8.1673, "averageMs" : 0.742481, "medianMs" : 0.742624, "percentage" : 0.134928 }
+, { "name" : "__myl_TraResSli_myl183_89", "timeMs" : 83.0886, "averageMs" : 7.5535, "medianMs" : 7.55299, "percentage" : 1.37266 }
+, { "name" : "__myl_ResSliSliResMulMulMulAddMulAddTraResSliSliSliSliResSliResResCasRevTraCasAddMulAddMulRouCasEtc_myl183_90", "timeMs" : 21.6845, "averageMs" : 1.97131, "medianMs" : 1.97158, "percentage" : 0.358237 }
+, { "name" : "__myl_DivMulTraResMovConMulSum_myl183_91", "timeMs" : 19.0136, "averageMs" : 1.72851, "medianMs" : 1.72864, "percentage" : 0.314114 }
+, { "name" : "__myl_Tra_myl183_92", "timeMs" : 0.406208, "averageMs" : 0.036928, "medianMs" : 0.037024, "percentage" : 0.00671075 }
+, { "name" : "/decoder/decoder/layers_2/cross_attn/output_proj/MatMul_myl183_93", "timeMs" : 0.63088, "averageMs" : 0.0573527, "medianMs" : 0.057408, "percentage" : 0.0104224 }
+, { "name" : "__myl_AddCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl183_94", "timeMs" : 0.513344, "averageMs" : 0.0466676, "medianMs" : 0.04672, "percentage" : 0.00848069 }
+, { "name" : "/decoder/decoder/layers_2/linear1/MatMul_myl183_95", "timeMs" : 1.67472, "averageMs" : 0.152247, "medianMs" : 0.152384, "percentage" : 0.0276672 }
+, { "name" : "/decoder/decoder/layers_2/linear2/MatMul_myl183_96", "timeMs" : 1.39552, "averageMs" : 0.126865, "medianMs" : 0.127008, "percentage" : 0.0230547 }
+, { "name" : "__myl_AddCasMeaSubMulMea_myl183_97", "timeMs" : 0.625856, "averageMs" : 0.056896, "medianMs" : 0.056928, "percentage" : 0.0103394 }
+, { "name" : "__myl_AddSqrDivMulCasMulAddResTra_myl183_98", "timeMs" : 0.895904, "averageMs" : 0.0814458, "medianMs" : 0.081472, "percentage" : 0.0148008 }
+, { "name" : "/decoder/decoder/layers_3/self_attn/MatMul_2_myl183_99", "timeMs" : 0.547264, "averageMs" : 0.0497513, "medianMs" : 0.049792, "percentage" : 0.00904106 }
+, { "name" : "/decoder/decoder/dec_bbox_head_2/layers_0/MatMul_myl183_100", "timeMs" : 0.57248, "averageMs" : 0.0520436, "medianMs" : 0.052064, "percentage" : 0.00945764 }
+, { "name" : "/decoder/decoder/dec_bbox_head_2/layers_1/MatMul_myl183_101", "timeMs" : 0.521568, "averageMs" : 0.0474153, "medianMs" : 0.047392, "percentage" : 0.00861655 }
+, { "name" : "/decoder/decoder/dec_bbox_head_2/layers_2/MatMul_myl183_102", "timeMs" : 0.580704, "averageMs" : 0.0527913, "medianMs" : 0.052736, "percentage" : 0.0095935 }
+, { "name" : "__myl_MinMaxMaxSubMinMaxMinDivLogAddNegExpAddDiv_myl183_103", "timeMs" : 0.086016, "averageMs" : 0.00781964, "medianMs" : 0.00784, "percentage" : 0.00142103 }
+, { "name" : "/decoder/decoder/query_pos_head/layers_0_3/MatMul_myl183_104", "timeMs" : 0.583328, "averageMs" : 0.0530298, "medianMs" : 0.053088, "percentage" : 0.00963686 }
+, { "name" : "__myl_Rel_myl183_105", "timeMs" : 0.670496, "averageMs" : 0.0609542, "medianMs" : 0.061024, "percentage" : 0.0110769 }
+, { "name" : "/decoder/decoder/query_pos_head/layers_1_3/MatMul_myl183_106", "timeMs" : 0.902368, "averageMs" : 0.0820334, "medianMs" : 0.082016, "percentage" : 0.0149075 }
+, { "name" : "__myl_AddResTra_myl183_107", "timeMs" : 0.513664, "averageMs" : 0.0466967, "medianMs" : 0.04672, "percentage" : 0.00848597 }
+, { "name" : "/decoder/decoder/layers_3/self_attn/MatMul_1+/decoder/decoder/layers_3/self_attn/MatMul_myl183_108", "timeMs" : 0.98304, "averageMs" : 0.0893673, "medianMs" : 0.0896, "percentage" : 0.0162403 }
+, { "name" : "__mye283542_myl183_109", "timeMs" : 0.010944, "averageMs" : 0.000994909, "medianMs" : 0.000992, "percentage" : 0.0001808 }
+, { "name" : "cast_hvar^283538i64_myl183_110", "timeMs" : 0.012448, "averageMs" : 0.00113164, "medianMs" : 0.001152, "percentage" : 0.000205647 }
+, { "name" : "off_add_myl183_111", "timeMs" : 0.011936, "averageMs" : 0.00108509, "medianMs" : 0.001088, "percentage" : 0.000197188 }
+, { "name" : "_gemm_mha_v2_myl183_112", "timeMs" : 2.17046, "averageMs" : 0.197315, "medianMs" : 0.197344, "percentage" : 0.0358571 }
+, { "name" : "__myl_TraResMov_myl183_113", "timeMs" : 0.31568, "averageMs" : 0.0286982, "medianMs" : 0.028736, "percentage" : 0.00521518 }
+, { "name" : "/decoder/decoder/layers_3/self_attn/Gemm_myl183_114", "timeMs" : 0.613056, "averageMs" : 0.0557324, "medianMs" : 0.05584, "percentage" : 0.010128 }
+, { "name" : "__myl_TraAddCasMeaSubMulMeaAddSqrDivMulCasMulAddResAdd_myl183_115", "timeMs" : 0.775392, "averageMs" : 0.0704902, "medianMs" : 0.070496, "percentage" : 0.0128098 }
+, { "name" : "/decoder/decoder/layers_3/cross_attn/attention_weights/MatMul+/decoder/decoder/layers_3/cross_attn/sampling_offsets/MatMul_myl183_116", "timeMs" : 0.688448, "averageMs" : 0.0625862, "medianMs" : 0.062624, "percentage" : 0.0113735 }
+, { "name" : "__myl_ResMaxSubExpSum_myl183_117", "timeMs" : 0.734624, "averageMs" : 0.066784, "medianMs" : 0.066816, "percentage" : 0.0121363 }
+, { "name" : "__myl_Res_myl183_118", "timeMs" : 8.18653, "averageMs" : 0.74423, "medianMs" : 0.744288, "percentage" : 0.135245 }
+, { "name" : "__myl_TraResSli_myl183_119", "timeMs" : 83.2122, "averageMs" : 7.56474, "medianMs" : 7.56538, "percentage" : 1.3747 }
+, { "name" : "__myl_ResSliSliResMulMulMulAddMulAddTraResSliSliSliSliResSliResResCasRevTraCasAddMulAddMulRouCasEtc_myl183_120", "timeMs" : 21.6457, "averageMs" : 1.96779, "medianMs" : 1.96784, "percentage" : 0.357598 }
+, { "name" : "__myl_DivMulTraResMovConMulSum_myl183_121", "timeMs" : 19.0122, "averageMs" : 1.72838, "medianMs" : 1.72838, "percentage" : 0.31409 }
+, { "name" : "__myl_Tra_myl183_122", "timeMs" : 0.40224, "averageMs" : 0.0365673, "medianMs" : 0.036576, "percentage" : 0.0066452 }
+, { "name" : "/decoder/decoder/layers_3/cross_attn/output_proj/MatMul_myl183_123", "timeMs" : 0.640256, "averageMs" : 0.0582051, "medianMs" : 0.058304, "percentage" : 0.0105773 }
+, { "name" : "__myl_AddCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl183_124", "timeMs" : 0.500384, "averageMs" : 0.0454895, "medianMs" : 0.045568, "percentage" : 0.00826658 }
+, { "name" : "/decoder/decoder/layers_3/linear1/MatMul_myl183_125", "timeMs" : 1.65318, "averageMs" : 0.150289, "medianMs" : 0.150112, "percentage" : 0.0273114 }
+, { "name" : "/decoder/decoder/layers_3/linear2/MatMul_myl183_126", "timeMs" : 1.38509, "averageMs" : 0.125917, "medianMs" : 0.126368, "percentage" : 0.0228823 }
+, { "name" : "__myl_AddCasMeaSubMulMea_myl183_127", "timeMs" : 0.621408, "averageMs" : 0.0564916, "medianMs" : 0.056416, "percentage" : 0.010266 }
+, { "name" : "__myl_AddSqrDivMulCasMulAddResTra_myl183_128", "timeMs" : 0.892672, "averageMs" : 0.081152, "medianMs" : 0.081216, "percentage" : 0.0147474 }
+, { "name" : "/decoder/decoder/layers_4/self_attn/MatMul_2_myl183_129", "timeMs" : 0.546656, "averageMs" : 0.049696, "medianMs" : 0.04976, "percentage" : 0.00903101 }
+, { "name" : "/decoder/decoder/dec_bbox_head_3/layers_0/MatMul_myl183_130", "timeMs" : 0.585472, "averageMs" : 0.0532247, "medianMs" : 0.05344, "percentage" : 0.00967227 }
+, { "name" : "/decoder/decoder/dec_bbox_head_3/layers_1/MatMul_myl183_131", "timeMs" : 0.512032, "averageMs" : 0.0465484, "medianMs" : 0.046496, "percentage" : 0.00845901 }
+, { "name" : "/decoder/decoder/dec_bbox_head_3/layers_2/MatMul_myl183_132", "timeMs" : 0.583488, "averageMs" : 0.0530444, "medianMs" : 0.053088, "percentage" : 0.0096395 }
+, { "name" : "__myl_MinMaxMaxSubMinMaxMinDivLogAddNegExpAddDiv_myl183_133", "timeMs" : 0.08832, "averageMs" : 0.00802909, "medianMs" : 0.008064, "percentage" : 0.00145909 }
+, { "name" : "/decoder/decoder/query_pos_head/layers_0_4/MatMul_myl183_134", "timeMs" : 0.581568, "averageMs" : 0.0528698, "medianMs" : 0.052992, "percentage" : 0.00960778 }
+, { "name" : "__myl_Rel_myl183_135", "timeMs" : 0.663872, "averageMs" : 0.060352, "medianMs" : 0.060352, "percentage" : 0.0109675 }
+, { "name" : "/decoder/decoder/query_pos_head/layers_1_4/MatMul_myl183_136", "timeMs" : 0.885984, "averageMs" : 0.080544, "medianMs" : 0.080576, "percentage" : 0.0146369 }
+, { "name" : "__myl_AddResTra_myl183_137", "timeMs" : 0.517312, "averageMs" : 0.0470284, "medianMs" : 0.047072, "percentage" : 0.00854624 }
+, { "name" : "/decoder/decoder/layers_4/self_attn/MatMul_1+/decoder/decoder/layers_4/self_attn/MatMul_myl183_138", "timeMs" : 0.974368, "averageMs" : 0.0885789, "medianMs" : 0.088704, "percentage" : 0.016097 }
+, { "name" : "__mye283479_myl183_139", "timeMs" : 0.0128, "averageMs" : 0.00116364, "medianMs" : 0.001152, "percentage" : 0.000211462 }
+, { "name" : "cast_hvar^283475i64_myl183_140", "timeMs" : 0.012256, "averageMs" : 0.00111418, "medianMs" : 0.00112, "percentage" : 0.000202475 }
+, { "name" : "off_add_myl183_141", "timeMs" : 0.011296, "averageMs" : 0.00102691, "medianMs" : 0.001024, "percentage" : 0.000186615 }
+, { "name" : "_gemm_mha_v2_myl183_142", "timeMs" : 2.23712, "averageMs" : 0.203375, "medianMs" : 0.203328, "percentage" : 0.0369583 }
+, { "name" : "__myl_TraResMov_myl183_143", "timeMs" : 0.321824, "averageMs" : 0.0292567, "medianMs" : 0.02928, "percentage" : 0.00531669 }
+, { "name" : "/decoder/decoder/layers_4/self_attn/Gemm_myl183_144", "timeMs" : 0.603488, "averageMs" : 0.0548625, "medianMs" : 0.054912, "percentage" : 0.00996991 }
+, { "name" : "__myl_TraAddCasMeaSubMulMeaAddSqrDivMulCasMulAddResAdd_myl183_145", "timeMs" : 0.77648, "averageMs" : 0.0705891, "medianMs" : 0.070656, "percentage" : 0.0128278 }
+, { "name" : "/decoder/decoder/layers_4/cross_attn/attention_weights/MatMul+/decoder/decoder/layers_4/cross_attn/sampling_offsets/MatMul_myl183_146", "timeMs" : 0.709056, "averageMs" : 0.0644596, "medianMs" : 0.064704, "percentage" : 0.0117139 }
+, { "name" : "__myl_ResMaxSubExpSum_myl183_147", "timeMs" : 0.73552, "averageMs" : 0.0668655, "medianMs" : 0.06688, "percentage" : 0.0121511 }
+, { "name" : "__myl_Res_myl183_148", "timeMs" : 8.17757, "averageMs" : 0.743415, "medianMs" : 0.743584, "percentage" : 0.135097 }
+, { "name" : "__myl_TraResSli_myl183_149", "timeMs" : 83.0062, "averageMs" : 7.54602, "medianMs" : 7.5457, "percentage" : 1.3713 }
+, { "name" : "__myl_ResSliSliResMulMulMulAddMulAddTraResSliSliSliSliResSliResResCasRevTraCasAddMulAddMulRouCasEtc_myl183_150", "timeMs" : 21.6354, "averageMs" : 1.96685, "medianMs" : 1.96723, "percentage" : 0.357426 }
+, { "name" : "__myl_DivMulTraResMovConMulSum_myl183_151", "timeMs" : 19.0097, "averageMs" : 1.72816, "medianMs" : 1.72826, "percentage" : 0.31405 }
+, { "name" : "__myl_Tra_myl183_152", "timeMs" : 0.39728, "averageMs" : 0.0361164, "medianMs" : 0.03616, "percentage" : 0.00656325 }
+, { "name" : "/decoder/decoder/layers_4/cross_attn/output_proj/MatMul_myl183_153", "timeMs" : 0.635104, "averageMs" : 0.0577367, "medianMs" : 0.057792, "percentage" : 0.0104922 }
+, { "name" : "__myl_AddCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl183_154", "timeMs" : 0.512288, "averageMs" : 0.0465716, "medianMs" : 0.046656, "percentage" : 0.00846324 }
+, { "name" : "/decoder/decoder/layers_4/linear1/MatMul_myl183_155", "timeMs" : 1.68822, "averageMs" : 0.153475, "medianMs" : 0.153696, "percentage" : 0.0278903 }
+, { "name" : "/decoder/decoder/layers_4/linear2/MatMul_myl183_156", "timeMs" : 1.40134, "averageMs" : 0.127395, "medianMs" : 0.127456, "percentage" : 0.0231509 }
+, { "name" : "__myl_AddCasMeaSubMulMea_myl183_157", "timeMs" : 0.635296, "averageMs" : 0.0577542, "medianMs" : 0.057824, "percentage" : 0.0104954 }
+, { "name" : "__myl_AddSqrDivMulCasMulAddResTra_myl183_158", "timeMs" : 0.89296, "averageMs" : 0.0811782, "medianMs" : 0.081184, "percentage" : 0.0147521 }
+, { "name" : "/decoder/decoder/layers_5/self_attn/MatMul_2_myl183_159", "timeMs" : 0.555776, "averageMs" : 0.0505251, "medianMs" : 0.050592, "percentage" : 0.00918168 }
+, { "name" : "/decoder/decoder/dec_bbox_head_4/layers_0/MatMul_myl183_160", "timeMs" : 0.570656, "averageMs" : 0.0518778, "medianMs" : 0.051936, "percentage" : 0.00942751 }
+, { "name" : "/decoder/decoder/dec_bbox_head_4/layers_1/MatMul_myl183_161", "timeMs" : 0.522784, "averageMs" : 0.0475258, "medianMs" : 0.047552, "percentage" : 0.00863664 }
+, { "name" : "/decoder/decoder/dec_bbox_head_4/layers_2/MatMul_myl183_162", "timeMs" : 0.585216, "averageMs" : 0.0532015, "medianMs" : 0.053216, "percentage" : 0.00966804 }
+, { "name" : "__myl_MinMaxMaxSubMinMaxMinDivLogAddNegExpAddDiv_myl183_163", "timeMs" : 0.089056, "averageMs" : 0.008096, "medianMs" : 0.008128, "percentage" : 0.00147125 }
+, { "name" : "/decoder/decoder/query_pos_head/layers_0_5/MatMul_myl183_164", "timeMs" : 0.583744, "averageMs" : 0.0530676, "medianMs" : 0.053216, "percentage" : 0.00964373 }
+, { "name" : "__myl_Rel_myl183_165", "timeMs" : 0.660352, "averageMs" : 0.060032, "medianMs" : 0.059968, "percentage" : 0.0109093 }
+, { "name" : "/decoder/decoder/query_pos_head/layers_1_5/MatMul_myl183_166", "timeMs" : 0.907808, "averageMs" : 0.082528, "medianMs" : 0.082592, "percentage" : 0.0149974 }
+, { "name" : "__myl_AddResTra_myl183_167", "timeMs" : 0.512128, "averageMs" : 0.0465571, "medianMs" : 0.046592, "percentage" : 0.0084606 }
+, { "name" : "/decoder/decoder/layers_5/self_attn/MatMul_1+/decoder/decoder/layers_5/self_attn/MatMul_myl183_168", "timeMs" : 0.975776, "averageMs" : 0.0887069, "medianMs" : 0.088832, "percentage" : 0.0161203 }
+, { "name" : "__mye283416_myl183_169", "timeMs" : 0.012416, "averageMs" : 0.00112873, "medianMs" : 0.00112, "percentage" : 0.000205118 }
+, { "name" : "cast_hvar^283412i64_myl183_170", "timeMs" : 0.012192, "averageMs" : 0.00110836, "medianMs" : 0.00112, "percentage" : 0.000201418 }
+, { "name" : "off_add_myl183_171", "timeMs" : 0.011648, "averageMs" : 0.00105891, "medianMs" : 0.001056, "percentage" : 0.00019243 }
+, { "name" : "_gemm_mha_v2_myl183_172", "timeMs" : 2.19834, "averageMs" : 0.199849, "medianMs" : 0.199872, "percentage" : 0.0363176 }
+, { "name" : "__myl_TraResMov_myl183_173", "timeMs" : 0.318272, "averageMs" : 0.0289338, "medianMs" : 0.028992, "percentage" : 0.005258 }
+, { "name" : "/decoder/decoder/layers_5/self_attn/Gemm_myl183_174", "timeMs" : 0.61392, "averageMs" : 0.0558109, "medianMs" : 0.055872, "percentage" : 0.0101422 }
+, { "name" : "__myl_TraAddCasMeaSubMulMeaAddSqrDivMulCasMulAddResAdd_myl183_175", "timeMs" : 0.771936, "averageMs" : 0.070176, "medianMs" : 0.070304, "percentage" : 0.0127527 }
+, { "name" : "/decoder/decoder/layers_5/cross_attn/attention_weights/MatMul+/decoder/decoder/layers_5/cross_attn/sampling_offsets/MatMul_myl183_176", "timeMs" : 0.68992, "averageMs" : 0.06272, "medianMs" : 0.06288, "percentage" : 0.0113978 }
+, { "name" : "__myl_ResMaxSubExpSum_myl183_177", "timeMs" : 0.732288, "averageMs" : 0.0665716, "medianMs" : 0.06656, "percentage" : 0.0120977 }
+, { "name" : "__myl_Res_myl183_178", "timeMs" : 8.16989, "averageMs" : 0.742717, "medianMs" : 0.742752, "percentage" : 0.13497 }
+, { "name" : "__myl_TraResSli_myl183_179", "timeMs" : 83.5091, "averageMs" : 7.59174, "medianMs" : 7.59341, "percentage" : 1.37961 }
+, { "name" : "__myl_ResSliSliResMulMulMulAddMulAddTraResSliSliSliSliResSliResResCasRevTraCasAddMulAddMulRouCasEtc_myl183_180", "timeMs" : 21.6718, "averageMs" : 1.97016, "medianMs" : 1.97027, "percentage" : 0.358029 }
+, { "name" : "__myl_DivMulTraResMovConMulSum_myl183_181", "timeMs" : 19.0164, "averageMs" : 1.72876, "medianMs" : 1.7289, "percentage" : 0.314159 }
+, { "name" : "__myl_Tra_myl183_182", "timeMs" : 0.4096, "averageMs" : 0.0372364, "medianMs" : 0.037344, "percentage" : 0.00676679 }
+, { "name" : "/decoder/decoder/layers_5/cross_attn/output_proj/MatMul_myl183_183", "timeMs" : 0.633856, "averageMs" : 0.0576233, "medianMs" : 0.0576, "percentage" : 0.0104716 }
+, { "name" : "__myl_AddCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl183_184", "timeMs" : 0.500224, "averageMs" : 0.0454749, "medianMs" : 0.045504, "percentage" : 0.00826394 }
+, { "name" : "/decoder/decoder/layers_5/linear1/MatMul_myl183_185", "timeMs" : 1.64774, "averageMs" : 0.149795, "medianMs" : 0.149568, "percentage" : 0.0272215 }
+, { "name" : "/decoder/decoder/layers_5/linear2/MatMul_myl183_186", "timeMs" : 1.35478, "averageMs" : 0.123162, "medianMs" : 0.122688, "percentage" : 0.0223817 }
+, { "name" : "__myl_AddCasMeaSubMulMeaAddSqrDivMulCasMulAdd_myl183_187", "timeMs" : 0.511744, "averageMs" : 0.0465222, "medianMs" : 0.04672, "percentage" : 0.00845425 }
+, { "name" : "/decoder/decoder/dec_score_head_5/MatMul_myl183_188", "timeMs" : 0.393248, "averageMs" : 0.0357498, "medianMs" : 0.035744, "percentage" : 0.00649664 }
+, { "name" : "__myl_GatResNegExp_myl183_189", "timeMs" : 0.24608, "averageMs" : 0.0223709, "medianMs" : 0.0224, "percentage" : 0.00406536 }
+, { "name" : "__myl_AddDivResTop_myl183_190", "timeMs" : 1.69238, "averageMs" : 0.153853, "medianMs" : 0.153952, "percentage" : 0.027959 }
+, { "name" : "/decoder/decoder/dec_bbox_head_5/layers_0/MatMul_myl183_191", "timeMs" : 0.581632, "averageMs" : 0.0528756, "medianMs" : 0.052864, "percentage" : 0.00960884 }
+, { "name" : "/decoder/decoder/dec_bbox_head_5/layers_1/MatMul_myl183_192", "timeMs" : 0.522912, "averageMs" : 0.0475375, "medianMs" : 0.047584, "percentage" : 0.00863875 }
+, { "name" : "/decoder/decoder/dec_bbox_head_5/layers_2/MatMul_myl183_193", "timeMs" : 0.574144, "averageMs" : 0.0521949, "medianMs" : 0.052192, "percentage" : 0.00948513 }
+, { "name" : "__myl_MinMaxMaxSubMinMaxMinDivLogCasDivResRepSliCasRepMulSubGatAddNegExpAddDivResGatSliResSliResEtc_myl183_194", "timeMs" : 0.195744, "averageMs" : 0.0177949, "medianMs" : 0.017856, "percentage" : 0.00323378 }
+, { "name" : "__myl_Cas_myl183_195", "timeMs" : 0.067328, "averageMs" : 0.00612073, "medianMs" : 0.006144, "percentage" : 0.00111229 }
+, { "name" : "__myl_Cas_myl183_196", "timeMs" : 0.071296, "averageMs" : 0.00648146, "medianMs" : 0.00656, "percentage" : 0.00117784 }
+]

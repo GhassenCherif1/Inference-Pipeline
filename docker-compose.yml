@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  benchmarker:
+    build:
+      context: .
+      dockerfile: Dockerfile.jetson
+    image: jetson-benchmarker:latest
+    volumes:
+      - .:/workspace
+      - /usr/bin/tegrastats:/usr/bin/tegrastats:ro
+    # Grant the container access to the NVIDIA runtime layers and GPU architectures
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+    ipc: host
+    network_mode: host
+    restart: unless-stopped
+    command: /bin/bash
